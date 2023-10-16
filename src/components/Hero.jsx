@@ -11,9 +11,6 @@ export default function Hero(){
     <div className="top-hero">
 
 
-
-
-
 <button className="zaloguj"> <Link to="/">{isLogged?"Wyloguj":"Zaloguj się"}</Link></button>
 <article >    Witamy na pokładzie, uczniowie Lego Mindstorms! Przeglądaj naszą stronę, aby znaleźć wskazówki dotyczące rozwiązywania problemów i wyzwania, które rozpalą Twoją pasję do robotyki. </article>
 <img src={image1} alt="robot" className="robot"/>

@@ -74,6 +74,7 @@ align-content: space-between;
 }
 
 .top-hero>article{
+  align-self: stretch;
  font-size: 1em;
   max-height: 150px;
   min-width: 200px;

@@ -12,8 +12,8 @@ export default function Lekcja1(){
         <div>
             <h2>Loops - Pętle</h2>
             <img className="wpro-image" src={loops} alt="rodzaje pętli"></img>
-            <article>Pętle pozwalają nam powtarzać bloki kodu, w zależności od rodzaju pętli może ona byc powtarzana określoną ilośc razy albo wtedy kiedy warunek jest spełniony.
-                Uzywamy ich wtedy kiedy chcemy powtarzać jakieś zadanie określoną ilość razy, lub na okrągło dopóki osiągniemy zamierzony rezultat.
+            <article>Pętle pozwalają nam powtarzać bloki kodu, w zależności od rodzaju pętli może ona być powtarzana określoną ilość razy albo wtedy kiedy warunek jest spełniony.
+                Używamy ich wtedy kiedy chcemy powtarzać jakieś zadanie określoną ilość razy, lub na okrągło dopóki osiągniemy zamierzony rezultat.
             </article>
             <img className="loops" src={rodzajeloops} alt="różne pętle"></img>
            

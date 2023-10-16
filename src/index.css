@@ -1,0 +1,477 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(2, 2, 2, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.green-font{
+  color: rgb(89, 134, 20);
+}
+
+.blue-font{
+  color: rgb(11, 27, 173);
+}
+
+
+a {
+  font-weight: 500;
+  color: #1a1a1a;
+  font-weight:600;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  /* min-width: 100%;
+  min-height: 100vh; */
+}
+
+.site-wrapper{
+  width: 100%;
+  height: fit-content;
+  margin:0;
+  padding: 0;
+}
+
+main{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+ min-height: 100vh;
+background-color: #d1cccc;
+}
+
+.hero{
+  position: relative;
+  height: 1000px;
+  background-image: linear-gradient(to top, #967AC1 60%, #fbc8d4 100%);
+  /* background-color: #967AC1; */
+  display: flex;
+  flex-direction: column;
+align-content: space-between;
+}
+
+
+.top-hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:3em;
+  padding: 0 0 0 2em;
+}
+
+.top-hero>article{
+ font-size: 1.1em;
+  max-height: 150px;
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.robot{
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+  width: 100%;
+  min-width: 400px;
+  max-width: 1200px;
+  height: 100%;
+
+}
+
+.bottom-hero{
+  position: absolute;
+  margin-top: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items:baseline;
+  padding: 0 0 40em 0;
+  width: 100%;
+  /* min-height: 40vh; */
+  height: 100px;
+  background-image: url("./assets/Vector1.svg");
+  /* background-color: black; */
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: bottom;
+ 
+}
+
+.bottom-hero article{
+  font-size: medium;
+padding: 2em;
+padding-top: 3em;
+text-align: center;
+}
+
+
+.white-box, .yellow-box{
+  min-width: 200px;
+  max-width: 400px;
+  height: 250px;
+  margin-top: 15em;
+}
+
+.white-box{
+  background-color:white;
+}
+
+.yellow-box{
+  background-color:#F0D05C;
+}
+
+.back-blue{
+  display: none;
+  margin-top: 450px;
+  width: 100%;
+  height: 50vh;
+  background-color: #5BB3E4;
+}
+
+.vector1{
+  display: block;
+}
+
+nav{
+  width: 100%;
+  min-height: 100px;
+  height: minmax(100px, 15%);
+  margin: 0px;
+
+  display: flex;
+  align-items: center;
+ /* justify-content: center; */
+/* align-content: space-around; */
+background-color: #1a1a1a;
+/* Alternative color #1C5860*/
+}
+
+nav a{
+  font-size: 1.2rem;
+  color:#5BB3E4;
+}
+
+.home-menu{
+  left: 0;
+  margin-right: auto;
+  padding-left: 2em;
+
+}
+
+.links-menu{
+display: flex;
+padding-right: 2em;
+gap: 2em;
+
+}
+
+section{
+  display: flex;
+  margin:0;
+  padding:0;
+}
+
+content{
+display: flex;
+justify-content: center;
+max-width: auto;
+}
+
+.menu-lekcji{
+  color:#d1cccc;
+  position: relative;
+  padding-bottom: 2em;
+  width: 15%;
+  min-width: 200px;
+  max-width: 30%;
+min-height: 100%;
+  background-color: #1C5860;
+}
+
+.menu-lekcji a{
+  color:#d1cccc;
+}
+
+
+footer{
+  width: 100%;
+  min-height: 50px;
+  max-height: 80px;
+  margin-bottom: 0px;
+  margin-top:auto;
+  display: flex;
+  align-items: center;
+ justify-content: space-around;
+background-color: #1a1a1a;
+z-index: 2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.zaloguj{
+
+  background: #f0d05c;
+}
+
+
+button {
+  color:#1a1a1a;
+  margin-right: auto;
+  border-radius: 8px;
+  border: 1px solid #1a1a1a;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.wprowadzenie{
+  max-width: 85%;
+padding: 0 5em;
+padding-bottom: 2em;
+}
+
+
+/*  Images    ---------------    */
+
+.wpro-image{
+  margin: auto;
+  width: clamp(350px, 50%, 7200px);
+  /* max-width: 720px;
+  min-width: 400px; */
+}
+
+.onstart{
+  width: 40%;
+  margin: 2em 0em;
+  border-radius: 0.3em;
+  border: red dashed 5px;
+}
+
+.loops{
+  margin: 2em;
+width: 35%;
+}
+
+.katblocks{
+  display: block;
+  margin: 2em auto;
+width: 50%;
+}
+
+    /* Przydatne linki--------- */
+
+    .przydatne-linki{
+      padding: 3em;
+    
+    }
+
+      /* Format Lekcji ------- */
+
+    .format-lekcje{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2em;
+    }
+
+    .format-lekcje div{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .format-lekcje>div{
+      flex-direction: column;
+     }
+
+     .format-lekcje article{
+      margin: 2em 0em;
+     }
+
+@media (max-width: 1200px){
+
+  .top-hero>article{
+    font-size: 0.96rem;
+  }
+
+  .bottom-hero{
+  margin-top: 30vh;
+  padding: 0 0 25em 0;
+
+}
+
+.back-blue{
+  margin-top: 100px;
+  width: 100%;
+  height: 70vh;
+}
+
+.vector1{
+  display: block;
+}
+
+section{
+  display: block;
+  margin:0;
+  padding:0;
+}
+
+.menu-lekcji{
+ 
+  text-align: center;
+  position: relative;
+  padding-bottom: 1em;
+  min-width: 100%;
+max-height: fit-content;
+  background-color: #1C5860;
+}
+
+.menu-lekcji>h1{
+  margin-top: 0;
+}
+
+.menu-lekcji>div{
+  margin-top: 0;
+  text-align: left;
+}
+
+
+}
+
+
+@media (max-width: 1000px){
+
+  .bottom-hero{
+    margin-top: 25vh;
+    padding: 0 0 16em 0;
+  
+  }
+  
+  .back-blue{
+    margin-top: 100px;
+    width: 100%;
+    height: 70vh;
+  }
+
+  .vector1{
+    display: none;
+  }
+
+  nav a{
+    font-size: 1rem;
+    color:#5BB3E4;
+  }
+}
+
+@media (max-width: 787px){
+  .robot{
+    width: 80%;
+    min-width: 150px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+.top-hero{
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.top-hero>article{
+  margin: 3em auto;
+  width: 80%;
+ min-width: 150px;
+ max-width: 400px;
+}
+
+.zaloguj{
+  margin: 3em auto 0 auto;
+}
+
+.bottom-hero{
+  position: relative;
+  flex-direction: column;
+  height: 40vh;
+  margin-top: 10%;
+  padding: 0 0 12em 0;
+  background-image: none;
+background-color: #5BB3E4;
+}
+
+.bottom-hero article{
+font-size: small;
+padding: 1em;
+
+}
+
+.back-blue{
+  display: none;
+  margin-top: auto;
+  width: 100%;
+  height: 70vh;
+}
+ 
+
+.white-box, .yellow-box{
+  width: 80%;
+  min-width: 150px;
+  max-width: 400px;
+  height: 200px;
+  margin: 1em auto;
+  margin-top: 5em;
+}
+
+.vector1{
+  display: none;
+}
+
+.wprowadzenie>h1{
+  display: inline-block;
+  font-size: clamp(1.5em, 3rem, 70px);
+}
+
+.format-lekcje>h1{
+  font-size: 2em;
+}
+
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

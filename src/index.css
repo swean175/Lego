@@ -453,14 +453,28 @@ padding: 1em;
   display: none;
 }
 
+.wprowadzenie{
+  padding: 1em;
+}
+
+.wprowadzenie a{
+  font-size: 0.9em;
+}
+
 .wprowadzenie>h1{
   display: inline-block;
-  font-size: clamp(1.5em, 3rem, 70px);
+  font-size: clamp(1.5em, 2.7rem, 70px);
 }
 
 .format-lekcje>h1{
   font-size: 2em;
 }
+
+.wpro-image, .katblocks{
+  width: 100%;
+}
+
+
 
 }
 

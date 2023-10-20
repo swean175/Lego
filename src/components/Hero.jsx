@@ -16,11 +16,9 @@ export default function Hero(){
 <img src={image1} alt="robot" className="robot"/>
 </div>
 <div className="bottom-hero">
-    <div className="white-box"><article>Czy jesteś gotowy, aby przenieść swoje umiejętności Lego Mindstorms na wyższy poziom? Odkryj zaawansowane techniki budowania, wskazówki dotyczące kodowania i zaprezentuj swoje dzieła na naszej stronie internetowej. Tylko niebo ogranicza!</article></div>
+{/* Czy jesteś gotowy, aby przenieść swoje umiejętności Lego Mindstorms na wyższy poziom? Odkryj zaawansowane techniki budowania, wskazówki dotyczące kodowania i zaprezentuj swoje dzieła na naszej stronie internetowej. Tylko niebo ogranicza! */}
+    <div className="white-box"><article><span className="ogloszenia">Ogłoszenia</span><p>Kolejne zajęcia:</p><p>Środa 25 październik godz 16:00</p><p>Środa 08 listopad godz 16:00</p> </article></div>
     <div className="yellow-box"><article>Przygotuj się na uwolnienie swojej kreatywności i zanurz się z nami w ekscytujący świat robotyki!</article></div>
-
-
-
 
 </div>
 <div className="back-blue"></div>

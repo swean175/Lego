@@ -48,7 +48,7 @@ export default function Lekcja1(){
             </h2> 
             <article><b>W przykładzie z psem po lewej stronie oba warunki muszą być spełnione, po prawej stronie tylko jeden z warunków musi być spełniony, 
                 więc algorytm sprawdza czy "zwierzę to pies" jeżeli tak idzie dalej i sprawdza czy pies chce iść na spacer, jeżeli tak to mamy Prawdę po lewej stronie i sprawdzamy czy zrówna się z prawą stroną. Po prawej najpierw sprawdza czy zwierzę nie jest lisem, pies nie jest lisem więc mamy Prawdę,
-                 dalej nie musi sprawdzać, ale gdyby zwierzę było lisem 🦊, to sprawdza jeszcze drugi warunek, czyli czy pies nie jest twój, Fałsz tego twierdzenia wnioskuje że pies jest twój, więc znowu mamy Prawdę. 
+                 dalej nie musi sprawdzać, ale gdyby zwierzę było lisem 🦊, to sprawdza jeszcze drugi warunek, czyli czy pies jest twój, jeżeli pies jest twój, więc znowu mamy Prawdę. 
                   Teraz gdy warunki po lewej i prawej są równe Prawda = Prawda możesz iść na spacer. Trzeba by jednak poprawić warunek logiczny 
                   z Albo (<span className="blue-font"> Or </span>) na Oraz (<span className="blue-font"> And </span>), bo inaczej jest ryzyko że wyjdziesz na spacer z cudzym psem Albo (<span className="blue-font"> Or </span>) z lisem.</b></article>
             </div>

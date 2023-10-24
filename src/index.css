@@ -342,10 +342,11 @@ width: 65%;
 
   .top-hero>article{
     font-size: 0.96rem;
+    line-height: 1.1em;
   }
 
   .bottom-hero{
-  margin-top: 30vh;
+    margin-top: 30%;
   padding: 0 0 25em 0;
 }
 
@@ -403,10 +404,7 @@ max-height: fit-content;
   .bottom-hero{
     margin-top: 25vh;
     padding: 0 0 16em 0;
-  
   }
-
-  
   
   .back-blue{
     margin-top: 100px;
@@ -444,6 +442,7 @@ max-height: fit-content;
   width: 80%;
  min-width: 150px;
  max-width: 400px;
+ line-height: 1.7em;
 }
 
 .zaloguj{

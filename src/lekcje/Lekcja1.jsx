@@ -55,9 +55,9 @@ export default function Lekcja1(){
             </div>
         </div>
         <div>
-        <img className="shiba" src={xor} alt="Xor"></img>
-        <article>W edytorze Lego Mindstorms Education EV3 mamy dodatkowy warunek logiczny "XOR", oznacza on że tylko jeden z warunków może być spełniony, spełnienie obu warunków
-            zwróci Fałsz(<span className="blue-font"> False </span>).
+        <img className="loops" src={xor} alt="Xor"></img>
+        <article><b>W edytorze Lego Mindstorms Education EV3 mamy dodatkowy warunek logiczny "XOR", oznacza on że tylko jeden z warunków może być spełniony, spełnienie obu warunków
+            zwróci Fałsz(<span className="blue-font"> False </span>)</b>.
         </article>
         </div>
         <h3><a href=" https://makecode.com/_5idgwzUPp8UW" target="blank">🤖Przykładowy program z użyciem If i While i Forever <PiCursorClickBold color="green" size={25} title="kliknij"/></a> </h3>

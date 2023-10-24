@@ -3,6 +3,7 @@ import onstart from "../assets/lekcja1/onstart.jpg"
 import rodzajeloops from "../assets/lekcja1/rodzajeloops.jpg"
 import warunek from "../assets/lekcja1/if.jpg"
 import extensionif from "../assets/lekcja1/iforand.jpg"
+import xor from "../assets/lekcja1/xor.jpg"
 import dog from "../assets/lekcja1/dog.webp"
 import { PiCursorClickBold } from "react-icons/pi"
 
@@ -52,6 +53,12 @@ export default function Lekcja1(){
                   Teraz gdy warunki po lewej i prawej są równe Prawda = Prawda możesz iść na spacer. Trzeba by jednak poprawić warunek logiczny 
                   z Albo (<span className="blue-font"> Or </span>) na Oraz (<span className="blue-font"> And </span>), bo inaczej jest ryzyko że wyjdziesz na spacer z cudzym psem Albo (<span className="blue-font"> Or </span>) z lisem.</b></article>
             </div>
+        </div>
+        <div>
+        <img className="shiba" src={xor} alt="Xor"></img>
+        <article>W edytorze Lego Mindstorms Education EV3 mamy dodatkowy warunek logiczny "XOR", oznacza on że tylko jeden z warunków może być spełniony, spełnienie obu warunków
+            zwróci Fałsz(<span className="blue-font"> False </span>).
+        </article>
         </div>
         <h3><a href=" https://makecode.com/_5idgwzUPp8UW" target="blank">🤖Przykładowy program z użyciem If i While i Forever <PiCursorClickBold color="green" size={25} title="kliknij"/></a> </h3>
        

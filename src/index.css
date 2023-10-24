@@ -338,11 +338,19 @@ width: 65%;
       padding: 0 1em;
      }
 
+
+@media (max-width: 1400px){
+  .top-hero>article{
+    font-size: 0.9rem;
+    line-height: 1.1em;
+  }
+}     
+
 @media (max-width: 1200px){
 
   .top-hero>article{
     font-size: 0.96rem;
-    line-height: 1.1em;
+    line-height: 1.3em;
   }
 
   .bottom-hero{

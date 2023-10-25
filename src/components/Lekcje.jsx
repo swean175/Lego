@@ -6,8 +6,8 @@ import React from 'react'
 
 
 export default function Lekcje(){
-const [disp, setDsip] = React.useState("Wprowadzenie")
-    const tematyArr = ["Wprowadzenie", "lekcja1", "ciagdalszy"]
+const [disp, setDisp] = React.useState("Wprowadzenie")
+    const tematyArr = ["Wprowadzenie", "lekcja1", "lekcja2"]
 
 
     const activeStyles = {
@@ -43,8 +43,7 @@ const [disp, setDsip] = React.useState("Wprowadzenie")
    
     function chosen(topic){
        
-       setDsip(() => topic)
-       console.log(disp.toLowerCase())
+        setDisp(() =>  tematyArr.indexOf(topic))
     }
 
     return (
@@ -56,7 +55,7 @@ const [disp, setDsip] = React.useState("Wprowadzenie")
       </div>
       <content>
       
-        <Outlet />
+      <Outlet/>
         
       </content>
         </section>

@@ -22,6 +22,10 @@
   color: rgb(11, 27, 173);
 }
 
+.red-font{
+  color: rgb(206, 32, 32);
+}
+
 
 .ogloszenia{
   margin: 0;
@@ -215,6 +219,15 @@ min-height: 100%;
   color:#d1cccc;
 }
 
+.arrows{
+  color:#1C5860;
+  transition: 0.2s;
+}
+
+.arrows:hover{
+  color:#5BB3E4;
+filter:drop-shadow(#1C5860 0px 0px 1px);
+}
 
 footer{
   width: 100%;
@@ -265,12 +278,16 @@ padding: 0 5em;
 padding-bottom: 2em;
 }
 
+.lekcje-layout{
+  display: flex;
+  justify-content: space-between;
+  }
 
-/*  Images    ---------------    */
+/*  Images    -----------------------------------------------------   */
 
 .wpro-image{
   margin: auto;
-  width: clamp(350px, 50%, 7200px);
+  width: 35vw;
   /* max-width: 720px;
   min-width: 400px; */
 }
@@ -299,6 +316,15 @@ width: 25%;
 
 .ifand,.shiba{
 width: 65%;
+}
+
+
+.variables-image{
+  width: 25%;
+}
+
+.math-image{
+ width: 25%;
 }
 
 
@@ -536,6 +562,11 @@ padding: 1em;
   padding: 1em 0;
   margin: 0;
  }
+
+ .loops,.if,.onstart,.ifand,.variables-image,.math-image{
+  margin: 0;
+width: 95%;
+}
 
 }
 

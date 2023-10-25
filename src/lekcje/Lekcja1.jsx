@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import loops from "../assets/lekcja1/loops.png"
 import onstart from "../assets/lekcja1/onstart.jpg"
 import rodzajeloops from "../assets/lekcja1/rodzajeloops.jpg"
@@ -10,6 +11,11 @@ import { PiCursorClickBold } from "react-icons/pi"
 
 
 export default function Lekcja1(){
+
+    useEffect(() => {
+        window.scrollTo(0, 100)
+      }, [])
+
     return(
         <div className="format-lekcje">
         <h1><span className="green-font">Loops ∞ </span>Warunek <span className="blue-font"> If ≤</span></h1>

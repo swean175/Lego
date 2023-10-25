@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import bricksgen from "../assets/bricksgen.webp"
 import Evtbsbutt from "../assets/Evtbsbutt.webp"
 import progexmp from "../assets/progexmp.jpg"
@@ -14,6 +15,10 @@ import ultrasonicsensor from "../assets/ultrasonicsensor.jpg"
 import colorssensor from "../assets/colorssensor.jpg"
 
 export default function Wprowadzenie(){
+    useEffect(() => {
+        window.scrollTo(0, 100)
+      }, [])
+
     return(
         <div className="wprowadzenie">
         <h1>Wprowadzenie</h1>

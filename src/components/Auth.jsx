@@ -3,7 +3,7 @@ import { Outlet, Navigate, useLocation } from "react-router-dom"
 
 export default function Auth() {
 
-
+   let isLoggedIn = false
     async function Log(message){
         const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/Log'
         const response = await fetch(serUrl, {
@@ -18,8 +18,15 @@ export default function Auth() {
      console.log("data " + data)
        return data
      }
-     const status = Log({log:"jajo", pass:"pajo"})
-    const isLoggedIn = status
+     const status = new Promise((resolve, reject) => {
+       return Log({log:"jajo", pass:"pajo"})
+      });
+      
+      status
+        .then(isLoged = status, console.log("Eroror"))
+
+
+    
     //localStorage.getItem("loggedin")
     const location = useLocation()
     console.log("islogin = "+isLoggedIn)

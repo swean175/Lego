@@ -30,9 +30,8 @@ export default function Loguj(){
         const status = new Promise((resolve, reject) => {
             return Log(loginFormData)
            })
-           status
+           status.then((value) => setAproved(() => value.aprove), setKomunikat(()=> "błąd logowania"))
            .then((value) => saveToken(value.token), alert("token error"))
-        .then((value) => setAproved(() => value.aprove), setKomunikat(()=> "błąd logowania"))
         
     
     }
@@ -67,7 +66,7 @@ export default function Loguj(){
                 <>
  <div className="login-container">
             <h1>Zaloguj się</h1>
-            <h2><span className="font-red">{komunikat}</span></h2>
+            <h2><span className="red-font">{komunikat}</span></h2>
             <form onSubmit={handleSubmit} className="login-form">
                 <input
                     name="email"

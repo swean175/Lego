@@ -32,7 +32,7 @@ console.log(loginFormData)
            })
            status
         .then((value) => console.log(value), setKomunikat(()=> "błąd logowania"))
-        .then((value) => sessionStorage.setItem("loData", value.token))
+        //.then((value) => sessionStorage.setItem("logData", value.token))
         //setAproved(() => value.aprove
     }
 

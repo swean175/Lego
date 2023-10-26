@@ -61,7 +61,7 @@ export default function Loguj(){
                 <>
  <div className="login-container">
             <h1>Zaloguj się</h1>
-            <h2>{komunikat}</h2>
+            <h2><span className="font-red">{komunikat}</span></h2>
             <form onSubmit={handleSubmit} className="login-form">
                 <input
                     name="email"

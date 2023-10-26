@@ -21,7 +21,8 @@ export default function Auth() {
         
      }
 
-    const isLoggedIn = Log({log:"jajo", pass:"pajo"})//localStorage.getItem("loggedin")
+    const isLoggedIn = false//Log({log:"jajo", pass:"pajo"})
+    //localStorage.getItem("loggedin")
     const location = useLocation()
     console.log(isLoggedIn)
     if (!isLoggedIn) {

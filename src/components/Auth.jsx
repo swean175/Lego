@@ -25,9 +25,8 @@ export default function Auth() {
       status
         .then((value) => isLoged = value, console.log("Not authentificated"))
 
-
- 
     const location = useLocation()
+    
     if (!isLoggedIn) {
         return (
             <>

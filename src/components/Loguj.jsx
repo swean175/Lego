@@ -23,7 +23,7 @@ export default function Loguj(){
 
     function handleSubmit(e) {
         e.preventDefault()
-        
+
         const status = new Promise((resolve, reject) => {
             return Log(loginFormData)
          
@@ -41,18 +41,22 @@ export default function Loguj(){
         }))
     }
 
-    return (
+    if (aproved) {
+        return (
         <>
-  {aproved ? <Navigate 
+ <Navigate 
                 to="/lekcje" 
                 state={{
                     message: "You must log in first",
                     from: location.pathname
                 }} 
                 replace
-            />: null}
-
-        <div className="login-container">
+            />
+            </>
+            )}
+            else {(
+                <>
+ <div className="login-container">
             <h1>Zaloguj się</h1>
             <h2>{komunikat}</h2>
             <form onSubmit={handleSubmit} className="login-form">
@@ -73,8 +77,12 @@ export default function Loguj(){
                 <button>Zaloguj</button>
             </form>
         </div>
+                </>)
+            }
+
+       
       
-        </>
-    )
+     
+    
 
 }

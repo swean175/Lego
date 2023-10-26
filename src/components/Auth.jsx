@@ -1,7 +1,7 @@
 
 import { Outlet, Navigate, useLocation } from "react-router-dom"
 
-export default function Auth() {
+export default async function Auth() {
 
 
     async function Log(message){
@@ -18,8 +18,8 @@ export default function Auth() {
      console.log("data " + data)
        return data
      }
-
-    const isLoggedIn = Log({log:"jajo", pass:"pajo"})
+     const status = await Log({log:"jajo", pass:"pajo"})
+    const isLoggedIn = await status
     //localStorage.getItem("loggedin")
     const location = useLocation()
     console.log("islogin = "+isLoggedIn)

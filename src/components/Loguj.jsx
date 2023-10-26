@@ -2,7 +2,7 @@ import React from "react"
 import { useNavigate } from "react-router-dom"
 
 export default function Loguj(){
-    const [loginFormData, setLoginFormData] = React.useState({ log: "", pass: "" })
+    const [loginFormData, setLoginFormData] = React.useState({ email: "", password: "" })
     const [aproved, setAproved] = React.useState(false)
   
 
@@ -21,7 +21,6 @@ export default function Loguj(){
 
     function handleSubmit(e) {
         e.preventDefault()
-        console.log(loginFormData)
         const status = new Promise((resolve, reject) => {
             return Log(loginFormData)
            })

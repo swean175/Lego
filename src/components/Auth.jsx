@@ -23,7 +23,7 @@ export default function Auth() {
       });
       
       status
-        .then(isLoged = status, console.log("Eroror"))
+        .then((value) => isLoged = value, console.log("Eroror"))
 
 
     

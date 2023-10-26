@@ -14,7 +14,7 @@ export default function Auth() {
      body:message
        })
      
-     const data = await response.reply.json()
+     const data = await response.reply
      console.log("data " + data)
        return data
      }

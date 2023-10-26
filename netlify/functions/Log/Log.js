@@ -14,7 +14,7 @@ console.log(creds)
     return {
     
       statusCode: 200,
-      body: JSON.stringify({"reply":logPass})
+      body: {"reply":logPass}
    
     }
 

@@ -6,7 +6,6 @@ import Footer from './Footer'
 export default function Layout(){
 
     const location = useLocation()
-    console.log(location)
     return(
         <div className="site-wrapper">
         <Nav />

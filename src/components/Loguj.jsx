@@ -2,6 +2,7 @@ import React from "react"
 import { Navigate } from "react-router-dom"
 
 export default function Loguj(){
+
     const [loginFormData, setLoginFormData] = React.useState({ email: "", password: "" })
     const [aproved, setAproved] = React.useState(false)
   
@@ -27,8 +28,8 @@ export default function Loguj(){
          
            })
            status
-        .then((value) => setAproved(() => value.aprove), alert("Eroror"))
-        
+        .then((value) => console.log(value)), alert("Eroror"))
+        //setAproved(() => value.aprove
     }
 
     function handleChange(e) {

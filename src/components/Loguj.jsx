@@ -21,6 +21,8 @@ export default function Loguj(){
          return data
     }
 
+
+
     function handleSubmit(e) {
         e.preventDefault()
 
@@ -39,6 +41,7 @@ export default function Loguj(){
             ...prev,
             [name]: value
         }))
+        console.log(loginFormData)
     }
 
     if (aproved) {

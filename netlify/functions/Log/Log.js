@@ -1,7 +1,7 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 const handler = async (event) => {
   try {
-const admin = {"log": "admin", "pass": "foxchcejesc", "token": "0012d3", "name": "Damian"}
+const admin = {"log": "swean@vp.pl", "pass": "foxchcejesc", "token": "0012d3", "name": "Damian"}
     let creds = await JSON.parse(event.body)
    let logPass = false
    let token = ""

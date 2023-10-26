@@ -5,6 +5,7 @@ export default function Loguj(){
 
     const [loginFormData, setLoginFormData] = React.useState({ email: "", password: "" })
     const [aproved, setAproved] = React.useState(false)
+    const [komunikat, setKomunikat] = React.useState("")
   
 
     async function Log(message){
@@ -28,7 +29,7 @@ export default function Loguj(){
          
            })
            status
-        .then((value) => console.log(value)), alert("Eroror"))
+        .then((value) => console.log(value), setKomunikat(()=> "błąd logowania"))
         //setAproved(() => value.aprove
     }
 
@@ -53,6 +54,7 @@ export default function Loguj(){
 
         <div className="login-container">
             <h1>Zaloguj się</h1>
+            <h2>{komunikat}</h2>
             <form onSubmit={handleSubmit} className="login-form">
                 <input
                     name="email"

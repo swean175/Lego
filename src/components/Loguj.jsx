@@ -25,14 +25,13 @@ export default function Loguj(){
 
     function handleSubmit(e) {
         e.preventDefault()
-console.log(loginFormData)
         const status = new Promise((resolve, reject) => {
             return Log(loginFormData)
          
            })
            status
         .then((value) => console.log(value), setKomunikat(()=> "błąd logowania"))
-        //.then((value) => sessionStorage.setItem("logData", value.token))
+        .then((value) => sessionStorage.setItem("logData", value.token))
         //setAproved(() => value.aprove
     }
 
@@ -42,7 +41,6 @@ console.log(loginFormData)
             ...prev,
             [name]: value
         }))
-        console.log(loginFormData)
     }
 
     if (aproved) {

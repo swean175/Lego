@@ -29,9 +29,8 @@ export default function Loguj(){
         const status = new Promise((resolve, reject) => {
             return Log(loginFormData)
            })
-           status
-           .then((value) => console.log(value.token), alert("token error"))
-        
+           .then((value) => setAproved(() => value.aprove), setKomunikat(()=> "błąd logowania"))
+         
     }
 
     function saveToken(token){

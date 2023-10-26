@@ -21,8 +21,10 @@ export default function Loguj(){
 
     function handleSubmit(e) {
         e.preventDefault()
+        console.log(loginFormData)
         const status = new Promise((resolve, reject) => {
             return Log(loginFormData)
+         
            })
            status
         .then((value) => setAproved(() => value.aprove), alert("Eroror"))

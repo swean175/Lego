@@ -15,8 +15,10 @@ export default function Auth() {
        })
      
      const data = await response.reply
+     console.log("data " + data)
        return data
-         
+       
+        
      }
 
     const isLoggedIn = Log({cos:"jajo", i:"pajo"})//localStorage.getItem("loggedin")

@@ -1,5 +1,5 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
-const handler = (event) => {
+const handler = async (event) => {
   try {
 
     const mikolaj  = {log: "mikolaj", pass: "mikolaj"}

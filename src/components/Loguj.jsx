@@ -25,13 +25,16 @@ export default function Loguj(){
 
     function handleSubmit(e) {
         e.preventDefault()
+         
+        const token = ""
         const status = new Promise((resolve, reject) => {
             return Log(loginFormData)
            })
            status
-        .then((value) => sessionStorage.setItem("logData", value.token), alert("not saved"))
         .then((value) => setAproved(() => value.aprove), setKomunikat(()=> "błąd logowania"))
-       
+        .then((data) => token = data.token, alert("token error"))
+      
+    sessionStorage.setItem("logData", value.token), alert("not saved")
     
     }
 

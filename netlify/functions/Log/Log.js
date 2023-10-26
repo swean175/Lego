@@ -13,7 +13,7 @@ const handler = (event) => {
     return {
     
       statusCode: 200,
-      body: {"reply":logPass}
+      body: JSON.stringify({"reply":logPass})
    
     }
 

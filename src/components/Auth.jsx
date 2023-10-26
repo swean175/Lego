@@ -14,7 +14,7 @@ export default function Auth() {
      body:JSON.stringify(message)
        })
      
-     const data = await response.reply.json()
+     const data = await response.reply
        return data
          
      }

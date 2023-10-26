@@ -1,8 +1,9 @@
 const handler = async (event) => {
+    const tokens = ["0012d3"]
+    let res = false
+
     try {
-        const tokens = ["0012d3"]
-        let res = false
-      let cred = await JSON.parse(event.body)
+        let cred = await JSON.parse(event.body)
 
       if (tokens.includes(cred)) {
       res = true

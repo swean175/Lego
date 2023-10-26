@@ -28,7 +28,6 @@ export default function Auth() {
 
  
     const location = useLocation()
-    console.log("islogin = "+isLoggedIn)
     if (!isLoggedIn) {
         return (
             <>

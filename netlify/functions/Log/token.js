@@ -1,6 +1,8 @@
+const tokens = ["0012d3"]
+let res = false
+
 const handler = async (event) => {
-    const tokens = ["0012d3"]
-    let res = false
+
 
     try {
         let cred = await JSON.parse(event.body)

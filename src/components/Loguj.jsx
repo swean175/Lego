@@ -23,14 +23,14 @@ export default function Loguj(){
 
 
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault()
          
         const status = new Promise((resolve, reject) => {
             return Log(loginFormData)
            })
-           .then((value) => setAproved(() => value.aprove), setKomunikat(()=> "błąd logowania"))
-         
+           const token = await status.token
+         saveToken(token)
     }
 
     function saveToken(token){

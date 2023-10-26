@@ -16,7 +16,7 @@ const handler = async (event) => {
       logPass = true
       token = admin.token
       name = admin.name
-      //localStorage.setItem("logData", token)
+      sessionStorage.setItem("logData", token)
     }
 
     return {

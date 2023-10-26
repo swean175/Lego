@@ -23,7 +23,7 @@ export default function Auth() {
         return token(tok)
        })
       status
-        .then((value) => isLoged = value, console.log("Eroror"))
+        .then((value) => isLoged = value, console.log("Not authentificated"))
 
 
  

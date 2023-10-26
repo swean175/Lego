@@ -31,11 +31,14 @@ export default function Loguj(){
             return Log(loginFormData)
            })
            status
+           .then((value) => saveToken(value.token), alert("token error"))
         .then((value) => setAproved(() => value.aprove), setKomunikat(()=> "błąd logowania"))
-        .then((data) => token = data.token, alert("token error"))
-      
-    sessionStorage.setItem("logData", value.token), alert("not saved")
+        
     
+    }
+
+    function saveToken(token){
+        sessionStorage.setItem("logData", token)
     }
 
     function handleChange(e) {

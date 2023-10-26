@@ -27,10 +27,9 @@ export default function Loguj(){
         e.preventDefault()
         const status = new Promise((resolve, reject) => {
             return Log(loginFormData)
-         
            })
            status
-        .then((value) => sessionStorage.setItem("logData", value.token))
+        .then((value) => sessionStorage.setItem("logData", value.token), alert("not saved"))
         .then((value) => setAproved(() => value.aprove), setKomunikat(()=> "błąd logowania"))
        
     

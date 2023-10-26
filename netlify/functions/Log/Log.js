@@ -3,7 +3,7 @@ const handler = async (event) => {
   try {
 
     const mikolaj  = {log: "mikolaj", pass: "mikolaj"}
-    let creds = JSON.parse(event.body)
+    let creds = await JSON.parse(event.body)
    let logPass = false
 console.log(creds)
     if (creds.log === mikolaj.log) {

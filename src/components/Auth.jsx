@@ -17,11 +17,9 @@ export default function Auth() {
      const data = await response.reply.json()
      console.log("data " + data)
        return data
-       
-        
      }
 
-    const isLoggedIn = false//Log({log:"jajo", pass:"pajo"})
+    const isLoggedIn = Log({log:"jajo", pass:"pajo"})
     //localStorage.getItem("loggedin")
     const location = useLocation()
     console.log(isLoggedIn)

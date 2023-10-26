@@ -11,7 +11,7 @@ export default function Auth() {
      headers: {
          'Content-Type': 'application/json'
      },
-     body:JSON.stringify(message)
+     body:message
        })
      
      const data = await response.reply

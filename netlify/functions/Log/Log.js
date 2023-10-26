@@ -1,5 +1,5 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
-const handler = async (event) => {
+const handler = (event) => {
   try {
 
     const mikolaj  = {log: "mikolaj", pass: "mikolaj"}
@@ -13,7 +13,7 @@ const handler = async (event) => {
     return {
     
       statusCode: 200,
-      body: JSON.stringify({"reply":logPass}),
+      body: {"reply":logPass}
    
     }
 

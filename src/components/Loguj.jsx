@@ -3,10 +3,31 @@ import { useNavigate } from "react-router-dom"
 
 export default function Loguj(){
     const [loginFormData, setLoginFormData] = React.useState({ log: "", pass: "" })
+    const [aproved, setAproved] = React.useState(false)
+  
+
+    async function Log(message){
+        const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/Log'
+        const response = await fetch(serUrl, {
+     method: 'POST',
+     headers: {
+         'Content-Type': 'application/json'
+     },
+     body:JSON.stringify(message)
+       })
+       const data = await response.json()
+         return data
+    }
 
     function handleSubmit(e) {
         e.preventDefault()
         console.log(loginFormData)
+        const status = new Promise((resolve, reject) => {
+            return Log(loginFormData)
+           })
+           status
+        .then((value) => setAproved(prev => value.aprove), console.log("Eroror"))
+        
     }
 
     function handleChange(e) {
@@ -18,6 +39,16 @@ export default function Loguj(){
     }
 
     return (
+        <>
+  {aproved ? <Navigate 
+                to="/lekcje" 
+                state={{
+                    message: "You must log in first",
+                    from: location.pathname
+                }} 
+                replace
+            />: null}
+
         <div className="login-container">
             <h1>Zaloguj się</h1>
             <form onSubmit={handleSubmit} className="login-form">
@@ -38,6 +69,8 @@ export default function Loguj(){
                 <button>Zaloguj</button>
             </form>
         </div>
+      
+        </>
     )
 
 }

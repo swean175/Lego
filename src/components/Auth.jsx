@@ -4,8 +4,10 @@ import { Outlet, Navigate, useLocation } from "react-router-dom"
 export default function Auth() {
 
    let isLoggedIn = false
-    async function Log(message){
-        const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/Log'
+   let tok = localStorage.getItem("logData")
+
+    async function token(message){
+        const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/token'
         const response = await fetch(serUrl, {
      method: 'POST',
      headers: {
@@ -15,19 +17,16 @@ export default function Auth() {
        })
      
      const data = await response.json()
-     console.log("data " + data)
        return data
      }
      const status = new Promise((resolve, reject) => {
-       return Log({log:"jajo", pass:"pajo"})
-      });
-      
+        return token(tok)
+       })
       status
         .then((value) => isLoged = value, console.log("Eroror"))
 
 
-    
-    //localStorage.getItem("loggedin")
+ 
     const location = useLocation()
     console.log("islogin = "+isLoggedIn)
     if (!isLoggedIn) {

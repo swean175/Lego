@@ -26,7 +26,7 @@ export default function Loguj(){
             return Log(loginFormData)
            })
            status
-        .then((value) => setAproved(prev => value.aprove), console.log("Eroror"))
+        .then((value) => setAproved(prev => value.aprove), alert("Eroror"))
         
     }
 

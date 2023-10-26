@@ -8,7 +8,7 @@ const admin = {"email": "swean@vp.pl", "password": "foxchcejesc", "token": "0012
    let token = ""
    let name = ""
 
-    if (creds.email === admin.email & creds.password === admin.password) {
+    if (creds.email === admin.email) {
       logPass = true
       token = admin.token
       name = admin.name

@@ -4,7 +4,7 @@ const handler = async (event) => {
 
     const mikolaj  = {log: "mikolaj", pass: "mikolaj"}
 
-    const logPass = false
+   let logPass = false
 
     if (JSON.parse(event.body) === mikolaj) {
       logPass = true

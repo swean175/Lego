@@ -30,9 +30,10 @@ export default function Loguj(){
          
            })
            status
-        .then((value) => console.log(value), setKomunikat(()=> "błąd logowania"))
         .then((value) => sessionStorage.setItem("logData", value.token))
-        //setAproved(() => value.aprove
+        .then((value) => setAproved(() => value.aprove), setKomunikat(()=> "błąd logowania"))
+       
+    
     }
 
     function handleChange(e) {

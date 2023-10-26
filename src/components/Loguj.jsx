@@ -19,7 +19,7 @@ export default function Loguj(){
 
     return (
         <div className="login-container">
-            <h1>Sign in to your account</h1>
+            <h1>Zalohuj się</h1>
             <form onSubmit={handleSubmit} className="login-form">
                 <input
                     name="email"
@@ -32,7 +32,7 @@ export default function Loguj(){
                     name="password"
                     onChange={handleChange}
                     type="password"
-                    placeholder="Password"
+                    placeholder="Hasło"
                     value={loginFormData.password}
                 />
                 <button>Log in</button>

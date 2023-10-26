@@ -26,12 +26,11 @@ export default function Loguj(){
     function handleSubmit(e) {
         e.preventDefault()
          
-        const token = ""
         const status = new Promise((resolve, reject) => {
             return Log(loginFormData)
            })
            status
-           .then((value) => saveToken(value.token), alert("token error"))
+           .then((value) => console.log(value.token), alert("token error"))
         
     }
 

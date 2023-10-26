@@ -22,7 +22,7 @@ export default function Auth() {
     const isLoggedIn = Log({log:"jajo", pass:"pajo"})
     //localStorage.getItem("loggedin")
     const location = useLocation()
-    console.log(isLoggedIn)
+    console.log("islogin = "+isLoggedIn)
     if (!isLoggedIn) {
         return (
             <>

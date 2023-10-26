@@ -5,13 +5,13 @@ export default function Auth() {
 
 
     async function Log(message){
-        const serUrl = 'https://slawa-lego-team.netlify.app//.netlify/functions/Log'
+        const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/Log'
         const response = await fetch(serUrl, {
      method: 'POST',
      headers: {
          'Content-Type': 'application/json'
      },
-     body:message
+     body:JSON.stringify(message)
        })
      
      const data = await response.res.json()

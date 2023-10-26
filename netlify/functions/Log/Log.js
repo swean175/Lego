@@ -6,7 +6,7 @@ const handler = async (event) => {
     let creds = JSON.parse(event.body)
    let logPass = false
 console.log(creds)
-    if (creds === mikolaj) {
+    if (creds.log === mikolaj.log) {
       logPass = true
     }
 

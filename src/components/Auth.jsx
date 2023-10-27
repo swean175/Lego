@@ -40,7 +40,7 @@ export default function Auth() {
     checkAuthentication()
 
     console.log("isLogged "+ isLoggedIn)
-    if (isLoggedIn===false) {
+    if (isLoggedIn === false) {
       console.log("should redirect")
         return (
             <>
@@ -54,7 +54,7 @@ export default function Auth() {
                 replace
             />
             </>)
-    } else {
+    } else if (isLoggedIn === true) {
       console.log("should work")
       return (
 <Outlet />

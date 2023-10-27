@@ -12,7 +12,7 @@ const handler = async (event) => {
   try {
     let creds = await JSON.parse(event.body)
 
-    if (creds.email === admin.email) {
+    if (creds.email === admin.email & creds.password === admin.password) {
       logPass = true
       token = admin.token
       name = admin.name

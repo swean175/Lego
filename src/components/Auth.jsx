@@ -2,8 +2,7 @@
 import { Outlet, Navigate, useLocation } from "react-router-dom"
 
 export default function Auth() {
-
-   let isLoggedIn = false
+const [isLoggedIn, setIsLoggedIn]  =React.useState(false)
    let tok = sessionStorage.getItem("logData")
 
     async function token(message){
@@ -19,11 +18,13 @@ export default function Auth() {
      const data = await response.json()
        return data
      }
+
+
      const status = new Promise((resolve, reject) => {
         return token(tok)
        })
       status
-        .then((value) => isLoged = value, console.log("Not authentificated"))
+        .then((value) => setIsLoggedIn(() => value), console.log("Not authentificated"))
 
     const location = useLocation()
 

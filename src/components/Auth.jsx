@@ -21,6 +21,7 @@ const [isLoggedIn, setIsLoggedIn]  =React.useState(false)
 
 
      const status = new Promise((resolve, reject) => {
+        console.log(tok)
         return token(tok)
        })
       status

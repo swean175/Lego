@@ -1,4 +1,4 @@
-const tokens = ["0012d3"]
+const tokens = ["0012d3","0014t3"]
 let res = false
 
 const handler = async (event) => {

@@ -2,7 +2,7 @@ import React from "react"
 import { Outlet, Navigate, useLocation } from "react-router-dom"
 
 export default function Auth() {
-const [isLoggedIn, setIsLoggedIn] = React.useState(false)
+let isLoggedIn = false
    let tok = sessionStorage.getItem("logData")
 
     checkAuthentication()
@@ -26,7 +26,7 @@ const [isLoggedIn, setIsLoggedIn] = React.useState(false)
      async function checkAuthentication() {
         try {
           const value = await token(tok)
-          value.then((data) => setIsLoggedIn(prev => prev =  data))
+          isLoggedIn = value
           console.log("Authenticated " + value)
         } catch (error) {
           console.error("error with Authentification " + value)

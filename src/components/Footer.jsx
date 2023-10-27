@@ -16,7 +16,7 @@ function logOff(){
 
 React.useEffect(() => {
     if (name) {
-      setUser("Witaj" + name)
+      setUser("Witaj " + name)
       setWyloguj("Wyloguj")
     }
   }, [name]);

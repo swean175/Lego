@@ -6,14 +6,15 @@ import vector1 from "../assets/Vector1.svg"
 
 export default function Hero(){
     const tok = sessionStorage.getItem("logData")
-    const [isLogged, setIsLogged] = React.useState(false) 
-    console.log(tok)
-    tok === null? null: setIsLogged(true)
+    let state 
+    tok === null ? state = false: state = true
+    const [isLogged, setIsLogged] = React.useState(state) 
+
 
     function logOff(){
         sessionStorage.removeItem("Name")
         sessionStorage.removeItem("logData")
-      setIsLogged(false)
+      setIsLogged(state)
     }
 
     return (

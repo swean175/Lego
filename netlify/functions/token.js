@@ -9,6 +9,8 @@ const handler = async (event) => {
 
       if (tokens.includes(cred)) {
       res = true
+      } else {
+        res = false
       }
   
       return {

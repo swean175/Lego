@@ -24,11 +24,11 @@ const [isLoggedIn, setIsLoggedIn] = React.useState(false)
         try {
           const value = await token(tok);
           setIsLoggedIn(() => value);
-          console.log("Authenticated" + value);
+          console.log("Authenticated " + value);
         } catch (error) {
-          console.error("Not Authenticated" + value);
+          console.error("Not Authenticated " + value);
         }
-        console.log(isLoggedIn)
+ 
       }
 
     

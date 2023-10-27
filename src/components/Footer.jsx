@@ -3,7 +3,8 @@ import { LuUserCircle2 } from "react-icons/lu"
 
 export default function Footer(){
 const [user, setUser] = React.useState("")
-setUser(() => sessionStorage.getItem("Name"))
+const name = sessionStorage.getItem("Name")
+name? setUser(() => name): null
 
     return(
         <>

@@ -4,7 +4,10 @@ import { Outlet, Navigate, useLocation } from "react-router-dom"
 export default function Auth() {
 const [isLoggedIn, setIsLoggedIn] = React.useState(false)
    let tok = sessionStorage.getItem("logData")
-   checkAuthentication()
+
+   React.useEffect(() => {
+    checkAuthentication()
+   }, [])
 
     async function token(message){
         const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/token'
@@ -26,13 +29,9 @@ const [isLoggedIn, setIsLoggedIn] = React.useState(false)
           setIsLoggedIn(() => value);
           console.log("Authenticated " + value);
         } catch (error) {
-          console.error("Not Authenticated " + value);
+          console.error("error with Authentification " + value);
         }
- 
       }
-
-    
-
 
 
     const location = useLocation()

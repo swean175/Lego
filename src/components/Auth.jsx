@@ -3,6 +3,7 @@ import { Outlet, Navigate, useLocation } from "react-router-dom"
 
 export default function Auth() {
   const [isLoggedIn, setIsLoggedIn] = React.useState(false)
+  const [isDone, setIsDone] = React.useState(false)
   const tok = sessionStorage.getItem("logData")
 
 
@@ -27,6 +28,7 @@ React.useEffect(()=>{
       const value = await token(tok)
       console.log("value " + value)
       setIsLoggedIn(value)
+      setIsDone(value)
       console.log("Authenticated " + value)
     } catch (error) {
       console.error("error with Authentification " + value)
@@ -41,7 +43,7 @@ React.useEffect(()=>{
 
 
     console.log("isLogged "+ isLoggedIn)
-    if (isLoggedIn === false) {
+    if (!isLoggedIn & isDone) {
       console.log("should redirect")
         return (
             <>
@@ -55,7 +57,7 @@ React.useEffect(()=>{
                 replace
             />
             </>)
-    } else if (isLoggedIn === true) {
+    } else if (isLoggedIn === true & isDone) {
       console.log("should work")
       return (
 <Outlet />

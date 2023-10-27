@@ -1,3 +1,4 @@
+import React from "react"
 import { LuUserCircle2 } from "react-icons/lu"
 
 export default function Footer(){

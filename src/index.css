@@ -317,8 +317,8 @@ h1 {
   background: #1C5860;
   font-weight: 700;
   margin-right: 0.5em;
-  margin-left: auto;
-  height: 25px;
+  margin-left: 10px;
+  height: 40px;
 }
 
 .user-icon{

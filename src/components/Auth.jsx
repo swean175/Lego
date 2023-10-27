@@ -28,10 +28,11 @@ const [isLoggedIn, setIsLoggedIn] = React.useState(false)
         } catch (error) {
           console.error("Not Authenticated" + value);
         }
+        console.log(isLoggedIn)
       }
 
     
-console.log(isLoggedIn)
+
 
 
     const location = useLocation()

@@ -298,6 +298,11 @@ background-color: #1a1a1a;
 z-index: 2;
 }
 
+footer>h2{
+  color:#d1cccc;
+  margin-right: auto;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -308,8 +313,12 @@ h1 {
 }
 
 .wyloguj{
+  color: rgb(206, 32, 32);
+  font-weight: 800;
   right:0;
   margin-left: auto;
+  border: 2px solid #1C5860;
+  align-self: flex-end;
 }
 
 

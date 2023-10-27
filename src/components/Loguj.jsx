@@ -31,7 +31,9 @@ export default function Loguj(){
            try{
             const token = await Log(loginFormData);
             saveToken(token.token);
+            setAproved(() => token.aprove)
            }catch(error){
+            setKomunikat(() => "Błąd logowania")
             console.error(error)
            }
     

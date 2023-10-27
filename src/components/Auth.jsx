@@ -5,12 +5,10 @@ export default function Auth() {
 const [isLoggedIn, setIsLoggedIn] = React.useState(false)
    let tok = sessionStorage.getItem("logData")
 
-   React.useEffect(() => {
     checkAuthentication()
-   }, [0])
-
 
    console.log("isLogged "+ isLoggedIn)
+   
     async function token(message){
         const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/token'
         const response = await fetch(serUrl, {

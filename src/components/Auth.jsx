@@ -25,7 +25,8 @@ const isLoggedIn = React.useRef(false)
      async function checkAuthentication() {
         try {
           const value = await token(tok)
-          .then((data) => isLoggedIn.current = data)
+          console.log("value " + value)
+           isLoggedIn.current = value
           console.log("Authenticated " + value)
         } catch (error) {
           console.error("error with Authentification " + value)

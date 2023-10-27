@@ -8,12 +8,18 @@ let logPass = false
 let token = ""
 let name = ""
 let user
+let usersArr = [admin, mikolaj]
 
 const handler = async (event) => {
 
   try {
     let creds = await JSON.parse(event.body)
-    user = admin
+    usersArr.map((it) => {
+      if (it.email === creds.email){
+        user = it
+      } 
+    })
+  
     if (creds.email === user.email & creds.password === user.password) {
       logPass = true
       token = user.token

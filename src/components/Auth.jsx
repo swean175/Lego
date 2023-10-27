@@ -31,14 +31,14 @@ let isLoggedIn = false
         } catch (error) {
           console.error("error with Authentification " + value)
         }
-        console.log("isLogged "+ isLoggedIn)
+     
       }
 
 
     const location = useLocation()
 
 
-
+    console.log("isLogged "+ isLoggedIn)
     if (!isLoggedIn) {
       console.log("should redirect")
         return (

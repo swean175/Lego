@@ -6,7 +6,7 @@ import vector1 from "../assets/Vector1.svg"
 
 export default function Hero(){
     const tok = sessionStorage.getItem("logData")
-    const [isLogged, setIsLogged] = React.useState() 
+    const [isLogged, setIsLogged] = React.useState(false) 
     tok? setIsLogged(true): setIsLogged(false)
 
     function logOff(){

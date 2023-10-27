@@ -8,7 +8,7 @@ export default function Hero(){
     const tok = sessionStorage.getItem("logData")
     const [isLogged, setIsLogged] = React.useState(false) 
     console.log(tok)
-    tok !== ""? null: setIsLogged(true)
+    tok === null? null: setIsLogged(true)
 
     function logOff(){
         sessionStorage.removeItem("Name")
@@ -21,7 +21,7 @@ export default function Hero(){
     <div className="top-hero">
 
 
-<button className="zaloguj" onClick={isLogged?logOff:null}> <Link to={isLogged?"/":"login"}>{isLogged?"Wyloguj":"Zaloguj się"}</Link></button>
+<Link to={isLogged?"/":"login"}><button className="zaloguj" onClick={isLogged?logOff:null}> {isLogged?"Wyloguj":"Zaloguj się"}</button></Link>
 <article >    Witamy na pokładzie, uczniowie Lego Mindstorms! Przeglądaj naszą stronę, aby znaleźć wskazówki dotyczące rozwiązywania problemów i wyzwania, które rozpalą Twoją pasję do robotyki. </article>
 <img src={image1} alt="robot" className="robot"/>
 </div>

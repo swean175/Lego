@@ -2,7 +2,7 @@ import React from "react"
 import { Outlet, Navigate, useLocation } from "react-router-dom"
 
 export default function Auth() {
-let isLoggedIn = false
+const isLoggedIn = React.useRef(false)
    let tok = sessionStorage.getItem("logData")
 
     checkAuthentication()

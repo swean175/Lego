@@ -6,8 +6,7 @@ export default function Auth() {
    let tok = sessionStorage.getItem("logData")
 
 
-React.useEffect(()=>{
-  async function token(message){
+   async function token(message){
     const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/token'
     const response = await fetch(serUrl, {
  method: 'POST',
@@ -20,6 +19,8 @@ React.useEffect(()=>{
  const data = await response.json()
    return data
  }
+
+React.useEffect(()=>{
 
  async function checkAuthentication() {
     try {

@@ -293,7 +293,7 @@ footer{
   margin-top:auto;
   display: flex;
   align-items: center;
- justify-content: space-around;
+ justify-content: space-between;
 background-color: #1a1a1a;
 z-index: 2;
 }
@@ -316,9 +316,9 @@ h1 {
   color: #f0d05c;
   background: #1C5860;
   font-weight: 700;
-  margin-right: 0;
+  margin-right: 0.5em;
   margin-left: auto;
-  align-self: flex-end;
+  height: 25px;
 }
 
 .user-icon{

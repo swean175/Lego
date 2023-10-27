@@ -1,3 +1,4 @@
+import React from "react"
 import { Link } from "react-router-dom"
 import image1 from "../assets/image1.webp"
 import vector1 from "../assets/Vector1.svg"
@@ -5,13 +6,13 @@ import vector1 from "../assets/Vector1.svg"
 
 export default function Hero(){
     const tok = sessionStorage.getItem("logData")
-    let isLogged 
-    tok? isLogged = true: isLogged = false
+    const [isLogged, setIsLogged] = React.useState(false) 
+    tok? setIsLogged(true): setIsLogged(false)
 
     function logOff(){
         sessionStorage.removeItem("Name")
         sessionStorage.removeItem("logData")
-       isLogged = false
+      setIsLogged(false)
     }
 
     return (

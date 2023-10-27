@@ -27,10 +27,10 @@ export default function Loguj(){
         e.preventDefault()
          console.log(Log(loginFormData))
         const status = new Promise((resolve, reject) => {
-            return Log(loginFormData)
-           })
-           const token = await status.token
-         saveToken(token)
+           Log(loginFormData)
+           }).then(saveToken(status.token), alert("not resolved"))
+           
+    
     }
 
     function saveToken(token){

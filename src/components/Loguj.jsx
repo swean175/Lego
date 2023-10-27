@@ -25,11 +25,15 @@ export default function Loguj(){
 
     async function handleSubmit(e) {
         e.preventDefault()
-         console.log(Log(loginFormData))
-        const status = new Promise((resolve, reject) => {
-           Log(loginFormData)
-           }).then(saveToken(status.token), alert("not resolved"))
-           
+        // const status = new Promise((resolve, reject) => {
+        //    Log(loginFormData)
+        //    }).then(saveToken(status.token), alert("not resolved"))
+           try{
+            const token = await Log(loginFormData);
+            saveToken(token.token);
+           }catch(error){
+            console.error(error)
+           }
     
     }
 

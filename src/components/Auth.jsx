@@ -7,7 +7,7 @@ const [isLoggedIn, setIsLoggedIn] = React.useState(false)
 
    React.useEffect(() => {
     checkAuthentication()
-   }, [])
+   }, [isLoggedIn])
 
     async function token(message){
         const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/token'

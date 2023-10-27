@@ -4,7 +4,8 @@ import { Outlet, Navigate, useLocation } from "react-router-dom"
 export default function Auth() {
   let isLoggedIn = false
    let tok = sessionStorage.getItem("logData")
-
+   
+   checkAuthentication()
 
 
 
@@ -37,7 +38,7 @@ export default function Auth() {
 
     const location = useLocation()
 
-    checkAuthentication()
+ 
 
     console.log("isLogged "+ isLoggedIn)
     if (isLoggedIn === false) {

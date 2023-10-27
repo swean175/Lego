@@ -25,7 +25,7 @@ export default function Loguj(){
 
     async function handleSubmit(e) {
         e.preventDefault()
-         
+         console.log(Log(loginFormData))
         const status = new Promise((resolve, reject) => {
             return Log(loginFormData)
            })

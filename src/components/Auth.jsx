@@ -39,7 +39,7 @@ const isLoggedIn = React.useRef(false)
 
 
     console.log("isLogged "+ isLoggedIn)
-    if (!isLoggedIn) {
+    if (isLoggedIn===false) {
       console.log("should redirect")
         return (
             <>

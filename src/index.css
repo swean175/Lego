@@ -303,9 +303,13 @@ h1 {
   line-height: 1.1;
 }
 
-.zaloguj{
-
+.zaloguj,.wyloguj{
   background: #f0d05c;
+}
+
+.wyloguj{
+  right:0;
+  margin-left: auto;
 }
 
 

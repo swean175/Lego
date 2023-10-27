@@ -4,6 +4,7 @@ import { Outlet, Navigate, useLocation } from "react-router-dom"
 export default function Auth() {
 const [isLoggedIn, setIsLoggedIn]  =React.useState(false)
    let tok = sessionStorage.getItem("logData")
+   checkAuthentication()
 
     async function token(message){
         const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/token'
@@ -29,7 +30,7 @@ const [isLoggedIn, setIsLoggedIn]  =React.useState(false)
         }
       }
 
-      checkAuthentication()
+    
 console.log(isLoggedIn)
 
 

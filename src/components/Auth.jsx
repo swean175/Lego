@@ -37,7 +37,10 @@ let isLoggedIn = false
 
     const location = useLocation()
 
+
+
     if (!isLoggedIn) {
+      console.log("should redirect")
         return (
             <>
             <h1>Auth</h1>
@@ -51,6 +54,7 @@ let isLoggedIn = false
             />
             </>)
     } else {
+      console.log("should work")
       return (
 <Outlet />
       )

@@ -7,7 +7,7 @@ const name = sessionStorage.getItem("Name")
 
 React.useEffect(() => {
     if (name) {
-      setUser(name);
+      setUser("Witaj" + name);
     }
   }, [name]);
 

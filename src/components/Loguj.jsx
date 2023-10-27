@@ -53,18 +53,17 @@ export default function Loguj(){
 
     if (aproved) {
         return (
-        <>
+        
  <Navigate 
                 to="/lekcje" 
                 state={{
-                    message: "You must log in first",
+                    message: "Zalogowano",
                     from: location.pathname
                 }} 
                 replace
             />
-            </>
             )}
-            else {
+           
                 return (
                 <>
  <div className="login-container">
@@ -88,12 +87,6 @@ export default function Loguj(){
                 <button>Zaloguj</button>
             </form>
         </div>
-                </>)
-            }
-
-       
-      
-     
-    
+     </>)
 
 }

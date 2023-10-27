@@ -14,7 +14,7 @@ export default function Hero(){
     function logOff(){
         sessionStorage.removeItem("Name")
         sessionStorage.removeItem("logData")
-      setIsLogged(state)
+      setIsLogged(false)
     }
 
     return (

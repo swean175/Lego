@@ -1,21 +1,23 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 
 const admin = {"email": "swean@vp.pl", "password": "foxchcejesc", "token": "0012d3", "name": "Damian"}
+const mikolaj = {"email": "mik@wp.pl", "password": "mikolaj", "token": "0014t3", "name": "Mikołaj"}
 
 
 let logPass = false
 let token = ""
 let name = ""
+let user
 
 const handler = async (event) => {
 
   try {
     let creds = await JSON.parse(event.body)
-
-    if (creds.email === admin.email & creds.password === admin.password) {
+    user = admin
+    if (creds.email === user.email & creds.password === user.password) {
       logPass = true
-      token = admin.token
-      name = admin.name
+      token = user.token
+      name = user.name
     }
 
     return {

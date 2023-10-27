@@ -30,7 +30,7 @@ export default function Loguj(){
         //    }).then(saveToken(status.token), alert("not resolved"))
            try{
             const token = await Log(loginFormData);
-            saveToken(token.token);
+            saveToken(token);
             setAproved(() => token.aprove)
            }catch(error){
             setKomunikat(() => "Błąd logowania")
@@ -40,7 +40,8 @@ export default function Loguj(){
     }
 
     function saveToken(token){
-        sessionStorage.setItem("logData", token)
+        sessionStorage.setItem("logData", token.token)
+        sessionStorage.setItem("Name", token.name)
     }
 
     function handleChange(e) {

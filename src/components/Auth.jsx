@@ -2,7 +2,7 @@ import React from "react"
 import { Outlet, Navigate, useLocation } from "react-router-dom"
 
 export default function Auth() {
-const [isLoggedIn, setIsLoggedIn]  =React.useState(false)
+const [isLoggedIn, setIsLoggedIn] = React.useState(false)
    let tok = sessionStorage.getItem("logData")
    checkAuthentication()
 
@@ -43,7 +43,7 @@ console.log(isLoggedIn)
             <Navigate 
                 to="/login" 
                 state={{
-                    message: "You must log in first",
+                    message: "Musisz się zalogować",
                     from: location.pathname
                 }} 
                 replace

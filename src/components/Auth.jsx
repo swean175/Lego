@@ -4,8 +4,11 @@ import { Outlet, Navigate, useLocation } from "react-router-dom"
 export default function Auth() {
 const isLoggedIn = React.useRef(false)
    let tok = sessionStorage.getItem("logData")
-
-    checkAuthentication()
+   
+React.useEffect(()=>{
+  checkAuthentication()
+}, [0])
+    
 
  
 

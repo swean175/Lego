@@ -21,11 +21,8 @@ const [isLoggedIn, setIsLoggedIn]  =React.useState(false)
 
 
      const status = new Promise((resolve, reject) => {
-        console.log(tok)
-        return token(tok)
-       })
-      status
-        .then((value) => setIsLoggedIn(() => value), console.log("Not authentificated"))
+      token(tok)
+       }).then((value) => setIsLoggedIn(() => value), console.log("Not authentificated"))
 
     const location = useLocation()
 

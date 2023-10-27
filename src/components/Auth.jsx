@@ -26,10 +26,10 @@ React.useEffect(()=>{
  async function checkAuthentication() {
     try {
       const value = await token(tok)
-      console.log("value " + value)
+    
       setIsLoggedIn(value)
       setIsDone(true)
-      console.log("Authenticated " + value)
+
     } catch (error) {
       console.error("error with Authentification " + value)
     }
@@ -42,9 +42,9 @@ React.useEffect(()=>{
     const location = useLocation()
 
 
-    console.log("isLogged "+ isLoggedIn)
+ 
     if (!isLoggedIn & isDone) {
-      console.log("should redirect")
+    
         return (
             <>
             <h1>Auth</h1>
@@ -58,7 +58,7 @@ React.useEffect(()=>{
             />
             </>)
     } else if (isLoggedIn === true & isDone) {
-      console.log("should work")
+     
       return (
 <Outlet />
       )

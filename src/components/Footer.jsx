@@ -26,7 +26,7 @@ React.useEffect(() => {
         <>
         <footer> 
             <h2>{user}</h2>
-        <LuUserCircle2 color="#d1cccc" size={48}/><button className="wyloguj" onClick={logOff}>{wyloguj}</button>
+        <LuUserCircle2 className="user-icon" color="#d1cccc" size={48}/><button className="wyloguj" onClick={logOff}>{wyloguj}</button>
         </footer>
        
         </>

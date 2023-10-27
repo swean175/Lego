@@ -19,9 +19,17 @@ const [isLoggedIn, setIsLoggedIn]  =React.useState(false)
        return data
      }
 
-     const status = new Promise((resolve, reject) => {
-      token(tok).then((value) => setIsLoggedIn(() => value), console.log("Not authentificated"))
-       })
+     async function checkAuthentication() {
+        try {
+          const value = await token(tok);
+          setIsLoggedIn(value);
+          console.log("Authenticated");
+        } catch (error) {
+          console.error("Not Authenticated");
+        }
+      }
+
+      checkAuthentication()
 console.log(isLoggedIn)
 
 

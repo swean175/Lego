@@ -4,7 +4,12 @@ import { LuUserCircle2 } from "react-icons/lu"
 export default function Footer(){
 const [user, setUser] = React.useState("")
 const name = sessionStorage.getItem("Name")
-name? setUser(() => name): null
+
+React.useEffect(() => {
+    if (name) {
+      setUser(name);
+    }
+  }, [name]);
 
     return(
         <>

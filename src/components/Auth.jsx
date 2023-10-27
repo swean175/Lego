@@ -28,7 +28,7 @@ React.useEffect(()=>{
       const value = await token(tok)
       console.log("value " + value)
       setIsLoggedIn(value)
-      setIsDone(value)
+      setIsDone(true)
       console.log("Authenticated " + value)
     } catch (error) {
       console.error("error with Authentification " + value)

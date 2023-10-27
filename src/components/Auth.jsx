@@ -5,7 +5,7 @@ export default function Auth() {
   const [isLoggedIn, setIsLoggedIn] = React.useState(false)
    let tok = sessionStorage.getItem("logData")
 
-  checkAuthentication()
+
 
 
     async function token(message){
@@ -26,7 +26,7 @@ export default function Auth() {
         try {
           const value = await token(tok)
           console.log("value " + value)
-           setIsLoggedIn(() => value)
+           await setIsLoggedIn(() => value)
           console.log("Authenticated " + value)
         } catch (error) {
           console.error("error with Authentification " + value)
@@ -37,6 +37,7 @@ export default function Auth() {
 
     const location = useLocation()
 
+    checkAuthentication()
 
     console.log("isLogged "+ isLoggedIn)
     if (isLoggedIn===false) {

@@ -23,7 +23,7 @@ const [isLoggedIn, setIsLoggedIn] = React.useState(false)
      async function checkAuthentication() {
         try {
           const value = await token(tok);
-          setIsLoggedIn(value);
+          setIsLoggedIn(() => value);
           console.log("Authenticated");
         } catch (error) {
           console.error("Not Authenticated");

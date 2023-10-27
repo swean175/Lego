@@ -7,8 +7,8 @@ const [isLoggedIn, setIsLoggedIn] = React.useState(false)
 
     checkAuthentication()
 
-   console.log("isLogged "+ isLoggedIn)
-   
+ 
+
     async function token(message){
         const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/token'
         const response = await fetch(serUrl, {
@@ -31,6 +31,7 @@ const [isLoggedIn, setIsLoggedIn] = React.useState(false)
         } catch (error) {
           console.error("error with Authentification " + value);
         }
+        console.log("isLogged "+ isLoggedIn)
       }
 
 

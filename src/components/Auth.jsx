@@ -50,6 +50,10 @@ let isLoggedIn = false
                 replace
             />
             </>)
+    } else {
+      return (
+<Outlet />
+      )
     }
-    return <Outlet />
+   
 }

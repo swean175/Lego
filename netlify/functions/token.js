@@ -7,7 +7,7 @@ const handler = async (event) => {
     try {
         let cred = await JSON.parse(event.body)
 
-      if (tokens.includes(cred)) {
+      if (tokens.arr.includes(cred)) {
       res = true
       } else {
         res = false

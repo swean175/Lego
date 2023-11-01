@@ -1,6 +1,6 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 
-const admin = process.env.CREDS_ADMIN
+const admin = JSON.parse(process.env.CREDS_ADMIN)
 
 
 

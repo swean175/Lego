@@ -1,4 +1,4 @@
-const tokens = process.env.TOKENS
+const tokens = JSON.parse(process.env.TOKENS)
 let res = false
 
 const handler = async (event) => {

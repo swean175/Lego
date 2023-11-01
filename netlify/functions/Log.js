@@ -1,14 +1,14 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 
-const admin = {"email": "swean@vp.pl", "password": "foxchcejesc", "token": "0012d3", "name": "Damian"}
-const mikolaj = {"email": "mik@wp.pl", "password": "mikolaj", "token": "0014t3", "name": "Mikołaj"}
+const admin = process.env.CREDS_ADMIN
+
 
 
 let logPass = false
 let token = ""
 let name = ""
 let user
-let usersArr = [admin, mikolaj]
+let usersArr = [admin]
 
 const handler = async (event) => {
 

@@ -20,7 +20,7 @@ const handler = async (event) => {
       } 
     })
   
-    if (creds.password === user.password) {
+    if (creds.email === user.email && creds.password === user.password) {
       logPass = true
       token = user.token
       name = user.name

@@ -24,6 +24,10 @@ const handler = async (event) => {
       logPass = true
       token = user.token
       name = user.name
+    } else {
+      logPass = false
+      token = ""
+      name = ""
     }
 
     return {

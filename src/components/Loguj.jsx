@@ -46,7 +46,7 @@ export default function Loguj(){
 
     function handleChange(e) {
         const { name, value } = e.target
-        setLoginFormData(prev => ({
+        setLoginFormData((prev) => ({
             ...prev,
             [name]: value
         }))

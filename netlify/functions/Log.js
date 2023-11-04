@@ -7,7 +7,7 @@ const admin = JSON.parse(process.env.CREDS_ADMIN)
 let logPass = false
 let token = ""
 let name = ""
-let user
+let user = {}
 let usersArr = [admin]
 
 const handler = async (event) => {

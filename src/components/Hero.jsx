@@ -5,7 +5,8 @@ import vector1 from "../assets/Vector1.svg"
 
 
 export default function Hero(){
-    const tok = sessionStorage.getItem("logData")
+    let tok
+    tok = sessionStorage.getItem("logData")
     let state 
     tok === null ? state = false: state = true
     const [isLogged, setIsLogged] = React.useState(state) 

@@ -29,7 +29,7 @@ const handler = async (event) => {
     return {
     
       statusCode: 200,
-      body: JSON.stringify({"aprove":logPass, "name": name, "token": token})
+      body: JSON.stringify({"data":{"aprove":logPass, "name": name, "token": token}, "user":user})
    
     }
 

@@ -2,8 +2,6 @@ import React from "react"
 import { Navigate } from "react-router-dom"
 
 export default function Loguj(){
-    const admin = JSON.parse(process.env.CREDS_ADMIN)
-    console.log(admin)
 
     const [loginFormData, setLoginFormData] = React.useState({ email: "", password: "" })
     const [aproved, setAproved] = React.useState(false)

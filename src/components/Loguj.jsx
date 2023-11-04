@@ -4,7 +4,7 @@ import { Navigate } from "react-router-dom"
 export default function Loguj(){
 
     const [loginFormData, setLoginFormData] = React.useState({ email: "", password: "" })
-    const [aproved, setAproved] = React.useState(false)
+    let aproved = false
     const [komunikat, setKomunikat] = React.useState("")
   
 
@@ -29,7 +29,7 @@ export default function Loguj(){
            try{
             const token = await Log(loginFormData);
             token.token !== "" ? saveToken(token):null
-            setAproved(() => token.aprove)
+           aproved =  token.aprove
             !aproved? setKomunikat("Adres email lub hasło jest nieprawidłowe") : null
            }catch(error){
             setKomunikat("Błąd logowania")

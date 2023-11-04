@@ -27,9 +27,10 @@ export default function Loguj(){
     async function handleSubmit(e) {
         e.preventDefault()
            try{
-            const token = await Log(loginFormData);
-            token.token !== "" ? saveToken(token):null
-           setAproved(token.aprove)
+            const token = await Log(loginFormData)
+            setAproved(token.aprove)
+            aproved ? saveToken(token):null
+           
             !aproved? setKomunikat("Adres email lub hasło jest nieprawidłowe") : null
            }catch(error){
             setKomunikat("Błąd logowania")

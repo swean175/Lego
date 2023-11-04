@@ -18,7 +18,8 @@ export default function Loguj(){
      body:JSON.stringify(message)
        })
        const data = await response.json()
-         return data
+        console.log(data.user)
+         return data.data
     }
 
 

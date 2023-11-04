@@ -43,7 +43,7 @@ React.useEffect(()=>{
 
 
  
-    if (!isLoggedIn & isDone) {
+    if (!isLoggedIn && isDone) {
     
         return (
             <>

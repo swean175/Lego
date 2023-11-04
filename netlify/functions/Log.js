@@ -16,7 +16,7 @@ const handler = async (event) => {
     let creds = await JSON.parse(event.body)
     usersArr.map((it) => {
       if (it.email === creds.email){
-        user = it
+        return user = it
       } 
     })
   

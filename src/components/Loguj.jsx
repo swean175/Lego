@@ -18,7 +18,7 @@ export default function Loguj(){
      body:JSON.stringify(message)
        })
        const data = await response.json()
-    
+    console.log(data)
          return data
     }
 
@@ -29,7 +29,7 @@ export default function Loguj(){
            try{
             const token = await Log(loginFormData)
             setAproved(token.aprove)
-            aproved ? ()=>saveToken(token):null
+            aproved ?saveToken(token):null
            
             !aproved? setKomunikat("Adres email lub hasło jest nieprawidłowe") : null
            }catch(error){

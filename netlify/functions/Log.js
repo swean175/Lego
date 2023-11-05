@@ -2,13 +2,14 @@
 
 const admin = JSON.parse(process.env.CREDS_ADMIN)
 const mikolaj = JSON.parse(process.env.CREDS_MIKOLAJ)
+const kuba = JSON.parse(process.env.CREDS_KUBA)
 
 
 let logPass = false
 let token = ""
 let name = ""
 let user = {}
-let usersArr = [admin, mikolaj]
+let usersArr = [admin, mikolaj, kuba]
 
 const handler = async (event) => {
 

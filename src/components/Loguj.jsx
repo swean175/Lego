@@ -30,11 +30,12 @@ export default function Loguj(){
             const token = await Log(loginFormData)
             setAproved(token.aprove)
             if (aproved){
-                saveToken(token)
+                sessionStorage.setItem("logData", token.token)
+                sessionStorage.setItem("Name", token.name)
+            } else {
+                setKomunikat("Adres email lub hasło jest nieprawidłowe")
             }
           
-           
-            !aproved? setKomunikat("Adres email lub hasło jest nieprawidłowe") : null
            }catch(error){
             setKomunikat("Błąd logowania")
             console.error(error)
@@ -42,10 +43,7 @@ export default function Loguj(){
     
     }
 
-    function saveToken(token){
-        sessionStorage.setItem("logData", token.token)
-        sessionStorage.setItem("Name", token.name)
-    }
+
 
     function handleChange(e) {
         const { name, value } = e.target

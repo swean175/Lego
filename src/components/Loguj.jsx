@@ -29,7 +29,6 @@ export default function Loguj(){
             const token = await Log(loginFormData)
             
             if (token.aprove){
-                console.log("powinno zapiseac")
                 sessionStorage.setItem("logData", token.token)
                 sessionStorage.setItem("Name", token.name)
                 setAproved(token.aprove)

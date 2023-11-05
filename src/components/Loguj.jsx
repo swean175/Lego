@@ -29,7 +29,10 @@ export default function Loguj(){
            try{
             const token = await Log(loginFormData)
             setAproved(token.aprove)
-            aproved ?saveToken(token):null
+            if (aproved){
+                saveToken(token)
+            }
+          
            
             !aproved? setKomunikat("Adres email lub hasło jest nieprawidłowe") : null
            }catch(error){

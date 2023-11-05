@@ -1,14 +1,14 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 
 const admin = JSON.parse(process.env.CREDS_ADMIN)
-
+const mikolaj = JSON.parse(process.env.CREDS_MIKOLAJ)
 
 
 let logPass = false
 let token = ""
 let name = ""
 let user = {}
-let usersArr = [admin]
+let usersArr = [admin, mikolaj]
 
 const handler = async (event) => {
 

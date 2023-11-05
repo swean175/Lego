@@ -18,7 +18,6 @@ export default function Loguj(){
      body:JSON.stringify(message)
        })
        const data = await response.json()
-    console.log(data)
          return data
     }
 
@@ -30,6 +29,7 @@ export default function Loguj(){
             const token = await Log(loginFormData)
             setAproved(token.aprove)
             if (aproved){
+                console.log("powinno zapiseac")
                 sessionStorage.setItem("logData", token.token)
                 sessionStorage.setItem("Name", token.name)
             } else {

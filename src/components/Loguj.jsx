@@ -27,11 +27,12 @@ export default function Loguj(){
         e.preventDefault()
            try{
             const token = await Log(loginFormData)
-            setAproved(token.aprove)
-            if (aproved){
+            
+            if (token.aprove){
                 console.log("powinno zapiseac")
                 sessionStorage.setItem("logData", token.token)
                 sessionStorage.setItem("Name", token.name)
+                setAproved(token.aprove)
             } else {
                 setKomunikat("Adres email lub hasło jest nieprawidłowe")
             }

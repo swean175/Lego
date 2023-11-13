@@ -184,6 +184,18 @@ nav a{
   margin-left: 1.3em;
 }
 
+.ev3logo{
+  height: 60px;
+  border-radius: 0.8em;
+  margin-left: 1.3em;
+  transform: translateY(25px);
+  transition: 0.2s;
+}
+
+.ev3logo:hover{
+filter:hue-rotate(200deg);
+}
+
 .home-menu{
   display: flex;
   align-items: center;

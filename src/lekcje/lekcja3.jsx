@@ -75,11 +75,7 @@ export default function Lekcja3(){
             <img className="math-image" src={list} alt="Bloki operacji na listach = arrays"></img>
                 <h2>Bloki operacji na Listach czyli inaczej tablicach w edytorze Ev3 Classroom</h2>
                 <br></br>
-                 <div>
-                   
             </div>
-            </div>
-           
            
         </div>
         </div>

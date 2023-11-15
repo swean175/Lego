@@ -2,41 +2,41 @@ import React from "react"
 import { Outlet, Navigate, useLocation } from "react-router-dom"
 
 export default function Auth() {
-  const [isLoggedIn, setIsLoggedIn] = React.useState(false)
-  const [isDone, setIsDone] = React.useState(false)
+  const [isLoggedIn, setIsLoggedIn] = React.useState(true)
+  const [isDone, setIsDone] = React.useState(true)
   const tok = sessionStorage.getItem("logData")
 
 
-   async function token(message){
-    const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/token'
-    const response = await fetch(serUrl, {
- method: 'POST',
- headers: {
-     'Content-Type': 'application/json'
- },
- body:JSON.stringify(message)
-   })
+//    async function token(message){
+//     const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/token'
+//     const response = await fetch(serUrl, {
+//  method: 'POST',
+//  headers: {
+//      'Content-Type': 'application/json'
+//  },
+//  body:JSON.stringify(message)
+//    })
  
- const data = await response.json()
-   return data
- }
+//  const data = await response.json()
+//    return data
+//  }
 
-React.useEffect(()=>{
+// React.useEffect(()=>{
 
- async function checkAuthentication() {
-    try {
-      const value = await token(tok)
+//  async function checkAuthentication() {
+//     try {
+//       const value = await token(tok)
     
-      setIsLoggedIn(value)
-      setIsDone(true)
+//       setIsLoggedIn(value)
+//       setIsDone(true)
 
-    } catch (error) {
-      console.error("error with Authentification " + value)
-    }
+//     } catch (error) {
+//       console.error("error with Authentification " + value)
+//     }
  
-  }
-  checkAuthentication()
-},[])
+//   }
+//   checkAuthentication()
+// },[])
 
 
     const location = useLocation()

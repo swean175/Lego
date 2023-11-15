@@ -67,9 +67,6 @@ export default function Lekcja3(){
             <h2>Bloki operacji Array w edytorze Makecode.mindstorms</h2>
             <br></br>
             <div>
-            
-            </div>
-            <div>
             <br></br>
            
             <img className="math-image" src={list} alt="Bloki operacji na listach = arrays"></img>

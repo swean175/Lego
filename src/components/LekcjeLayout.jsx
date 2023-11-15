@@ -6,7 +6,6 @@ export default function LekcjeLayout(){
   const location = useLocation()
   let locPath = location.pathname.slice(-1)
   let lesseonIndex = parseInt(locPath)
-console.log( lesseonIndex, locPath)
 
     return(
       <div> 

@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import vararray from "../assets/lekcja3/vararray.jpg"
 import array from "../assets/lekcja3/array.jpg"
 import options from "../assets/lekcja3/arroptions.jpg"
@@ -8,6 +9,11 @@ import list from "../assets/lekcja3/listclassroom.jpg"
 
 
 export default function Lekcja3(){
+
+    useEffect(() => {
+        window.scrollTo(0, 100)
+      }, [])
+
     return(
         <div className="format-lekcje">
         <h1>Tablice Listy(<span className="red-font">Array, List</span>)</h1>

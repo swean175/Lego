@@ -7,7 +7,7 @@ import React from 'react'
 
 export default function Lekcje(){
 const [disp, setDisp] = React.useState("Wprowadzenie")
-    const tematyArr = ["Wprowadzenie", "lekcja1", "lekcja2"]
+    const tematyArr = ["Wprowadzenie", "lekcja1", "lekcja2", "lekcja3"]
 
 
     const activeStyles = {

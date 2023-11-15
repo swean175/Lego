@@ -76,9 +76,7 @@ export default function Lekcja3(){
                 <h2>Bloki operacji na Listach czyli inaczej tablicach w edytorze Ev3 Classroom</h2>
                 <br></br>
                  <div>
-                
-          {/* <article>Dzięki bloku operacji matematycznych możemy mnożyć, dzielić, dodawać itd.</article> */}
-            
+                   
             </div>
             </div>
            

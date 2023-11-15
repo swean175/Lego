@@ -14,7 +14,7 @@ import Auth from './components/Auth'
 import Wprowadzenie from './lekcje/Wprowadzenie'
 import Lekcja1 from './lekcje/Lekcja1'
 import Lekcja2 from './lekcje/Lekcja2'
-import Lekcja3 from './lekcje/Lekcja3'
+import lekcja3 from './lekcje/lekcja3'
 import Lekcja4 from './lekcje/Lekcja4'
 import LekcjeLayout from './components/LekcjeLayout'
 
@@ -40,7 +40,7 @@ export default function App() {
     <Route index element={<Wprowadzenie />}/>
     <Route path="lekcja1" element={<Lekcja1 />}/>
     <Route path="lekcja2" element={<Lekcja2 />}/>
-    <Route path="lekcja3" element={<Lekcja3 />}/>
+    <Route path="lekcja3" element={<lekcja3 />}/>
     <Route path="lekcja4" element={<Lekcja4 />}/>
 </Route>
 </Route>

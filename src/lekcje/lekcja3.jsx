@@ -7,7 +7,6 @@ import list from "../assets/lekcja3/listclassroom.jpg"
 
 
 
-
 export default function Lekcja3(){
     return(
         <div className="format-lekcje">

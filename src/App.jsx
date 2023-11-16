@@ -40,7 +40,7 @@ export default function App() {
     <Route index element={<Wprowadzenie />}/>
     <Route path="lekcja1" element={<Lekcja1 />}/>
     <Route path="lekcja2" element={<Lekcja2 />}/>
-    <Route path="lekcja3" element={<lekcja3 />}/>
+    <Route path="lekcja3" element={<Lekcja3 />}/>
     <Route path="lekcja4" element={<Lekcja4 />}/>
 </Route>
 </Route>

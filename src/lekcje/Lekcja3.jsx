@@ -16,7 +16,7 @@ export default function Lekcja3(){
         <div>
         <h3>Robot podjeżdza do przedmiotu, zabiera go i wraca na miejsce startu
         </h3>
-        <img className="arrays-image" src={widlak} alt="kod programu w edytorze Lego Mindstorm Education EV3"></img>
+        <img className="program-image" src={widlak} alt="kod programu w edytorze Lego Mindstorm Education EV3"></img>
         </div>
             </div>
         

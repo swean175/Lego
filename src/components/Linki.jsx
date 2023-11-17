@@ -19,7 +19,8 @@ export default function Linki(){
        <hr></hr>
        <h3><a href=" https://education.lego.com/pl-pl/downloads/retiredproducts/mindstorms-ev3-lab/software/" target="blank">Lego mindstorms Education Ev3 lub Ev3 Labs<img className="ev3logo" src={ev} alt="Link do programu Lego mindstorms Education Ev3 lub Ev3 Labs"/> </a></h3>
        <hr></hr>
-   
+       <h3><a href="https://www.youtube.com/watch?v=3tguWcKTXQI" target="blank">Zawody Sumo </a></h3>
+ 
             </div>
         </React.Fragment>
     )

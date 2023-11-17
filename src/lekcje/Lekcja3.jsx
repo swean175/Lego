@@ -4,7 +4,7 @@ import variablesMakecode from "../assets/lekcja2/variables-makecode.jpg"
 
 
 
- function Lekcja3(){
+export default function Lekcja3(){
 
     useEffect(() => {
         window.scrollTo(0, 100)

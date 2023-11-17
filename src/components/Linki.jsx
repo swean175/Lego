@@ -1,6 +1,6 @@
 import React from "react"
 import classroom from "../assets/Ev-class.png"
-import ev from "../assets/EV3_icon.ico"
+import ev from "../assets/EV3_Icon.ico"
 
 export default function Linki(){
     return(

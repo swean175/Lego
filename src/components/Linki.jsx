@@ -18,7 +18,7 @@ export default function Linki(){
        <hr></hr>
        <h3><a href="https://www.youtube.com/watch?v=7-4yOx1CnXE" target="blank">Fabryka Tesla</a></h3>
        <hr></hr>
-       <h3><a href="https://www.youtube.com/watch?v=3tguWcKTXQI" target="blank">Zawody Sumo </a></h3>
+       <h3><a href="https://www.youtube.com/watch?v=3tguWcKTXQI" target="blank">Walki Sumo </a></h3>
  
             </div>
         </React.Fragment>

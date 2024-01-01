@@ -16,6 +16,7 @@ import Lekcja1 from './lekcje/Lekcja1'
 import Lekcja2 from './lekcje/Lekcja2'
 import Lekcja3 from './lekcje/Lekcja3'
 import Lekcja4 from './lekcje/Lekcja4'
+import Lekcja5 from './lekcje/Lekcja5'
 import LekcjeLayout from './components/LekcjeLayout'
 
 
@@ -39,6 +40,7 @@ export default function App() {
     <Route path="lekcja2" element={<Lekcja2 />}/>
     <Route path="lekcja3" element={<Lekcja3 />}/>
     <Route path="lekcja4" element={<Lekcja4 />}/>
+    <Route path="lekcja5" element={<Lekcja5 />}/>
 </Route>
 </Route>
 </Route>

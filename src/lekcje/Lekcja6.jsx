@@ -56,11 +56,11 @@ export default function Lekcja6(){
 
 <div id = "circle">
       
-{/*           <Kolo /> */}
+          <Kolo />
 
     </div>
 
-{/*     <Line /> */}
+    <Line />
 
     </div>
 

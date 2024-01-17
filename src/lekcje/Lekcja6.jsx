@@ -25,7 +25,7 @@ export default function Lekcja6(){
 
        
         <img className="lekcjaszesc-img" src={tyre} alt="koło lego">fota1</img>
-    <img src={list} alt="koło lego"></img>
+    <img className="math-image" src={list} alt="koło lego"></img>
 
 <h2>Jeden obrót koła pokonuje określoną odległość która jest zależna od wielkości koła. Na oponie kół naszych robotów
     możemy odczytać średnicę podaną w milimetrach.

@@ -1,10 +1,5 @@
 import { useEffect } from "react"
-import vararray from "../assets/lekcja4/vararray.jpg"
-import array from "../assets/lekcja4/array.jpg"
-import options from "../assets/lekcja4/arroptions.jpg"
-import blokiarray from "../assets/lekcja4/blokiarray.jpg"
-import makecodearray from "../assets/lekcja4/makecodearray.jpg"
-import list from "../assets/lekcja4/listclassroom.jpg"
+
 
 
 

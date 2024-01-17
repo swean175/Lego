@@ -19,7 +19,7 @@ export default function Lekcja6(){
         <div className="format-lekcje">
     
     <h1>Tworzymy własny blok programu (Lego mindstorms Education Ev3) do jazdy na wprost na zadaną odległość w centymetrach.</h1>
-    <div class="tresc">
+    <div className="tresc">
 
        
 {/*         <img src={tyre} alt="koło lego" width="350"></img> */}
@@ -28,7 +28,7 @@ export default function Lekcja6(){
 <h2>Jeden obrót koła pokonuje określoną odległość która jest zależna od wielkości koła. Na oponie kół naszych robotów
     możemy odczytać średnicę podaną w milimetrach.
 </h2>
-        <div class="wzor">
+        <div className="wzor">
 
 
 {/* <img src={cir} alt="koło opis" width="350"></img> */}
@@ -39,15 +39,17 @@ export default function Lekcja6(){
             <h2><p>liczba PI w przybliżeniu π ≈ 3.14159</p><p>C = 2πr</p></h2>
             <h3>Przykładowo jeżeli średnica to 64mm to:<p>
                 C = 64 * 3.14
-            </p><p style="color:blue;">
+            </p>
+{/*                 <p style="color:blue;">
                 C = 200.96 mm
-            </p></h3>
+            </p> */}
+            </h3>
           
        
     
         </div>
 
-    <div class="obwod">
+    <div className="obwod">
 {/*     <Whee /> */}
 
 
@@ -71,7 +73,7 @@ export default function Lekcja6(){
 </div>
 
 <div id="jazda">
-    <div class="kolo">
+    <div className="kolo">
 
 {/*     <Wheel/> */}
 
@@ -79,13 +81,13 @@ export default function Lekcja6(){
 {/*     <Droga/> */}
 </div>
 
-<div class="obliczanie-drogi">
-<div class="droga">
-    <div class="numery-odc">
-        <h2>1C <span style="font-size:0.3em;">(200.96mm)</span></h2>
+<div className="obliczanie-drogi">
+<div className="droga">
+    <div className="numery-odc">
+{/*         <h2>1C <span style="font-size:0.3em;">(200.96mm)</span></h2>
         <h2>2C <span style="font-size:0.3em;">(200.96mm)</span></h2>
         <h2>3C <span style="font-size:0.3em;">(200.96mm)</span></h2>
-        <h2>3.25C <span style="font-size:0.3em;">(50.24mm)</span></h2>
+        <h2>3.25C <span style="font-size:0.3em;">(50.24mm)</span></h2> */}
     </div>
 {/*         <Odc 
         id={"odc1"}
@@ -104,15 +106,15 @@ export default function Lekcja6(){
 
    
 </div>
-<div class="droga-wzory">
-<h2 style="color:red;">Droga "D" =  <span  style="color:blue;"> 3.25 (obrotów "T") * 200.96mm (obwód koła "C")</span>
+<div className="droga-wzory">
+{/* <h2 style="color:red;">Droga "D" =  <span  style="color:blue;"> 3.25 (obrotów "T") * 200.96mm (obwód koła "C")</span>
 <p>D = <span style="color:blue;">T * C</span></p>
 <p>D = 653,12mm</p>
-</h2>
+</h2> */}
 </div>
 <h3>Teraz chcąc pokonać drogę którą sami wyznaczymy musimy wiedzieć ile razy obrócić koło żeby uzyskać długość drogi, 
     aby to obliczyć musimy podzielić drogę "D" przez obwód koła "C"</h3>
-<h2 style="color:blue;">T = <span style="color:red;">D / C</span></h2>
+{/* <h2 style="color:blue;">T = <span style="color:red;">D / C</span></h2> */}
 
 <h3>Skróty "C", "D", "T", "r", "π" są czymś jak zmienne w programie, podłączmy pod nie wartości.
    
@@ -131,7 +133,6 @@ export default function Lekcja6(){
     
 </div>
 </div>
-    
-        </div>
+</div>
     )
 }

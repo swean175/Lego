@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import cir from "../assets/lekcja6/cir.jpg"
 import tyre from "../assets/lekcja6/tyre.jpg"
-// import Whee from "../components/svgs/whee"
+import Whee from "../components/svgs/whee"
 // import Wheel from "../components/svgs/wheel"
 // import Kolo from "../components/svgs/kolo"
 // import Line from "../components/svgs/line"
@@ -50,7 +50,7 @@ export default function Lekcja6(){
         </div>
 
     <div className="obwod">
-{/*     <Whee /> */}
+    <Whee />
 
 
 <div id = "circle">

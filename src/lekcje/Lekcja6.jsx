@@ -48,7 +48,7 @@ export default function Lekcja6(){
         </div>
 
     <div class="obwod">
-    <Whee />
+{/*     <Whee /> */}
 
 
 <div id = "circle">
@@ -57,7 +57,7 @@ export default function Lekcja6(){
 
     </div>
 
-    <Line />
+{/*     <Line /> */}
 
     </div>
 

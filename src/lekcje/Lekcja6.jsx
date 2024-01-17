@@ -2,13 +2,13 @@
 import { useEffect } from "react"
 import cir from "../assets/lekcja6/cir.jpg"
 import tyre from "../assets/lekcja6/tyre.jpg"
-// import Whee from "../components/svgs/whee"
-// import Wheel from "../components/svgs/wheel"
+import Whee from "../components/svgs/whee"
+import Wheel from "../components/svgs/wheel"
 // import Kolo from "../components/svgs/kolo"
 // import Line from "../components/svgs/line"
 // import Droga from "../components/svgs/droga"
 // import Odc from "../components/svgs/odc"
-import list from "../assets/lekcja4/listclassroom.jpg"
+
 
 
 export default function Lekcja6(){
@@ -25,7 +25,7 @@ export default function Lekcja6(){
 
        
         <img className="lekcjaszesc-img" src={tyre} alt="koło lego"></img>
-    <img className="math-image" src={list} alt="koło lego"></img>
+
 
 <h2>Jeden obrót koła pokonuje określoną odległość która jest zależna od wielkości koła. Na oponie kół naszych robotów
     możemy odczytać średnicę podaną w milimetrach.
@@ -52,7 +52,7 @@ export default function Lekcja6(){
         </div>
 
     <div className="obwod">
-{/*     <Whee /> */}
+    <Whee />
 
 
 <div id = "circle">
@@ -77,7 +77,7 @@ export default function Lekcja6(){
 <div id="jazda">
     <div className="kolo">
 
-{/*     <Wheel/> */}
+    <Wheel/>
 
     </div>
 {/*     <Droga/> */}

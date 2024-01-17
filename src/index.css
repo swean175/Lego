@@ -689,6 +689,235 @@ width: 95%;
 }
 
 
+.tresc{
+  padding: 5em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+ }
+
+
+#circle{
+  opacity: 50%;
+  animation: move 3s linear infinite alternate both;
+}
+
+#whee{
+  position: absolute;
+  animation: whee 3s linear infinite alternate both;
+}
+
+#kolo {
+margin-left: 100px;
+    /* Define the animation name, duration, timing function, iteration count, direction, and fill mode */
+    stroke-width: 10;
+    animation: draw-circle 3s linear infinite alternate both;
+  
+  }
+
+  #line{
+    position: absolute;
+    stroke-width: 10;
+    margin-left: 10px;
+    transform: translateY(-17.5px);
+    animation: draw-line 3s linear infinite alternate both;
+  }
+
+
+.obliczanie-drogi{
+  display: block;
+}
+
+.droga{
+  display: block;
+  stroke-width: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+ .odcdrogi{
+  position: absolute;
+  display: inline;
+  margin: 0;
+  padding: 0;
+ }
+
+ .numery-odc{
+  display: flex;
+  width: 550px;
+  margin-left: 100px;
+  color: blue;
+  justify-content:space-between;
+ }
+
+ .numery-odc h2:nth-child(2){
+  animation: odc1 3s linear infinite both;
+ }
+
+ .numery-odc h2:nth-child(3){
+  animation: odc2 3s linear infinite both;
+ }
+
+ .numery-odc h2:nth-child(4){
+  animation: odc3 3s linear infinite both;
+ }
+
+ #odc1{
+  margin-left: 0px;
+ }
+
+ #odc2{
+  margin-left: 200px;
+  animation: odc1 3s linear infinite both;
+ }
+
+ #odc3{
+  margin-left: 400px;
+  animation: odc2 3s linear infinite both;
+ }
+
+ #odc4{
+  margin-left: 600px;
+  animation: odc3 3s linear infinite both;
+ }
+
+ #droga{
+  display: block;
+  margin-top: 0;
+  stroke-width: 10px;
+  margin: 0;
+ }
+
+ .droga-wzory{
+  margin: 2em;
+ }
+
+ .kolo{
+  animation: kolo 3s linear infinite both;
+ }
+  
+ #wheel{
+  margin: 0;
+  animation: wheel 3s linear infinite both;
+ }
+
+  @keyframes draw-circle {
+    /* At 0%, the circle has no stroke */
+    0% {
+      transform: rotate(-90deg) scaleX(-1);
+      stroke-dasharray: 200 0; /* 628 is the circumference of the circle */
+      stroke-dashoffset: 0;
+    }
+    /* At 100%, the circle has a full stroke */
+    100% {
+        /* transform: rotate(-270deg); */
+      stroke-dasharray: 0 200;
+    transform: rotate(-90deg) scaleX(-1);
+       /* 314 is half of the circumference */
+    }
+  }
+  
+  @keyframes draw-line {
+    /* At 0%, the circle has no stroke */
+    0% {
+      stroke-dasharray: 0 200; /* 628 is the circumference of the circle */
+      stroke-dashoffset: 0;
+    }
+    /* At 100%, the circle has a full stroke */
+    100% {
+     transform: translateY(-17.5px);
+      stroke-dasharray: 200 0;
+    
+       /* 314 is half of the circumference */
+    }
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(59px) translateX(-190px);
+    }
+    100%{
+      transform: translateY(59px) translateX(10px);
+    }
+  }
+  
+
+  @keyframes odc1 {
+    0% {
+      opacity: 0;
+  }
+  33%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 100;
+  }
+    100%{
+      opacity: 100;
+  }
+  }
+
+  
+  @keyframes odc2 {
+    0% {
+      opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  66%{
+    opacity: 100;
+  }
+    100%{
+      opacity: 100;
+  }
+  }
+
+  
+  @keyframes odc3 {
+    0% {
+      opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  93%{
+    opacity: 100;
+  }
+    100%{
+      opacity: 100;
+  }
+  }
+
+@keyframes kolo {
+  0% {
+ 
+  }
+  100%{
+    transform: translateX(582px);
+  }
+}
+
+@keyframes whee {
+  0% {
+    transform: translateY(127.5px) translateX(-22.5px);
+  }
+  100%{
+    transform: translateY(127.5px) translateX(177.5px) rotate(360deg);
+  }
+}
+
+@keyframes wheel {
+  0% {
+ 
+  }
+  100%{
+    transform: rotate(1170deg);
+  }
+}
+
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

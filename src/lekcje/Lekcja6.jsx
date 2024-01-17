@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect } from "react"
 import cir from "../assets/lekcja6/cir.jpg"
 import tyre from "../assets/lekcja6/tyre.jpg"

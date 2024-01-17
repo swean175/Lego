@@ -7,7 +7,7 @@ import React from 'react'
 
 export default function Lekcje(){
 const [disp, setDisp] = React.useState("Wprowadzenie")
-    const tematyArr = ["Wprowadzenie", "lekcja1", "lekcja2", "lekcja3", "lekcja4", "lekcja5"]
+    const tematyArr = ["Wprowadzenie", "lekcja1", "lekcja2", "lekcja3", "lekcja4", "lekcja5", "lekcja6"]
 
 
     const activeStyles = {
@@ -51,7 +51,7 @@ const [disp, setDisp] = React.useState("Wprowadzenie")
         <section>
             <div className='menu-lekcji'>
                  <h1>Lekcje:</h1>
-      <div><ol>{dane()}</ol></div>
+      <div><ul>{dane()}</ul></div>
       </div>
       <content>
       

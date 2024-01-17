@@ -107,14 +107,14 @@ export default function Lekcja6(){
    
 </div>
 <div className="droga-wzory">
-<h2 className="font-red">Droga "D" =  <span  className="font-blue"> 3.25 (obrotów "T") * 200.96mm (obwód koła "C")</span>
-<p>D = <span className="font-blue">T * C</span></p>
+<h2 className="red-font">Droga "D" =  <span  className="blue-font"> 3.25 (obrotów "T") * 200.96mm (obwód koła "C")</span>
+<p>D = <span className="blue-font">T * C</span></p>
 <p>D = 653,12mm</p>
 </h2>
 </div>
 <h3>Teraz chcąc pokonać drogę którą sami wyznaczymy musimy wiedzieć ile razy obrócić koło żeby uzyskać długość drogi, 
     aby to obliczyć musimy podzielić drogę "D" przez obwód koła "C"</h3>
-<h2 className="font-blue">T = <span className="font-red">D / C</span></h2>
+<h2 className="blue-font">T = <span className="red-font">D / C</span></h2>
 
 <h3>Skróty "C", "D", "T", "r", "π" są czymś jak zmienne w programie, podłączmy pod nie wartości.
    

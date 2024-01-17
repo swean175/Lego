@@ -1,14 +1,12 @@
 import cir from "../assets/lekcja6/cir.jpg"
 import tyre from "../assets/lekcja6/tyre.jpg"
-import whee from "../components/svgs/lekcja6/whee"
-import wheel from "../components/svgs/wheel"
-import kolo from "../components/svgs/kolo"
-import line from "../components/svgs/line"
-import droga from "../components/svgs/droga"
-import odc1 from "../components/svgs/odc1"
-import odc2 from "../components/svgs/odc2"
-import odc3 from "../components/svgs/odc3"
-import odc4 from "../components/svgs/odc4"
+import Whee from "../components/svgs/whee"
+import Wheel from "../components/svgs/wheel"
+import Kolo from "../components/svgs/kolo"
+import Line from "../components/svgs/line"
+import Droga from "../components/svgs/droga"
+import Odc from "../components/svgs/odc"
+
 
 export default function Lekcja6(){
 
@@ -49,16 +47,16 @@ export default function Lekcja6(){
         </div>
 
     <div class="obwod">
-    <whee />
+    <Whee />
 
 
 <div id = "circle">
       
-          <kolo />
+          <Kolo />
 
     </div>
 
-    <line />
+    <Line />
 
     </div>
 
@@ -74,10 +72,10 @@ export default function Lekcja6(){
 <div id="jazda">
     <div class="kolo">
 
-    <wheel/>
+    <Wheel/>
 
     </div>
-    <droga/>
+    <Droga/>
 </div>
 
 <div class="obliczanie-drogi">
@@ -88,16 +86,16 @@ export default function Lekcja6(){
         <h2>3C <span style="font-size:0.3em;">(200.96mm)</span></h2>
         <h2>3.25C <span style="font-size:0.3em;">(50.24mm)</span></h2>
     </div>
-        <odc 
+        <Odc 
         id={"odc1"}
         x2={"200"} />
-          <odc 
+          <Odc 
         id={"odc2"}
         x2={"200"} />
-          <odc 
+          <Odc 
         id={"odc3"}
         x2={"200"} />
-          <odc 
+          <Odc 
         id={"odc4"}
         x2={"50"} />
    

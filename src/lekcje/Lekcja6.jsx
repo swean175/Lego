@@ -24,7 +24,7 @@ export default function Lekcja6(){
     <div className="tresc">
 
        
-        <img className="lekcjaszesc-img" src={tyre} alt="koło lego">fota1</img>
+        <img className="lekcjaszesc-img" src={tyre} alt="koło lego"></img>
     <img className="math-image" src={list} alt="koło lego"></img>
 
 <h2>Jeden obrót koła pokonuje określoną odległość która jest zależna od wielkości koła. Na oponie kół naszych robotów
@@ -33,7 +33,7 @@ export default function Lekcja6(){
         <div className="wzor">
 
 
-<img className="lekcjaszesc-img" src={cir} alt="koło opis" >fota2</img>
+<img className="lekcjaszesc-img" src={cir} alt="koło opis" ></img>
 
             <h3>
                 Znając średnicę koła która zawsze jest równą dwóm promieniom "r", możemy obliczyć obwód koła "C".

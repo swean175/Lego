@@ -1,4 +1,9 @@
-<svg id="whee" fill="#000000" height="63.68px" width="63.68px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+export default function whee(){
+
+
+    return(
+        <>
+  <svg id="whee" fill="#000000" height="63.68px" width="63.68px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 60 60" xml:space="preserve">
 <path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M50.236,42.907
 	c-0.208,0.325-0.424,0.644-0.648,0.959c-0.032,0.045-0.063,0.091-0.096,0.136c-0.214,0.298-0.437,0.589-0.664,0.877
@@ -27,3 +32,5 @@
 	c-0.146,3.582-1.073,7.023-2.702,10.128L37.373,33.102z M37.931,29c-0.092-0.736-0.278-1.442-0.557-2.102l13.893-8.021
 	c1.632,3.105,2.562,6.545,2.709,10.123H37.931z"/>
 </svg>
+        </>
+    )}

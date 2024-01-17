@@ -1,14 +1,14 @@
 import cir from "../assets/lekcja6/cir.jpg"
 import tyre from "../assets/lekcja6/tyre.jpg"
-import whee from "../assets/lekcja6/whee.svg"
-import wheel from "../assets/lekcja6/wheel.svg"
-import kolo from "../assets/lekcja6/kolo.svg"
-import line from "../assets/lekcja6/line.svg"
-import droga from "../assets/lekcja6/droga.svg"
-import odc1 from "../assets/lekcja6/odc1.svg"
-import odc2 from "../assets/lekcja6/odc2.svg"
-import odc3 from "../assets/lekcja6/odc3.svg"
-import odc4 from "../assets/lekcja6/odc4.svg"
+import whee from "../components/svgs/lekcja6/whee"
+import wheel from "../components/svgs/wheel"
+import kolo from "../components/svgs/kolo"
+import line from "../components/svgs/line"
+import droga from "../components/svgs/droga"
+import odc1 from "../components/svgs/odc1"
+import odc2 from "../components/svgs/odc2"
+import odc3 from "../components/svgs/odc3"
+import odc4 from "../components/svgs/odc4"
 
 export default function Lekcja6(){
 
@@ -24,6 +24,7 @@ export default function Lekcja6(){
 
        
         <img src={tyre} alt="koło lego" width="350"></img>
+    
 
 <h2>Jeden obrót koła pokonuje określoną odległość która jest zależna od wielkości koła. Na oponie kół naszych robotów
     możemy odczytać średnicę podaną w milimetrach.
@@ -48,16 +49,16 @@ export default function Lekcja6(){
         </div>
 
     <div class="obwod">
-    <img src={whee} alt="koło"></img>
+    <whee />
 
 
 <div id = "circle">
       
-          <img src={kolo} alt="koło"></img>
+          <kolo />
 
     </div>
 
-    <img src={line} alt="linia"></img>
+    <line />
 
     </div>
 
@@ -73,10 +74,10 @@ export default function Lekcja6(){
 <div id="jazda">
     <div class="kolo">
 
-    <img src={wheel} alt="koło"></img>
+    <wheel/>
 
     </div>
-    <img src={droga} alt="droga"></img>
+    <droga/>
 </div>
 
 <div class="obliczanie-drogi">
@@ -87,11 +88,19 @@ export default function Lekcja6(){
         <h2>3C <span style="font-size:0.3em;">(200.96mm)</span></h2>
         <h2>3.25C <span style="font-size:0.3em;">(50.24mm)</span></h2>
     </div>
-
-    <img src={odc1} alt="odcinek drogi"></img>
-    <img src={odc2} alt="odcinek drogi"></img>
-    <img src={odc3} alt="odcinek drogi"></img>
-    <img src={odc4} alt="odcinek drogi"></img>
+        <odc 
+        id={"odc1"}
+        x2={"200"} />
+          <odc 
+        id={"odc2"}
+        x2={"200"} />
+          <odc 
+        id={"odc3"}
+        x2={"200"} />
+          <odc 
+        id={"odc4"}
+        x2={"50"} />
+   
 
 
    

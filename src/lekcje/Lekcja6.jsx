@@ -1,13 +1,13 @@
-import React from 'react'
+
 import { useEffect } from "react"
 import cir from "../assets/lekcja6/cir.jpg"
 import tyre from "../assets/lekcja6/tyre.jpg"
 import Whee from "../components/svgs/whee"
-// import Wheel from "../components/svgs/wheel"
-// import Kolo from "../components/svgs/kolo"
-// import Line from "../components/svgs/line"
-// import Droga from "../components/svgs/droga"
-// import Odc from "../components/svgs/odc"
+import Wheel from "../components/svgs/wheel"
+import Kolo from "../components/svgs/kolo"
+import Line from "../components/svgs/line"
+import Droga from "../components/svgs/droga"
+import Odc from "../components/svgs/odc"
 
 
 export default function Lekcja6(){

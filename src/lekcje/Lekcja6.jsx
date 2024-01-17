@@ -86,10 +86,10 @@ export default function Lekcja6(){
 <div className="obliczanie-drogi">
 <div className="droga">
     <div className="numery-odc">
-        <h2>1C <span style={{font-size:"0.3em"}}>(200.96mm)</span></h2>
-        <h2>2C <span style={{font-size:"0.3em"}}>(200.96mm)</span></h2>
-        <h2>3C <span style={{font-size:"0.3em"}}>(200.96mm)</span></h2>
-        <h2>3.25C <span style={{font-size:"0.3em"}}>(50.24mm)</span></h2>
+        <h2>1C <span style={{fontSize:"0.3em"}}>(200.96mm)</span></h2>
+        <h2>2C <span style={{fontSize:"0.3em"}}>(200.96mm)</span></h2>
+        <h2>3C <span style={{fontSize:"0.3em"}}>(200.96mm)</span></h2>
+        <h2>3.25C <span style={{fontSize:"0.3em"}}>(50.24mm)</span></h2>
     </div>
         <Odc 
         id={"odc1"}

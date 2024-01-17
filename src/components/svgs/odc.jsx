@@ -1,4 +1,4 @@
-export default function odc({id, x2}){
+export default function Odc({id, x2}){
 
 
     return(

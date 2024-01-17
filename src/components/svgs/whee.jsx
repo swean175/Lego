@@ -1,4 +1,4 @@
-export default function whee(){
+export default function Whee(){
 
 
     return(

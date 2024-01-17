@@ -1,4 +1,4 @@
-export default function wheel(){
+export default function Wheel(){
 
     return(
     

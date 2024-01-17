@@ -1,5 +1,4 @@
-export default function droga(){
-
+export default function Droga(){
 
     return(
       

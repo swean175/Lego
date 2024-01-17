@@ -1,4 +1,4 @@
-export default function kolo(){
+export default function Kolo(){
 
 
     return(

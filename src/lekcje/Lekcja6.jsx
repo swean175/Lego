@@ -1,6 +1,6 @@
 import { useEffect } from "react"
-// import cir from "../assets/lekcja6/cir.jpg"
-// import tyre from "../assets/lekcja6/tyre.jpg"
+import cir from "../assets/lekcja6/cir.jpg"
+import tyre from "../assets/lekcja6/tyre.jpg"
 // import Whee from "../components/svgs/whee"
 // import Wheel from "../components/svgs/wheel"
 // import Kolo from "../components/svgs/kolo"
@@ -22,7 +22,7 @@ export default function Lekcja6(){
     <div className="tresc">
 
        
-{/*         <img src={tyre} alt="koło lego" width="350"></img> */}
+        <img src={tyre} alt="koło lego" width="350"></img>
     
 
 <h2>Jeden obrót koła pokonuje określoną odległość która jest zależna od wielkości koła. Na oponie kół naszych robotów
@@ -31,7 +31,7 @@ export default function Lekcja6(){
         <div className="wzor">
 
 
-{/* <img src={cir} alt="koło opis" width="350"></img> */}
+<img src={cir} alt="koło opis" width="350"></img>
 
             <h3>
                 Znając średnicę koła która zawsze jest równą dwóm promieniom "r", możemy obliczyć obwód koła "C".
@@ -40,9 +40,9 @@ export default function Lekcja6(){
             <h3>Przykładowo jeżeli średnica to 64mm to:<p>
                 C = 64 * 3.14
             </p>
-{/*                 <p style="color:blue;">
+                <p className="blue-font">
                 C = 200.96 mm
-            </p> */}
+            </p>
             </h3>
           
        
@@ -84,10 +84,10 @@ export default function Lekcja6(){
 <div className="obliczanie-drogi">
 <div className="droga">
     <div className="numery-odc">
-{/*         <h2>1C <span style="font-size:0.3em;">(200.96mm)</span></h2>
-        <h2>2C <span style="font-size:0.3em;">(200.96mm)</span></h2>
-        <h2>3C <span style="font-size:0.3em;">(200.96mm)</span></h2>
-        <h2>3.25C <span style="font-size:0.3em;">(50.24mm)</span></h2> */}
+        <h2>1C <span style={{font-size:"0.3em"}}>(200.96mm)</span></h2>
+        <h2>2C <span style={{font-size:"0.3em"}}>(200.96mm)</span></h2>
+        <h2>3C <span style={{font-size:"0.3em"}}>(200.96mm)</span></h2>
+        <h2>3.25C <span style={{font-size:"0.3em"}}>(50.24mm)</span></h2>
     </div>
 {/*         <Odc 
         id={"odc1"}
@@ -107,14 +107,14 @@ export default function Lekcja6(){
    
 </div>
 <div className="droga-wzory">
-{/* <h2 style="color:red;">Droga "D" =  <span  style="color:blue;"> 3.25 (obrotów "T") * 200.96mm (obwód koła "C")</span>
-<p>D = <span style="color:blue;">T * C</span></p>
+<h2 className="font-red">Droga "D" =  <span  className="font-blue"> 3.25 (obrotów "T") * 200.96mm (obwód koła "C")</span>
+<p>D = <span className="font-blue">T * C</span></p>
 <p>D = 653,12mm</p>
-</h2> */}
+</h2>
 </div>
 <h3>Teraz chcąc pokonać drogę którą sami wyznaczymy musimy wiedzieć ile razy obrócić koło żeby uzyskać długość drogi, 
     aby to obliczyć musimy podzielić drogę "D" przez obwód koła "C"</h3>
-{/* <h2 style="color:blue;">T = <span style="color:red;">D / C</span></h2> */}
+<h2 className="font-blue">T = <span className="font-red">D / C</span></h2>
 
 <h3>Skróty "C", "D", "T", "r", "π" są czymś jak zmienne w programie, podłączmy pod nie wartości.
    

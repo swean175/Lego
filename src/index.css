@@ -558,7 +558,7 @@ width: 65%;
 
 .obwod{
  display:block;
-  padding:0;
+  padding:0em 1em;
 }
 
  .numery-odc{
@@ -730,7 +730,7 @@ width: 65%;
  
   }
   100%{
-    transform: rotate(1170deg);
+    transform: rotate(585deg);
   }
 }
 

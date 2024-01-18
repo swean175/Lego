@@ -486,6 +486,7 @@ width: 65%;
 
 
 .tresc{
+  overflow: hidden;
   padding: 1em;
   margin: 0;
   display: flex;
@@ -512,7 +513,7 @@ width: 65%;
 
 #circle{
   opacity: 50%;
-  width: 500px;
+  width: fit-content;
   animation: move 3s linear infinite alternate both;
 }
 
@@ -528,7 +529,6 @@ width: 65%;
 
 #kolo {
 margin-left: 100px;
-overflow: hidden;
     stroke-width: 10;
     animation: draw-circle 3s linear infinite alternate both;
   

@@ -512,6 +512,7 @@ width: 65%;
 
 #circle{
   opacity: 50%;
+  overflow: clip;
   animation: move 3s linear infinite alternate both;
 }
 

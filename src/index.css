@@ -493,7 +493,7 @@ width: 65%;
  }
 
 .wzor{
-  display: block;
+  display: flex;
 }
 
 #circle{

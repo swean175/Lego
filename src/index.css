@@ -527,7 +527,7 @@ margin-left: 100px;
 /*     position: absolute; */
     stroke-width: 10;
     margin-left: 10px;
-    transform: translateY(317.5px);
+/*     transform: translateY(317.5px); */
     animation: draw-line 3s linear infinite alternate both;
   }
 
@@ -637,7 +637,7 @@ margin-left: 100px;
     }
     /* At 100%, the circle has a full stroke */
     100% {
-     transform: translateY(317.5px);
+/*      transform: translateY(317.5px); */
       stroke-dasharray: 200 0;
     
        /* 314 is half of the circumference */
@@ -712,10 +712,10 @@ margin-left: 100px;
 
 @keyframes whee {
   0% {
-    transform: translateY(127.5px) translateX(-22.5px);
+    transform: translateX(-22.5px);
   }
   100%{
-    transform: translateY(127.5px) translateX(177.5px) rotate(360deg);
+    transform: translateX(177.5px) rotate(360deg);
   }
 }
 

@@ -513,6 +513,7 @@ width: 65%;
 #circle{
   opacity: 50%;
   overflow: clip;
+  width: 500px;
   animation: move 3s linear infinite alternate both;
 }
 
@@ -717,7 +718,7 @@ margin-left: 100px;
     transform: translateX(-22.5px);
   }
   100%{
-    transform: translateX(88.7px) rotate(360deg);
+    transform: translateX(177.5px) rotate(360deg);
   }
 }
 

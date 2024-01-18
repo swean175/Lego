@@ -52,16 +52,15 @@ export default function Lekcja6(){
         </div>
 
     <div className="obwod">
+           <Line />
     <Whee />
 
-
-<div className = "circle">
       <div id="circle">
            <Kolo />
       </div>
          
-            <Line />
-    </div>
+         
+
     </div>
 
   

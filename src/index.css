@@ -513,6 +513,7 @@ width: 65%;
 
 #circle{
   margin-left: 100px;
+  margin-top: 0;
   opacity: 50%;
   width: fit-content;
   height: fit-content;
@@ -557,6 +558,7 @@ width: 65%;
 
 .obwod{
  display:block;
+  padding:0;
 }
 
  .numery-odc{

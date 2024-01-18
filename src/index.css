@@ -488,7 +488,7 @@ width: 65%;
 .tresc{
   overflow: hidden;
   padding: 1em;
-  max-width: 450px;
+  max-width: 650px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -950,6 +950,10 @@ width: 95%;
   width: 250px;
   margin: 0.5em;
 }
+.tresc{
+  max-width: 400px;
+ }
+  
 }
 
 

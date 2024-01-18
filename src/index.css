@@ -558,7 +558,7 @@ margin-left: 100px;
 
  .numery-odc{
   display: flex;
-  max-width: 650px;
+  max-width: 350px;
   color: blue;
   justify-content:space-between;
  }
@@ -580,17 +580,17 @@ margin-left: 100px;
  }
 
  #odc2{
-  margin-left: 200px;
+  margin-left: 100px;
   animation: odc1 3s linear infinite both;
  }
 
  #odc3{
-  margin-left: 400px;
+  margin-left: 200px;
   animation: odc2 3s linear infinite both;
  }
 
  #odc4{
-  margin-left: 600px;
+  margin-left: 300px;
   animation: odc3 3s linear infinite both;
  }
 

@@ -585,17 +585,17 @@ width: 65%;
  }
 
  #odc2{
-  margin-left: 100px;
+  margin-left: 75px;
   animation: odc1 3s linear infinite both;
  }
 
  #odc3{
-  margin-left: 200px;
+  margin-left: 150px;
   animation: odc2 3s linear infinite both;
  }
 
  #odc4{
-  margin-left: 300px;
+  margin-left: 225px;
   animation: odc3 3s linear infinite both;
  }
 
@@ -730,7 +730,7 @@ width: 65%;
  
   }
   100%{
-    transform: rotate(585deg);
+    transform: rotate(438.7deg);
   }
 }
 

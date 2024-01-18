@@ -55,7 +55,7 @@ export default function Lekcja6(){
     <Whee />
 
 
-<div id = "circle">
+<div className = "circle">
       
           <Kolo />
             <Line />

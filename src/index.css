@@ -492,6 +492,9 @@ width: 65%;
   flex-direction: column;
  }
 
+.wzor{
+  display: block;
+}
 
 #circle{
   opacity: 50%;
@@ -544,7 +547,7 @@ margin-left: 100px;
  }
 
 .obwod{
-  max-height: 400px;
+  max-height: 300px;
 }
 
  .numery-odc{

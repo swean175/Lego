@@ -512,6 +512,7 @@ width: 65%;
   }
 
 #circle{
+  margin-left: 100px;
   opacity: 50%;
   width: fit-content;
   overflow: hidden;
@@ -529,7 +530,6 @@ width: 65%;
 }
 
 #kolo {
-margin-left: 100px;
     stroke-width: 10;
     animation: draw-circle 3s linear infinite alternate both;
   

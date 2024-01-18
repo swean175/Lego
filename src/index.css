@@ -540,8 +540,9 @@ margin-left: 100px;
 
  .numery-odc{
   display: flex;
-  width: 550px;
+  width: 250px;
   color: blue;
+   background: red;
   justify-content:space-between;
  }
 

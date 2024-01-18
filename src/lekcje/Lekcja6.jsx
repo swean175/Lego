@@ -26,26 +26,24 @@ export default function Lekcja6(){
        
         <img className="lekcjaszesc-img" src={tyre} alt="koło lego"></img>
 
-
 <h2>Jeden obrót koła pokonuje określoną odległość która jest zależna od wielkości koła. Na oponie kół naszych robotów
     możemy odczytać średnicę podaną w milimetrach.
 </h2>
         <div className="wzor">
 
-
 <img className="lekcjaszesc-img" src={cir} alt="koło opis" ></img>
-
             <h3>
                 Znając średnicę koła która zawsze jest równą dwóm promieniom "r", możemy obliczyć obwód koła "C".
             </h3>
-            <h2><p>liczba PI w przybliżeniu π ≈ 3.14159</p><p>C = 2πr</p></h2>
-            <h3>Przykładowo jeżeli średnica to 64mm to:<p>
+            <div> <h2><p>liczba PI w przybliżeniu π ≈ 3.14159</p><p>C = 2πr</p></h2></div>
+           <div>  <h3>Przykładowo jeżeli średnica to 64mm to:<p>
                 C = 64 * 3.14
             </p>
                 <p className="blue-font">
                 C = 200.96 mm
             </p>
             </h3>
+           </div>
         </div>
 
     <div className="obwod">

@@ -516,7 +516,7 @@ margin-left: 100px;
   }
 
   #line{
-    position: absolute;
+/*     position: absolute; */
     stroke-width: 10;
     margin-left: 10px;
     transform: translateY(-17.5px);

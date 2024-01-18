@@ -82,16 +82,16 @@ export default function Lekcja6(){
     </div>
         <Odc 
         id={"odc1"}
-        x2={"200"} />
+        x2={"75"} />
           <Odc 
         id={"odc2"}
-        x2={"200"} />
+        x2={"75"} />
           <Odc 
         id={"odc3"}
-        x2={"200"} />
+        x2={"75"} />
           <Odc 
         id={"odc4"}
-        x2={"50"} />
+        x2={"18.7"} />
    
 
 

@@ -543,7 +543,6 @@ width: 65%;
 
 .droga{
   display: block;
-
   stroke-width: 10px;
   margin: 0;
   padding: 0;
@@ -559,6 +558,10 @@ width: 65%;
 .obwod{
  display:block;
   padding:0em 1em;
+}
+
+#jazda{
+  max-width: 350px;
 }
 
  .numery-odc{
@@ -730,7 +733,7 @@ width: 65%;
  
   }
   100%{
-    transform: rotate(438.7deg);
+    transform: rotate(1170deg);
   }
 }
 

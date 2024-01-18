@@ -515,6 +515,7 @@ width: 65%;
   margin-left: 100px;
   opacity: 50%;
   width: fit-content;
+  height: fit-content;
   overflow: hidden;
   animation: move 3s linear infinite alternate both;
 }

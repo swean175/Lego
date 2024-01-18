@@ -506,7 +506,7 @@ width: 65%;
     position: absolute;
     stroke-width: 10;
     margin-left: 10px;
-    transform: translateY(57.5px);
+    transform: translateY(59px);
     animation: draw-line 3s linear infinite alternate both;
   }
 
@@ -632,12 +632,12 @@ margin-left: 100px;
   @keyframes draw-line {
     /* At 0%, the circle has no stroke */
     0% {
-      stroke-dasharray: 0 200; /* 628 is the circumference of the circle */
+      stroke-dasharray: 0 205; /* 628 is the circumference of the circle */
       stroke-dashoffset: 0;
     }
     /* At 100%, the circle has a full stroke */
     100% {
-     transform: translateY(57.5px);
+     transform: translateY(59px);
       stroke-dasharray: 200 0;
     
        /* 314 is half of the circumference */

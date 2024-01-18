@@ -502,8 +502,15 @@ width: 65%;
   padding: 1em;
 }
 
+  #line{
+    position: absolute;
+    stroke-width: 10;
+    margin-left: 10px;
+    transform: translateY(57.5px);
+    animation: draw-line 3s linear infinite alternate both;
+  }
+
 #circle{
-  position: absolute;
   opacity: 50%;
   animation: move 3s linear infinite alternate both;
 }
@@ -524,15 +531,6 @@ margin-left: 100px;
     animation: draw-circle 3s linear infinite alternate both;
   
   }
-
-  #line{
-    position: absolute;
-    stroke-width: 10;
-    margin-left: 10px;
-    transform: translateY(57.5px);
-    animation: draw-line 3s linear infinite alternate both;
-  }
-
 
 .obliczanie-drogi{
   display: block;

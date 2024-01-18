@@ -35,7 +35,7 @@ export default function Lekcja6(){
             <h3>
                 Znając średnicę koła która zawsze jest równą dwóm promieniom "r", możemy obliczyć obwód koła "C".
             </h3>
-            <div> <h2><p>liczba PI w przybliżeniu π ≈ 3.14159</p><p>C = 2πr</p></h2></div>
+            <div> <h2><p>liczba PI w przybliżeniu π ≈ 3.14159</p><p>C = 2πr</p></h2> </div>
            <div>  <h3>Przykładowo jeżeli średnica to 64mm to:<p>
                 C = 64 * 3.14
             </p>

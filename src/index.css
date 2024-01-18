@@ -503,6 +503,7 @@ width: 65%;
 }
 
 #circle{
+  position: absolute;
   opacity: 50%;
   animation: move 3s linear infinite alternate both;
 }

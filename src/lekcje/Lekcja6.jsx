@@ -56,8 +56,10 @@ export default function Lekcja6(){
 
 
 <div className = "circle">
-      
-          <Kolo />
+      <div id="circle">
+           <Kolo />
+      </div>
+         
             <Line />
     </div>
     </div>

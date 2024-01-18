@@ -518,6 +518,7 @@ width: 65%;
 
 .circle{
   display: block;
+  max-width: 350px;
 }
 
 #whee{

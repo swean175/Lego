@@ -527,7 +527,7 @@ margin-left: 100px;
 /*     position: absolute; */
     stroke-width: 10;
     margin-left: 10px;
-    transform: translateY(-317.5px);
+    transform: translateY(317.5px);
     animation: draw-line 3s linear infinite alternate both;
   }
 
@@ -552,7 +552,7 @@ margin-left: 100px;
  }
 
 .obwod{
-  max-height: 500px;
+ display:block;
 }
 
  .numery-odc{
@@ -637,7 +637,7 @@ margin-left: 100px;
     }
     /* At 100%, the circle has a full stroke */
     100% {
-     transform: translateY(-317.5px);
+     transform: translateY(317.5px);
       stroke-dasharray: 200 0;
     
        /* 314 is half of the circumference */

@@ -543,6 +543,10 @@ margin-left: 100px;
   padding: 0;
  }
 
+.obwod{
+  max-height: 400px;
+}
+
  .numery-odc{
   display: flex;
   max-width: 650px;

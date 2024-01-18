@@ -526,6 +526,7 @@ margin-left: 100px;
 
 .droga{
   display: block;
+
   stroke-width: 10px;
   margin: 0;
   padding: 0;
@@ -540,9 +541,8 @@ margin-left: 100px;
 
  .numery-odc{
   display: flex;
-  width: 250px;
+  max-width: 550px;
   color: blue;
-   background: red;
   justify-content:space-between;
  }
 

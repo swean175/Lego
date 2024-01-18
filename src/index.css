@@ -514,6 +514,7 @@ width: 65%;
 #circle{
   opacity: 50%;
   width: fit-content;
+  overflow: hidden;
   animation: move 3s linear infinite alternate both;
 }
 

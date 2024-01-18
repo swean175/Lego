@@ -504,7 +504,6 @@ width: 65%;
 
   #line{
     position: absolute;
-    display:none;
     stroke-width: 10;
     margin-left: 10px;
     transform: translateY(58px);

@@ -512,7 +512,6 @@ width: 65%;
 
 #circle{
   opacity: 50%;
-  overflow: clip;
   width: 500px;
   animation: move 3s linear infinite alternate both;
 }
@@ -529,7 +528,7 @@ width: 65%;
 
 #kolo {
 margin-left: 100px;
-    /* Define the animation name, duration, timing function, iteration count, direction, and fill mode */
+overflow: hidden;
     stroke-width: 10;
     animation: draw-circle 3s linear infinite alternate both;
   
@@ -709,7 +708,7 @@ margin-left: 100px;
  
   }
   100%{
-    transform: translateX(582px);
+    transform: translateX(291px);
   }
 }
 

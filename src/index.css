@@ -498,6 +498,10 @@ width: 65%;
   animation: move 3s linear infinite alternate both;
 }
 
+.circle{
+  display: block;
+}
+
 #whee{
   position: absolute;
   animation: whee 3s linear infinite alternate both;

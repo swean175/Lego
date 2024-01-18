@@ -46,24 +46,17 @@ export default function Lekcja6(){
                 C = 200.96 mm
             </p>
             </h3>
-          
-       
-    
         </div>
 
     <div className="obwod">
-           <Line />
+         
     <Whee />
-
+  <Line />
       <div id="circle">
+          
            <Kolo />
       </div>
-         
-         
-
     </div>
-
-  
 
 
 <div>

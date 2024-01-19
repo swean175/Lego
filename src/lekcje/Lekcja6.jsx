@@ -20,19 +20,19 @@ export default function Lekcja6(){
     return(
         <div className="format-lekcje">
     
-    <h1 className="lek6-title">Tworzymy własny blok programu (Lego mindstorms Education Ev3) do jazdy na wprost na zadaną odległość w centymetrach.</h1>
+    <h1>Tworzymy własny blok programu (Lego mindstorms Education Ev3) do jazdy na wprost na zadaną odległość w centymetrach.</h1>
     <div className="tresc">
 
        
         <img className="lekcjaszesc-img" src={tyre} alt="koło lego"></img>
 
-<h2 className="lek6-title">Jeden obrót koła pokonuje określoną odległość która jest zależna od wielkości koła. Na oponie kół naszych robotów
+<h2>Jeden obrót koła pokonuje określoną odległość która jest zależna od wielkości koła. Na oponie kół naszych robotów
     możemy odczytać średnicę podaną w milimetrach.
 </h2>
         <div className="wzor">
 
 <img className="lekcjaszesc-img" src={cir} alt="koło opis" ></img>
-            <h3 className="lek6-title">
+            <h3>
                 Znając średnicę koła która zawsze jest równą dwóm promieniom "r", możemy obliczyć obwód koła "C".
             </h3>
             <div> <h2><p>liczba PI w przybliżeniu π ≈ 3.14159</p><p>C = 2πr</p></h2> </div>
@@ -58,7 +58,7 @@ export default function Lekcja6(){
 
 
 <div>
-    <h3 className="lek6-title">
+    <h3 >
         Znając obwód koła "C" wiemy jaki odcinek drogi zrobi jeden obrót.
     </h3>
 </div>

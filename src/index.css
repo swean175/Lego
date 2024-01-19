@@ -627,8 +627,8 @@ width: 65%;
  }
 
  .kolo{
-  width:100px;
-  overflow: clip;
+  max-width: 100px;
+  overflow: hidden;
   animation: kolo 3s linear infinite both;
  }
   

@@ -496,6 +496,7 @@ width: 65%;
  }
 
  .lek6-title{
+  display: inline-block;
   max-width: 400px;
  }
 

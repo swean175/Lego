@@ -72,7 +72,7 @@ export default function Lekcja6(){
     <Droga/>
 
     <div className="droga">
-    <div className="numery-odc" style={{width:"550px"}}>
+    <div className="numery-odc" style={{width:"243,5px"}}>
         <h2>1C <span style={{fontSize:"0.3em"}}>(200.96mm)</span></h2>
         <h2>2C <span style={{fontSize:"0.3em"}}>(200.96mm)</span></h2>
         <h2>3C <span style={{fontSize:"0.3em"}}>(200.96mm)</span></h2>

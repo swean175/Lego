@@ -103,11 +103,11 @@ export default function Lekcja6(){
 <p>D = 653,12mm</p>
 </h2>
 </div>
-<h3 className="lek6-title">Teraz chcąc pokonać drogę którą sami wyznaczymy musimy wiedzieć ile razy obrócić koło żeby uzyskać długość drogi, 
+<h3>Teraz chcąc pokonać drogę którą sami wyznaczymy musimy wiedzieć ile razy obrócić koło żeby uzyskać długość drogi, 
     aby to obliczyć musimy podzielić drogę "D" przez obwód koła "C"</h3>
 <h2 className="blue-font">T = <span className="red-font">D / C</span></h2>
 
-<h3 className="lek6-title">Skróty "C", "D", "T", "r", "π" są czymś jak zmienne w programie, podłączmy pod nie wartości.
+<h3>Skróty "C", "D", "T", "r", "π" są czymś jak zmienne w programie, podłączmy pod nie wartości.
    
     <p>Jeżeli przykładowo chcemy pokonać drogę "D" o długości 50cm to znając obwód koła "C" np. 64mm, możemy obliczyć ilość obrotów "T" potrzebną
         do przebycia drogi.</p>
@@ -115,12 +115,12 @@ export default function Lekcja6(){
             a długość drogi w cm, więc skonwertujemy cm na mm
         </p>
 </h3>
-<h2 className="lek6-title">D = 50cm = 500mm
+<h2>D = 50cm = 500mm
     <p>T = 500 / 64</p>
     <p>T = 7,8125</p>
     <p>T ≈ 7,8</p>
 </h2>
-<h3 className="lek6-title">Potrzeba więc około 7.8 obrotu koła do przebycia 50cm drogi</h3>
+<h3 >Potrzeba więc około 7.8 obrotu koła do przebycia 50cm drogi</h3>
     
 </div>
 </div>

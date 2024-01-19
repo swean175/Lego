@@ -490,7 +490,7 @@ width: 65%;
   overflow: hidden;
   width: 375px;
   padding: 0em 2em;
-  margin: 0em 0.5em;
+  margin: 0em;
   display: flex;
   flex-direction: column;
   justify-content: center;

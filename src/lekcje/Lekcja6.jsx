@@ -20,7 +20,7 @@ export default function Lekcja6(){
     return(
         <div className="format-lekcje">
     
-    <h1>Tworzymy własny blok programu (Lego mindstorms Education Ev3) do jazdy na wprost na zadaną odległość w centymetrach.</h1>
+    <h1 className="lek6-title">Tworzymy własny blok programu (Lego mindstorms Education Ev3) do jazdy na wprost na zadaną odległość w centymetrach.</h1>
     <div className="tresc">
 
        

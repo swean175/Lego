@@ -487,12 +487,16 @@ width: 65%;
 
 .tresc{
   overflow: hidden;
-  max-width: 600px;
+  max-width: 400px;
   min-width: fit-content;
   padding: 1em;
   margin: 0em 0.5em;
   display: flex;
   flex-direction: column;
+ }
+
+ .lek6-title{
+  max-width: 400px;
  }
 
 .wzor{
@@ -560,7 +564,7 @@ width: 65%;
 .obwod{
  display:block;
   padding:0em 1em;
-  max-width: 370px;
+  width: 370px;
 }
 
 #jazda{

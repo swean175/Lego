@@ -106,7 +106,7 @@ export default function Lekcja6(){
 <p>D = 653,12mm</p>
 </h2>
 </div>
-<h3>Teraz chcąc pokonać drogę którą sami wyznaczymy musimy wiedzieć ile razy obrócić koło żeby uzyskać długość drogi, 
+<h3>Teraz chcąc pokonać drogę którą sami wyznaczymy<br> musimy wiedzieć ile razy obrócić koło żeby uzyskać długość drogi, 
     aby to obliczyć musimy podzielić drogę "D" przez obwód koła "C"</h3>
 <h2 className="blue-font">T = <span className="red-font">D / C</span></h2>
 

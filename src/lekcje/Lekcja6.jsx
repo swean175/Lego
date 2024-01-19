@@ -120,7 +120,7 @@ export default function Lekcja6(){
     <p>T = 7,8125</p>
     <p>T ≈ 7,8</p>
 </h2>
-<h3>Potrzeba więc około 7.8 obrotu koła do przebycia 50cm drogi</h3>
+<h3 className="lek6-title">Potrzeba więc około 7.8 obrotu koła do przebycia 50cm drogi</h3>
     
 </div>
 </div>

@@ -70,9 +70,8 @@ export default function Lekcja6(){
 
     </div>
     <Droga/>
-</div>
 
-<div className="obliczanie-drogi">
+    <div className="obliczanie-drogi">
 <div className="droga">
     <div className="numery-odc" style={{width:"550px"}}>
         <h2>1C <span style={{fontSize:"0.3em"}}>(200.96mm)</span></h2>
@@ -97,6 +96,9 @@ export default function Lekcja6(){
 
    
 </div>
+</div>
+
+
 <div className="droga-wzory">
 <h2 className="red-font">Droga "D" =  <span  className="blue-font"> 3.25 (obrotów "T") * 200.96mm (obwód koła "C")</span>
 <p>D = <span className="blue-font">T * C</span></p>

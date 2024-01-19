@@ -500,6 +500,7 @@ width: 65%;
  .lek6-title{
   display: block;
   width: 300px;
+  justify-self: left;
  }
 
 .wzor{

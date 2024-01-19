@@ -627,7 +627,7 @@ width: 65%;
  }
 
  .kolo{
-  width: fit-content;
+  width: 100px;
   animation: kolo 3s linear infinite both;
  }
   

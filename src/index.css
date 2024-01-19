@@ -505,6 +505,7 @@ width: 65%;
 
 .wzor{
   display: flex;
+  max-width: 300px;
 }
 
 .wzor div{
@@ -569,16 +570,16 @@ width: 65%;
 .obwod{
  display:block;
   padding:0em 1em;
-  width: 370px;
+  width: 320px;
 }
 
 #jazda{
-  max-width: 350px;
+  max-width: 320px;
 }
 
  .numery-odc{
   display: flex;
-  max-width: 244px;
+  max-width: 274px;
   color: blue;
   justify-content:space-between;
  }
@@ -626,6 +627,7 @@ width: 65%;
  }
 
  .kolo{
+  width: fit-content;
   animation: kolo 3s linear infinite both;
  }
   

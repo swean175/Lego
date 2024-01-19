@@ -26,17 +26,17 @@ export default function Lekcja6(){
        
         <img className="lekcjaszesc-img" src={tyre} alt="koło lego"></img>
 
-<h2>Jeden obrót koła pokonuje określoną odległość która jest zależna od wielkości koła. Na oponie kół naszych robotów
+<h2 className="lek6-title">Jeden obrót koła pokonuje określoną odległość która jest zależna od wielkości koła. Na oponie kół naszych robotów
     możemy odczytać średnicę podaną w milimetrach.
 </h2>
         <div className="wzor">
 
 <img className="lekcjaszesc-img" src={cir} alt="koło opis" ></img>
-            <h3>
+            <h3 className="lek6-title">
                 Znając średnicę koła która zawsze jest równą dwóm promieniom "r", możemy obliczyć obwód koła "C".
             </h3>
             <div> <h2><p>liczba PI w przybliżeniu π ≈ 3.14159</p><p>C = 2πr</p></h2> </div>
-           <div>  <h3>Przykładowo jeżeli średnica to 64mm to:<p>
+           <div>  <h3 className="lek6-title">Przykładowo jeżeli średnica to 64mm to:<p>
                 C = 64 * 3.14
             </p>
                 <p className="blue-font">
@@ -58,7 +58,7 @@ export default function Lekcja6(){
 
 
 <div>
-    <h3>
+    <h3 className="lek6-title">
         Znając obwód koła "C" wiemy jaki odcinek drogi zrobi jeden obrót.
     </h3>
 </div>
@@ -103,11 +103,11 @@ export default function Lekcja6(){
 <p>D = 653,12mm</p>
 </h2>
 </div>
-<h3>Teraz chcąc pokonać drogę którą sami wyznaczymy musimy wiedzieć ile razy obrócić koło żeby uzyskać długość drogi, 
+<h3 className="lek6-title">Teraz chcąc pokonać drogę którą sami wyznaczymy musimy wiedzieć ile razy obrócić koło żeby uzyskać długość drogi, 
     aby to obliczyć musimy podzielić drogę "D" przez obwód koła "C"</h3>
 <h2 className="blue-font">T = <span className="red-font">D / C</span></h2>
 
-<h3>Skróty "C", "D", "T", "r", "π" są czymś jak zmienne w programie, podłączmy pod nie wartości.
+<h3 className="lek6-title">Skróty "C", "D", "T", "r", "π" są czymś jak zmienne w programie, podłączmy pod nie wartości.
    
     <p>Jeżeli przykładowo chcemy pokonać drogę "D" o długości 50cm to znając obwód koła "C" np. 64mm, możemy obliczyć ilość obrotów "T" potrzebną
         do przebycia drogi.</p>
@@ -115,7 +115,7 @@ export default function Lekcja6(){
             a długość drogi w cm, więc skonwertujemy cm na mm
         </p>
 </h3>
-<h2>D = 50cm = 500mm
+<h2 className="lek6-title">D = 50cm = 500mm
     <p>T = 500 / 64</p>
     <p>T = 7,8125</p>
     <p>T ≈ 7,8</p>

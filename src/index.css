@@ -486,6 +486,7 @@ width: 65%;
 
 
 .tresc{
+  position: absolute;
   font-size: 0.6rem;
   overflow: clip;
   width: 375px;

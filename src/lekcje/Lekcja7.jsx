@@ -14,8 +14,8 @@ export default function Lekcja7(){
 const [deg, setDeg] = React.useState(stopnie.defaultValue)
 const [degB, setDegB] = React.useState(stopnieB.defaultValue)
 
-const [code, setCode] = React.useState(` <Robo className="robo"/>`)
-const [codeB, setCodeB] = React.useState(`  <Robo className="roboB"/>`)
+const [code, setCode] = React.useState('<Robo className="robo"/>')
+const [codeB, setCodeB] = React.useState('<Robo className="roboB"/>')
 
 const [styl, setStyl] = React.useState(``)
 const [styl2, setStyl2] = React.useState(``)
@@ -81,7 +81,6 @@ function render(){
     arr.forEach((it)=>{
         setCode(prev => prev + it)
     })
-
 
 }
 

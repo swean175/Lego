@@ -1,8 +1,6 @@
 export default function Robo(){
 
-
     return(
-    
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1024px" height="1024px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g><path style="opacity:0.967" fill="#59616b" d="M 471.5,108.5 C 477.833,108.5 484.167,108.5 490.5,108.5C 490.5,119.167 490.5,129.833 490.5,140.5C 484.167,140.5 477.833,140.5 471.5,140.5C 471.5,129.833 471.5,119.167 471.5,108.5 Z"/></g>
         <g><path style="opacity:0.576" fill="#73787f" d="M 471.5,108.5 C 471.5,119.167 471.5,129.833 471.5,140.5C 470.833,140.5 470.167,140.5 469.5,140.5C 469.334,130.161 469.5,119.828 470,109.5C 470.383,108.944 470.883,108.611 471.5,108.5 Z"/></g>

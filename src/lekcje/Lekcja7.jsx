@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import React,{ useEffect } from "react"
 import Robo from "../components/svgs/robo"
 import oponaszer from "../assets/lekcja6/tyre.jpg"
 
@@ -10,6 +10,9 @@ export default function Lekcja7(){
     useEffect(() => {
         window.scrollTo(0, 100)
       }, [])
+
+const stopnie = document.getElementById('stopnie')
+const stopnieB = document.getElementById('stopnieB')
 
 const [deg, setDeg] = React.useState(stopnie.defaultValue)
 const [degB, setDegB] = React.useState(stopnieB.defaultValue)
@@ -28,10 +31,10 @@ let arrB = []
 
 function handleSliderB(event){
     setDegB(event.target.value) 
-setCodeB (`<div id="point" className="point"></div>
-<div className="centrumB" id="centrumB;">
-<Robo className="roboB"/> 
-</div> `)
+// setCodeB (`<div id="point" className="point"></div>
+// <div className="centrumB" id="centrumB;">
+// <Robo className="roboB"/> 
+// </div> `)
 arrB = []
 renderB()
 }
@@ -51,11 +54,11 @@ function renderB(){
     }
 
 
-    arrB.forEach((it)=>{
-        setCodeB(prev => prev + it)
-    })
+    // arrB.forEach((it)=>{
+    //     setCodeB(prev => prev + it)
+    // })
 
- 
+ setCodeB(prev => prev + [...arrB])
 }
 
 
@@ -64,8 +67,8 @@ function renderB(){
 
 function handleSlider (event){
    setDeg(event.target.value)
-setCode(`<Robo className="robo" style={{"transform: rotate(${deg*10}deg); 
-transition: 0.2s;"}}/>`)
+// setCode(`<Robo className="robo" style={{"transform: rotate(${deg*10}deg); 
+// transition: 0.2s;"}}/>`)
 arr = []
 render()
 }
@@ -78,9 +81,11 @@ function render(){
         arr.push(`<div className="slad" style={{${styl}}}></div><div className="slad2" style={{${styl2}}}></div>`) 
     }
     
-    arr.forEach((it)=>{
-        setCode(prev => prev + it)
-    })
+    // arr.forEach((it)=>{
+    //     setCode(prev => prev + it)
+    // })
+
+    setCode(prev => prev + [...arr])
 
 }
 
@@ -99,7 +104,6 @@ function Obrot(){
 
 function Centrum(){
     return(
-      
         <div className="centrum" id="centrum">
             <Robo className="robo"/>
             {code}

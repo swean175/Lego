@@ -42,10 +42,10 @@ function renderB(){
     for (let i =0; i <= degB; i++){
 
         setStylB(`"transform:translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px));"`) 
-        arrB.push(`<div className="sladB" style=${stylB}></div>`) 
+        arrB.push(`<div className="sladB" style={{${stylB}}}></div>`) 
 
         setCodeB (`<div id="point" className="point"></div>
-        <div className="centrumB" id="centrumB" style="transform: rotate(${i*10}deg)">
+        <div className="centrumB" id="centrumB" style={{"transform: rotate(${i*10}deg)}}">
         <Robo className="roboB"/> 
         </div> `)
     }
@@ -64,8 +64,8 @@ function renderB(){
 
 function handleSlider (event){
    setDeg(event.target.value)
-setCode(`<Robo className="robo" style="transform: rotate(${deg*10}deg); 
-transition: 0.2s;"/>`)
+setCode(`<Robo className="robo" style={{"transform: rotate(${deg*10}deg); 
+transition: 0.2s;"}}/>`)
 arr = []
 render()
 }
@@ -75,7 +75,7 @@ function render(){
     for (let i =0; i <= deg; i++){
         setStyl(`"transform:translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)));"`) 
         setStyl2( `"transform:translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)));"`) 
-        arr.push(`<div className="slad" style=${styl}></div><div className="slad2" style=${styl2}></div>`) 
+        arr.push(`<div className="slad" style={{${styl}}}></div><div className="slad2" style={{${styl2}}}></div>`) 
     }
     
     arr.forEach((it)=>{

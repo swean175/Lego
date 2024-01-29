@@ -1,6 +1,8 @@
 
 import { useEffect } from "react"
 import cir from "../assets/lekcja6/cir.jpg"
+import insideblok from "../assets/lekcja6/blokoliczdrofi.jpg"
+import outsideblok from "../assets/lekcja6/blokod.jpg"
 import tyre from "../assets/lekcja6/tyre.jpg"
 import Whee from "../components/svgs/whee"
 import Wheel from "../components/svgs/wheel"
@@ -126,6 +128,17 @@ export default function Lekcja6(){
 <h3 >Potrzeba więc około 7.8 obrotu koła do przebycia 50cm drogi</h3>
     
 </div>
+<dic className="blok-obliczania-drogi">
+    <h3>Używając bloków matematycznych obliczamy potrzebną ilość obrotów silnika, po zaznaczeniu potrzebnych bloków klikamy w Tools (narzędzia) 
+        i wybieramy My block builder (konstruktor moich bloków), w menu konstruowania bloku wybieramy odpowiednie opcje i zapisujemy.</h3>
+    <img className="lekcjaszesc-img" src={insideblok} alt="wewnątrz bloku obliczania drogi"></img>
+    <h3>Wszystkie obliczenia będa zawarte w pojedynczym bloku do którego możemy podłączać wejścia i wyprowadzać wyjścia</h3>
+<img className="lekcjaszesc-img" src={outsideblok} alt="blok obliczania drogi"></img>
+<h3>Żeby edytować zawartość skonstruowanego bloku, klikamy dwukrotnie, zawartość wyswietli się w nowej zakładce.</h3>
+</dic>
+
+
+
 </div>
 </div>
     )

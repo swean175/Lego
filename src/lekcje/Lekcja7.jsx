@@ -17,6 +17,10 @@ const [degB, setDegB] = React.useState(stopnieB.defaultValue)
 const [code, setCode] = React.useState(` <Robo className="robo"/>`)
 const [codeB, setCodeB] = React.useState(`  <Robo className="roboB"/>`)
 
+const [styl, setStyl] = React.useState(``)
+const [styl2, setStyl2] = React.useState(``)
+const [stylB, setStylB] = React.useState(``)
+
       const centrum = document.getElementById('centrum')
 const slider = document.getElementById('slider')
 const stopnie = document.getElementById('stopnie')
@@ -25,7 +29,7 @@ const stopnie = document.getElementById('stopnie')
 const centrumB = document.getElementById('centrumB')
 const sliderB = document.getElementById('sliderB')
 const stopnieB = document.getElementById('stopnieB')
-const obrot = document.getElementById('obrot')
+
 
 
 let arr = []
@@ -52,8 +56,8 @@ function renderB(){
 
     for (let i =0; i <= degB; i++){
 
-        let styleB = `"transform:translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px));"`
-        arrB.push(`<div className="sladB" style=${styleB}></div>`) 
+        setStylB(`"transform:translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px));"`) 
+        arrB.push(`<div className="sladB" style=${stylB}></div>`) 
 
         setCodeB (`<div id="point" className="point"></div>
         <div className="centrumB" id="centrumB" style="transform: rotate(${i*10}deg)">
@@ -66,8 +70,6 @@ function renderB(){
         setCodeB(prev => prev + it)
     })
 
-    stopnieB.textContent = `${degB * 10} stopni`
-    obrot.innerHTML = codeB 
  
 }
 
@@ -77,7 +79,7 @@ function renderB(){
 
 function handleSlider (event){
    setDeg(event.target.value)
-setCode (`<Robo className="robo" style="transform: rotate(${deg*10}deg); 
+setCode(`<Robo className="robo" style="transform: rotate(${deg*10}deg); 
 transition: 0.2s;"/>`)
 arr = []
 render()
@@ -86,20 +88,40 @@ render()
 function render(){
 
     for (let i =0; i <= deg; i++){
-        let style = `"transform:translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)));"`
-        let style2 = `"transform:translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)));"`
-        arr.push(`<div className="slad" style=${style}></div><div className="slad2" style=${style2}></div>`) 
+        setStyl(`"transform:translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)));"`) 
+        setStyl2( `"transform:translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)));"`) 
+        arr.push(`<div className="slad" style=${styl}></div><div className="slad2" style=${styl2}></div>`) 
     }
     
     arr.forEach((it)=>{
         setCode(prev => prev + it)
     })
 
-    stopnie.textContent = `${deg * 10} stopni`
-    centrum.innerHTML = code 
 
 }
 
+
+function Obrot(){
+    return (
+        <div id="obrot" className="obrotB">
+        <div id="point" className="point"></div>
+          <div className="centrumB" id="centrumB">
+        <Robo className="roboB"/>
+        {codeB}
+    </div> 
+    </div>
+    )
+}
+
+function Centrum(){
+    return(
+      
+        <div className="centrum" id="centrum">
+            <Robo className="robo"/>
+            {code}
+        </div>
+    )
+}
 
     return(
         <>
@@ -109,27 +131,19 @@ function render(){
 <h3>Robot napędzany jednym kołem zatacza okrąg, oś obrotu znajduję się na drugim kole</h3>
         <div className="skretB">
          
-            <div id="obrot" className="obrotB">
-                <div id="point" className="point"></div>
-                  <div className="centrumB" id="centrumB">
-                <Robo className="roboB"/>
-            </div> 
-            </div>
+         <Obrot />
 
              <input id="sliderB" className="slider" value="0" type="range" name="pointsB" min="0" max="36" onChange={handleSliderB}></input>
-            <p id="stopnieB"></p>
+            <p id="stopnieB">{degB * 10} stopni</p>
 
         </div>
 
         <h3>Napędzając koła w przeciwnych kierunkach zmniejsza się okrąg i przyspiesza obrót, oś obrotu jest w połowie szerokości</h3>
-
         <div className="skret">
-            <div className="centrum" id="centrum">
-                <Robo className="robo"/>
-            </div>
+      <Centrum />
 
             <input id="slider" className="slider" value="0" type="range" name="points" min="0" max="36" onChange={handleSlider}></input>
-            <p id="stopnie"></p>
+            <p id="stopnie">{deg * 10} stopni</p>
         </div>
 
         

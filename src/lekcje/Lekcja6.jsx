@@ -128,14 +128,14 @@ export default function Lekcja6(){
 <h3 >Potrzeba więc około 7.8 obrotu koła do przebycia 50cm drogi</h3>
     
 </div>
-<dic className="blok-obliczania-drogi">
+<div className="blok-obliczania-drogi">
     <h3>Używając bloków matematycznych obliczamy potrzebną ilość obrotów silnika, po zaznaczeniu potrzebnych bloków klikamy w Tools (narzędzia) 
         i wybieramy My block builder (konstruktor moich bloków), w menu konstruowania bloku wybieramy odpowiednie opcje i zapisujemy.</h3>
     <img className="bloki-image" src={insideblok} alt="wewnątrz bloku obliczania drogi"></img>
     <h3>Wszystkie obliczenia będa zawarte w pojedynczym bloku do którego możemy podłączać wejścia i wyprowadzać wyjścia</h3>
 <img className="options-image" src={outsideblok} alt="blok obliczania drogi"></img>
 <h3>Żeby edytować zawartość skonstruowanego bloku, klikamy dwukrotnie, zawartość wyswietli się w nowej zakładce.</h3>
-</dic>
+</div>
 
 
 

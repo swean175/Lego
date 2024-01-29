@@ -21,24 +21,9 @@ const [styl, setStyl] = React.useState(``)
 const [styl2, setStyl2] = React.useState(``)
 const [stylB, setStylB] = React.useState(``)
 
-      const centrum = document.getElementById('centrum')
-const slider = document.getElementById('slider')
-const stopnie = document.getElementById('stopnie')
-
-
-const centrumB = document.getElementById('centrumB')
-const sliderB = document.getElementById('sliderB')
-const stopnieB = document.getElementById('stopnieB')
-
-
 
 let arr = []
 let arrB = []
-
-
-
-stopnie.textContent = "0 stopni"
-stopnieB.textContent = "0 stopni"
 
 
 function handleSliderB(event){

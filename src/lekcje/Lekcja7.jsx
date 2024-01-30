@@ -58,7 +58,7 @@ stylB  = {transform:`translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*
     arrB.push(`<div className="sladB" style={${stylB}}></div>`) 
 
     codeB = `<div id="point" className="point"></div>
-    <div className="centrumB" id="centrumB" style="transform: rotate(${i*10}deg)">
+    <div className="centrumB" id="centrumB" style={transform:"rotate(${i*10}deg)"}>
     <Robo className="roboB"/> 
     </div>`
 
@@ -72,8 +72,8 @@ stylB  = {transform:`translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*
 
 function handleSlider(event){
    setDeg(event.target.value)
-   let code = `<Robo className="robo" style="transform: rotate(${deg*10}deg); 
-   transition: 0.2s;"/>`
+   let code = `<Robo className="robo" style={transform: "rotate(${deg*10}deg); 
+   transition: 0.2s;"}/>`
 
 let arr = []
 

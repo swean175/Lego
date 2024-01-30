@@ -18,7 +18,7 @@ const [degB, setDegB] = useState(0)
 let code = '<Robo className="robo"/>'
 
 let codeB = `<div id="point" className="point"></div>
- <div className="centrumB" id="centrumB;">
+ <div className="centrumB" id="centrumB">
  <Robo className="roboB"/> 
  </div> `
 

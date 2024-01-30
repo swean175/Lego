@@ -1,5 +1,5 @@
 import  React, { useEffect } from "react"
-// import Robo from "../components/svgs/robo"
+import Robo from "../components/svgs/robo"
 import oponaszer from "../assets/lekcja6/tyre.jpg"
 
 
@@ -22,14 +22,7 @@ const degB = 0
 //  <Robo className="roboB"/> 
 //  </div> `
 
-function Robo(){
-    return (
-        <div>
-        <h1>Robo </h1>
-        </div>
-    )
-   
-}
+
 
 function Obrot(){
     return (

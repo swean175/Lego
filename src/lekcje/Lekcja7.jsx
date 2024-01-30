@@ -66,7 +66,8 @@ function Obrot(){
        <>
         <div id="point" className="point"></div>
  <div className="centrumB" id="centrumB" style={{transform:`"rotate(${degB}deg)"`}}>
-         <Robo className="roboB"/>
+         <Robo 
+         clasa={"roboB"}/>
     
 
  {degB > 0?<SladB/>:null}
@@ -81,7 +82,8 @@ function Centrum(){
             <div className="robo" style={{transform:`"rotate(${deg}deg)"`}}>
              
             </div>
-              <Robo className="robo"/> 
+              <Robo
+              clasa={"robo"}/> 
             {deg > 0?<Slad/>:null}
         </div>
     

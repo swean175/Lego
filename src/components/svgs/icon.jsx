@@ -1,16 +1,15 @@
 import React from "react";
 
-function Icon() {
+function Icon({clasa}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="250"
-      height="250"
       fillRule="evenodd"
       clipRule="evenodd"
       imageRendering="optimizeQuality"
       shapeRendering="geometricPrecision"
       textRendering="geometricPrecision"
+      className={clasa}
     >
       <path fill="#5e666f" d="M120.5 33.5h-7v-8h7v8z" opacity="0.892"></path>
       <path

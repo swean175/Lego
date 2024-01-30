@@ -674,8 +674,6 @@ background-color: red;
 .robo{
   position: absolute;
   margin: auto;
-  width: 250px;
-  aspect-ratio: 1;
 }
 
 .obrotB{
@@ -698,8 +696,6 @@ aspect-ratio: 1;
 .roboB{
   position: absolute;
   margin: auto;
-  width: 250px;
-  aspect-ratio: 1;
   transform: rotate(90deg);
 }
 

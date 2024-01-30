@@ -1,4 +1,4 @@
-import React,{ useEffect } from "react"
+import { useEffect, useState } from "react"
 import Robo from "../components/svgs/robo"
 import oponaszer from "../assets/lekcja6/tyre.jpg"
 
@@ -14,83 +14,18 @@ export default function Lekcja7(){
 
 
 
-const [deg, setDeg] = React.useState(stopnie.defaultValue)
-const [degB, setDegB] = React.useState(stopnieB.defaultValue)
+const [deg, setDeg] = useState(stopnie.defaultValue)
+const [degB, setDegB] = useState(stopnieB.defaultValue)
 
-const [code, setCode] = React.useState('<Robo className="robo"/>')
-const [codeB, setCodeB] = React.useState('<Robo className="roboB"/>')
-
-const [styl, setStyl] = React.useState(``)
-const [styl2, setStyl2] = React.useState(``)
-const [stylB, setStylB] = React.useState(``)
-
-
-
-
-function handleSliderB(event){
-    stopnieB = document.getElementById('stopnieB')
-    setDegB(event.target.value) 
-// setCodeB (`<div id="point" className="point"></div>
+const [code, setCode] = useState('<Robo className="robo"/>')
+const [codeB, setCodeB] = useState(`<div id="point" className="point"></div>
 // <div className="centrumB" id="centrumB;">
 // <Robo className="roboB"/> 
 // </div> `)
-// arrB = []
-renderB()
-}
 
-function renderB(){
-
-    let arrB = []
-
-    for (let i =0; i <= degB; i++){
-
-        setStylB(`"transform:translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px));"`) 
-        arrB.push(`<div className="sladB" style={{${stylB}}}></div>`) 
-
-        setCodeB (`<div id="point" className="point"></div>
-        <div className="centrumB" id="centrumB" style={{"transform: rotate(${i*10}deg)}}">
-        <Robo className="roboB"/> 
-        </div>`)
-    }
-
-
-    // arrB.forEach((it)=>{
-    //     setCodeB(prev => prev + it)
-    // })
-
- setCodeB(prev => prev + [...arrB])
-}
-
-
-//--------------------------------------------------------------------------------------------
-
-
-function handleSlider (event){
-    stopnie = document.getElementById('stopnie')
-   setDeg(event.target.value)
-setCode(`<Robo className="robo" style={{"transform: rotate(${deg*10}deg); 
-transition: 0.2s;"}}/>`)
-// arr = []
-render()
-}
-
-function render(){
-
-    let arr = []
-
-    for (let i =0; i <= deg; i++){
-        setStyl(`"transform:translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)));"`) 
-        setStyl2( `"transform:translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)));"`) 
-        arr.push(`<div className="slad" style={{${styl}}}></div><div className="slad2" style={{${styl2}}}></div>`) 
-    }
-    
-    // arr.forEach((it)=>{
-    //     setCode(prev => prev + it)
-    // })
-
-    setCode(prev => prev + [...arr])
-
-}
+const [styl, setStyl] = useState(``)
+const [styl2, setStyl2] = useState(``)
+const [stylB, setStylB] = useState(``)
 
 
 function Obrot(){
@@ -113,6 +48,58 @@ function Centrum(){
         </div>
     )
 }
+
+
+function handleSliderB(event){
+    stopnieB = document.getElementById('stopnieB')
+    setDegB(event.target.value) 
+// arrB = []
+
+let arrB = []
+
+for (let i =0; i <= degB; i++){
+let b  = `"transform:translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px));"`
+    arrB.push(`<div className="sladB" style={{${stylB}}}></div>`) 
+
+    setCodeB (`<div id="point" className="point"></div>
+    <div className="centrumB" id="centrumB" style={{"transform: rotate(${i*10}deg)}}">
+    <Robo className="roboB"/> 
+    </div>`)
+
+    setCodeB(b + [...arrB])
+}
+}
+
+    // arrB.forEach((it)=>{
+    //     setCodeB(prev => prev + it)
+    // })
+
+//--------------------------------------------------------------------------------------------
+
+
+function handleSlider(event){
+    stopnie = document.getElementById('stopnie')
+   setDeg(event.target.value)
+   let a = `<Robo className="robo" style={{"transform: rotate(${deg*10}deg); 
+   transition: 0.2s;"}}/>`
+
+let arr = []
+
+for (let i =0; i <= deg; i++){
+    setStyl(`"transform:translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)));"`) 
+    setStyl2( `"transform:translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)));"`) 
+    arr.push(`<div className="slad" style={{${styl}}}></div><div className="slad2" style={{${styl2}}}></div>`) 
+}
+
+// arr.forEach((it)=>{
+//     setCode(prev => prev + it)
+// })
+
+setCode(a + [...arr])
+
+}
+
+
 
     return(
         <>

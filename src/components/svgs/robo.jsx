@@ -10,6 +10,7 @@ export default function Robo(){
       imageRendering="optimizeQuality"
       shapeRendering="geometricPrecision"
       textRendering="geometricPrecision"
+      viewBox="0 0 250 250" 
     >
       <path
         fill="#59616b"

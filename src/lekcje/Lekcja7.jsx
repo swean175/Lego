@@ -13,7 +13,6 @@ const [deg, setDeg] = useState(0)
 const [degB, setDegB] = useState(0)
 
 
-
 // let code = '<Robo className="robo"/>'
 
 // let codeB = `<div id="point" className="point"></div>
@@ -25,8 +24,8 @@ function SladB(){
 let arrB = []
 
 for (let i =0; i <= degB; i++){
-const stylB  = `{transform:"translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px))"}`
-    arrB.push(`<div className="sladB" style={${stylB}}></div>`) 
+// const stylB  = `{transform:"translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px))"}`
+    arrB.push(`<div className="sladB" style={{transform:"translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px))"}}></div>`) 
 }
     return (
 <>
@@ -44,9 +43,9 @@ function Slad(){
     let arr = []
 
     for (let i =0; i <= deg; i++){
-       const styl = `{transform:"translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)))"}`
-       const styl2 = `{transform:"translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)))"}`
-        arr.push(`<div className="slad" style={${styl}}></div><div className="slad2" style={${styl2}}></div>`) 
+    //    const styl = `{transform:"translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)))"}`
+    //    const styl2 = `{transform:"translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)))"}`
+        arr.push(`<div className="slad" style={{transform:"translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)))"}}></div><div className="slad2" style={{transform:"translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)))"}}></div>`) 
     }
     return (
 <>

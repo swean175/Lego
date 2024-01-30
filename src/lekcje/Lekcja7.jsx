@@ -78,8 +78,6 @@ function Obrot(){
 
 function Centrum(){
     return(
-        <>
-         <Robo />
         <div className="centrum" id="centrum">
             <div className="robo" style={{transform:`"rotate(${deg}deg)"`}}>
              
@@ -87,7 +85,7 @@ function Centrum(){
               <Robo /> 
             {deg > 0?<Slad/>:null}
         </div>
-        </>
+    
        
     )
 }
@@ -119,9 +117,10 @@ function handleSlider(event){
             <p id="stopnieB">{degB * 10} stopni</p>
 
         </div>
-
+        <Robo />
         <h3>Napędzając koła w przeciwnych kierunkach zmniejsza się okrąg i przyspiesza obrót, oś obrotu jest w połowie szerokości</h3>
         <div className="skret">
+
       <Centrum />
 
             <input id="slider" className="slider" value="0" type="range" name="points" min="0" max="36" onChange={handleSlider}></input>

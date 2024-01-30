@@ -1,6 +1,6 @@
 import React from "react";
 
-function Icon({clasa}) {
+function Icon({clasa, degrees}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,6 +10,7 @@ function Icon({clasa}) {
       shapeRendering="geometricPrecision"
       textRendering="geometricPrecision"
       className={clasa}
+      style={{transform:`rotate(${degrees}deg)`}}
     >
       <path fill="#5e666f" d="M120.5 33.5h-7v-8h7v8z" opacity="0.892"></path>
       <path

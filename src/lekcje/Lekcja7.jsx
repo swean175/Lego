@@ -105,6 +105,7 @@ function handleSlider(event){
 
     return(
         <div className="format-lekcje">
+            <div className="layout7">
              <img className="lekcjaszesc-img" src={oponaszer} alt="koło lego"></img>
 
    <h1 style={{fontSize:"1.5em"}}> Programujemy blok do skręcania robotem </h1>
@@ -126,7 +127,7 @@ function handleSlider(event){
             <p id="stopnie">{deg * 10} stopni</p>
         </div>
 
-        
+        </div>
 </div>
     )
 }

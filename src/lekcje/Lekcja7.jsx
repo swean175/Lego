@@ -15,12 +15,12 @@ export default function Lekcja7(){
 const deg = 0
 const degB = 0
 
-let code = '<Robo className="robo"/>'
+let code = '(<Robo className="robo"/>)'
 
-let codeB = `<div id="point" className="point"></div>
+let codeB = `(<div id="point" className="point"></div>
  <div className="centrumB" id="centrumB">
  <Robo className="roboB"/> 
- </div> `
+ </div> )`
 
 
 

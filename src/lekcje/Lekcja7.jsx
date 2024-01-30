@@ -110,7 +110,7 @@ function handleSlider(event){
 <h3>Robot napędzany jednym kołem zatacza okrąg, oś obrotu znajduję się na drugim kole</h3>
         <div className="skretB">
          
-         <Obrot />
+         <Obrot className="obrotB"/>
 
              <input id="sliderB" className="slider" value="0" type="range" name="pointsB" min="0" max="36" onChange={handleSliderB}></input>
             <p id="stopnieB">{degB * 10} stopni</p>

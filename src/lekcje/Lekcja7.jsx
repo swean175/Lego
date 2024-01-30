@@ -36,7 +36,7 @@ let codeB = arrB.map((it)=> {
 
     return (
 <>
-<h2>cos</h2>
+{codeB}
 </>
     )
 }
@@ -62,7 +62,7 @@ function Slad(){
 
     return (
 <>
-<h2>cos</h2>
+{code}
 </>
     )
 }
@@ -73,7 +73,7 @@ function Obrot(){
         <div id="point" className="point"></div>
  <div className="centrumB" id="centrumB" style={{transform:`"rotate(${i*10}deg)"`}}>
  <Robo className="roboB" /> 
- {degB > 0?<SladB/>:null}
+
  </div>
    </>
     )
@@ -83,7 +83,7 @@ function Centrum(){
     return(
         <div className="centrum" id="centrum">
             <Robo className="robo" style={{transform:`"rotate(${i*10}deg)"`}}/>
-            {deg > 0?<Slad/>:null}
+       
         </div>
     )
 }

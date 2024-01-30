@@ -3,8 +3,7 @@ export default function Robo(){
     return(
         <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="250"
-      height="250"
+     
       fillRule="evenodd"
       clipRule="evenodd"
       imageRendering="optimizeQuality"

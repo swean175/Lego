@@ -104,7 +104,7 @@ function handleSlider(event){
 }
 
     return(
-        <div className="layout7">
+        <div className="format-lekcje">
              <img className="lekcjaszesc-img" src={oponaszer} alt="koło lego"></img>
 
    <h1 style={{fontSize:"1.5em"}}> Programujemy blok do skręcania robotem </h1>

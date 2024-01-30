@@ -1,10 +1,10 @@
-export default function Robo(){
+export default function Robo({width,height}){
 
     return(
         <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1024"
-      height="1024"
+      width={width}
+      height={height}
       fillRule="evenodd"
       clipRule="evenodd"
       imageRendering="optimizeQuality"

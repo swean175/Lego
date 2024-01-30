@@ -55,7 +55,7 @@ let arrB = []
 
 for (let i =0; i <= degB; i++){
 stylB  = {transform:`translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px));`}
-    arrB.push(`<div className="sladB" style={{${stylB}}}></div>`) 
+    arrB.push(`<div className="sladB" style={${stylB}}></div>`) 
 
     codeB = `<div id="point" className="point"></div>
     <div className="centrumB" id="centrumB" style="transform: rotate(${i*10}deg)">
@@ -80,7 +80,7 @@ let arr = []
 for (let i =0; i <= deg; i++){
     styl = {transform:`translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)));`}
     styl2 = {transform:`translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)));`}
-    arr.push(`<div className="slad" style={{${styl}}}></div><div className="slad2" style={{${styl2}}}></div>`) 
+    arr.push(`<div className="slad" style={${styl}}></div><div className="slad2" style={${styl2}}></div>`) 
 }
 
 code = code + [...arr]

@@ -9,10 +9,11 @@ export default function Lekcja7(){
 
     useEffect(() => {
         window.scrollTo(0, 100)
+        const stopnie = document.getElementById('stopnie')
+const stopnieB = document.getElementById('stopnieB')
       }, [])
 
-const stopnie = document.getElementById('stopnie')
-const stopnieB = document.getElementById('stopnieB')
+
 
 const [deg, setDeg] = React.useState(stopnie.defaultValue)
 const [degB, setDegB] = React.useState(stopnieB.defaultValue)
@@ -25,8 +26,6 @@ const [styl2, setStyl2] = React.useState(``)
 const [stylB, setStylB] = React.useState(``)
 
 
-let arr = []
-let arrB = []
 
 
 function handleSliderB(event){
@@ -35,12 +34,13 @@ function handleSliderB(event){
 // <div className="centrumB" id="centrumB;">
 // <Robo className="roboB"/> 
 // </div> `)
-arrB = []
+// arrB = []
 renderB()
 }
 
 function renderB(){
 
+    let arrB = []
 
     for (let i =0; i <= degB; i++){
 
@@ -50,7 +50,7 @@ function renderB(){
         setCodeB (`<div id="point" className="point"></div>
         <div className="centrumB" id="centrumB" style={{"transform: rotate(${i*10}deg)}}">
         <Robo className="roboB"/> 
-        </div> `)
+        </div>`)
     }
 
 
@@ -67,13 +67,15 @@ function renderB(){
 
 function handleSlider (event){
    setDeg(event.target.value)
-// setCode(`<Robo className="robo" style={{"transform: rotate(${deg*10}deg); 
-// transition: 0.2s;"}}/>`)
-arr = []
+setCode(`<Robo className="robo" style={{"transform: rotate(${deg*10}deg); 
+transition: 0.2s;"}}/>`)
+// arr = []
 render()
 }
 
 function render(){
+
+    let arr = []
 
     for (let i =0; i <= deg; i++){
         setStyl(`"transform:translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)));"`) 

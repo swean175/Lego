@@ -25,7 +25,7 @@ const degB = 0
 function Robo(){
     return (
         <div>
-        Robo 
+        <h1>Robo </h1>
         </div>
     )
    

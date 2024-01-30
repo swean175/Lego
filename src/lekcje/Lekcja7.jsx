@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import React,{ useEffect } from "react"
 import Robo from "../components/svgs/robo"
 import oponaszer from "../assets/lekcja6/tyre.jpg"
 

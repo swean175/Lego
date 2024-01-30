@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import Robo from "../components/svgs/robo"
 import oponaszer from "../assets/lekcja6/tyre.jpg"
 
@@ -9,8 +9,8 @@ export default function Lekcja7(){
         window.scrollTo(0, 100)
       }, [])
 
-const [deg, setDeg] = useState(0)
-const [degB, setDegB] = useState(0)
+const [deg, setDeg] = React.useState(0)
+const [degB, setDegB] = React.useState(0)
 
 
 // let code = '<Robo className="robo"/>'

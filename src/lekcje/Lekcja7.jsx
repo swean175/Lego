@@ -2,15 +2,14 @@ import React,{ useEffect } from "react"
 import Robo from "../components/svgs/robo"
 import oponaszer from "../assets/lekcja6/tyre.jpg"
 
-
+let stopnie 
+let stopnieB 
 
 
 export default function Lekcja7(){
 
     useEffect(() => {
         window.scrollTo(0, 100)
-        const stopnie = document.getElementById('stopnie')
-const stopnieB = document.getElementById('stopnieB')
       }, [])
 
 
@@ -29,6 +28,7 @@ const [stylB, setStylB] = React.useState(``)
 
 
 function handleSliderB(event){
+    stopnieB = document.getElementById('stopnieB')
     setDegB(event.target.value) 
 // setCodeB (`<div id="point" className="point"></div>
 // <div className="centrumB" id="centrumB;">
@@ -66,6 +66,7 @@ function renderB(){
 
 
 function handleSlider (event){
+    stopnie = document.getElementById('stopnie')
    setDeg(event.target.value)
 setCode(`<Robo className="robo" style={{"transform: rotate(${deg*10}deg); 
 transition: 0.2s;"}}/>`)

@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import Robo from "../components/svgs/robo"
 import oponaszer from "../assets/lekcja6/tyre.jpg"
 
-let stopnie 
-let stopnieB 
+
 let styl
 let styl2
 let stylB
@@ -50,7 +49,6 @@ function Centrum(){
 
 
 function handleSliderB(event){
-    stopnieB = document.getElementById('stopnieB')
     setDegB(event.target.value) 
 
 let arrB = []
@@ -73,7 +71,6 @@ stylB  = `"transform:translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*
 
 
 function handleSlider(event){
-    stopnie = document.getElementById('stopnie')
    setDeg(event.target.value)
    let code = `<Robo className="robo" style={{"transform: rotate(${deg*10}deg); 
    transition: 0.2s;"}}/>`

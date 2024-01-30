@@ -27,13 +27,15 @@ for (let i =0; i <= degB; i++){
 const stylB  = `{transform:"translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px))"}`
     arrB.push({stylB:stylB}) 
 }
-    return (
-<>
-{arrB.map((it)=> {
+
+let codeB = arrB.map((it)=> {
     return (
         <div className="sladB" style={it.stylB}></div>
     )
-})}
+})
+    return (
+<>
+{codeB}
 </>
     )
 }
@@ -47,17 +49,19 @@ function Slad(){
        const styl2 = `{transform:"translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)))"}`
         arr.push({styl:styl, styl2:styl2}) 
     }
+
+   let code = arr.map((it)=>{
+        return (
+            <>
+            <div className="slad" style={it.styl}></div>
+            <div className="slad2" style={it.styl2}></div>
+            </>
+        )
+    }
+    )
     return (
 <>
-{arr.map((it)=>{
-    return (
-        <>
-
-        <div className="slad" style={it.styl}></div>
-        <div className="slad2" style={it.styl2}></div>
-        </>
-    )
-})}
+{code}
 </>
     )
 }
@@ -68,7 +72,7 @@ function Obrot(){
         <div id="point" className="point"></div>
  <div className="centrumB" id="centrumB" style={{transform:`rotate(${i*10}deg)`}}>
  <Robo className="roboB" /> 
- {deg>0?<SladB/>:null}
+ {degB > 0?<SladB/>:null}
  </div>
    </>
     )
@@ -78,7 +82,7 @@ function Centrum(){
     return(
         <div className="centrum" id="centrum">
             <Robo className="robo" style={{transform: `rotate(${deg*10}deg`}}/>
-            {deg>0?<Slad/>:null}
+            {deg > 0?<Slad/>:null}
         </div>
     )
 }

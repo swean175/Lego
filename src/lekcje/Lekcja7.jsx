@@ -104,7 +104,7 @@ function handleSlider(event){
 }
 
     return(
-        <div className="format-lekcje">
+      
             <div className="layout7">
              <img className="lekcjaszesc-img" src={oponaszer} alt="koło lego"></img>
 
@@ -128,6 +128,6 @@ function handleSlider(event){
         </div>
 
         </div>
-</div>
+
     )
 }

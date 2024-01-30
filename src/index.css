@@ -643,12 +643,13 @@ width: 65%;
  
  
  .layout7{
-  display:flex;
-  position: relative;
+  display: flex;
   flex-direction: column;
+  position: relative;
   justify-content: center;
   align-items: center;
   gap:3em;
+  width: 50%;
 }
 
 /* .skretB{

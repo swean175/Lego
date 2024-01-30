@@ -644,6 +644,7 @@ width: 65%;
  
  .layout7{
   display:flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;

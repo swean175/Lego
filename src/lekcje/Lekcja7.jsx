@@ -1,5 +1,5 @@
 import React,{ useEffect } from "react"
-import Robo from "../components/svgs/Robo"
+import Robo from "../components/svgs/icon"
 import oponaszer from "../assets/lekcja6/tyre.jpg"
 
 

@@ -66,9 +66,8 @@ function Obrot(){
        <>
         <div id="point" className="point"></div>
  <div className="centrumB" id="centrumB" style={{transform:`"rotate(${degB}deg)"`}}>
-    <div className="roboB">
-         <Robo />
-    </div>
+         <Robo className="roboB"/>
+    
 
  {degB > 0?<SladB/>:null}
  </div>
@@ -82,7 +81,7 @@ function Centrum(){
             <div className="robo" style={{transform:`"rotate(${deg}deg)"`}}>
              
             </div>
-              <Robo /> 
+              <Robo className="robo"/> 
             {deg > 0?<Slad/>:null}
         </div>
     
@@ -117,7 +116,6 @@ function handleSlider(event){
             <p id="stopnieB">{degB * 10} stopni</p>
 
         </div>
-        <Robo />
         <h3>Napędzając koła w przeciwnych kierunkach zmniejsza się okrąg i przyspiesza obrót, oś obrotu jest w połowie szerokości</h3>
         <div className="skret">
 

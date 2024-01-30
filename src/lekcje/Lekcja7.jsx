@@ -9,18 +9,17 @@ export default function Lekcja7(){
         window.scrollTo(0, 100)
       }, [])
 
-// const [deg, setDeg] = useState(0)
-// const [degB, setDegB] = useState(0)
+const [deg, setDeg] = useState(0)
+const [degB, setDegB] = useState(0)
 
-const deg = 0
-const degB = 0
 
-let code = '<Robo className="robo"/>'
 
-let codeB = `<div id="point" className="point"></div>
- <div className="centrumB" id="centrumB">
- <Robo className="roboB"/> 
- </div> `
+// let code = '<Robo className="robo"/>'
+
+// let codeB = `<div id="point" className="point"></div>
+//  <div className="centrumB" id="centrumB">
+//  <Robo className="roboB"/> 
+//  </div> `
 
 function SladB(){
 let arrB = []
@@ -64,8 +63,8 @@ function Obrot(){
     return (
        <>
         <div id="point" className="point"></div>
- <div className="centrumB" id="centrumB">
- <Robo className="roboB"/> 
+ <div className="centrumB" id="centrumB" style={{transform:`rotate(${i*10}deg)`}}>
+ <Robo className="roboB" /> 
  {deg>0?SladB:null}
  </div>
    </>
@@ -75,50 +74,24 @@ function Obrot(){
 function Centrum(){
     return(
         <div className="centrum" id="centrum">
-            <Robo className="robo"/>
+            <Robo className="robo" style={{transform: `rotate(${deg*10}deg`}}/>
             {deg>0?Slad:null}
         </div>
     )
 }
 
 
-// function handleSliderB(event){
-//     setDegB(event.target.value) 
-
-// let arrB = []
-
-// for (let i =0; i <= degB; i++){
-// const stylB  = `{transform:"translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px))"}`
-//     arrB.push(`<div className="sladB" style={${stylB}}></div>`) 
-
-//     codeB = `<div id="point" className="point"></div>
-//     <div className="centrumB" id="centrumB" style={{transform:"rotate(${i*10}deg)"}}>
-//     <Robo className="roboB"/> 
-//     </div>`
-
-//  codeB = codeB + [...arrB]
-// }
-// }
+function handleSliderB(event){
+    setDegB(event.target.value) 
+}
 
 
 //--------------------------------------------------------------------------------------------
 
 
-// function handleSlider(event){
-//    setDeg(event.target.value)
-//  code = `<Robo className="robo" style={{transform: "rotate(${deg*10}deg)", 
-//    transition:" 0.2s"}}/>`
-
-// let arr = []
-
-// for (let i =0; i <= deg; i++){
-//    const styl = `{transform:"translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)))"}`
-//    const styl2 = `{transform:"translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)))"}`
-//     arr.push(`<div className="slad" style={${styl}}></div><div className="slad2" style={${styl2}}></div>`) 
-// }
-
-// code = code + [...arr]
-// }
+function handleSlider(event){
+   setDeg(event.target.value)
+}
 
     return(
         <React.Fragment>
@@ -130,7 +103,7 @@ function Centrum(){
          
          <Obrot />
 
-             <input id="sliderB" className="slider" value="0" type="range" name="pointsB" min="0" max="36" ></input>
+             <input id="sliderB" className="slider" value="0" type="range" name="pointsB" min="0" max="36" onChange={handleSliderB}></input>
             <p id="stopnieB">{degB * 10} stopni</p>
 
         </div>
@@ -139,7 +112,7 @@ function Centrum(){
         <div className="skret">
       <Centrum />
 
-            <input id="slider" className="slider" value="0" type="range" name="points" min="0" max="36" ></input>
+            <input id="slider" className="slider" value="0" type="range" name="points" min="0" max="36" onChange={handleSlider}></input>
             <p id="stopnie">{deg * 10} stopni</p>
         </div>
 

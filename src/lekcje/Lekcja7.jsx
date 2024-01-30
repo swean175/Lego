@@ -33,6 +33,7 @@ let codeB = arrB.map((it)=> {
         <div className="sladB" style={it.stylB}></div>
     )
 })
+
     return (
 <>
 {codeB}
@@ -57,8 +58,8 @@ function Slad(){
             <div className="slad2" style={it.styl2}></div>
             </>
         )
-    }
-    )
+    })
+
     return (
 <>
 {code}
@@ -70,7 +71,7 @@ function Obrot(){
     return (
        <>
         <div id="point" className="point"></div>
- <div className="centrumB" id="centrumB" style={{transform:`rotate(${i*10}deg)`}}>
+ <div className="centrumB" id="centrumB" style={{transform:`"rotate(${i*10}deg)"`}}>
  <Robo className="roboB" /> 
  {degB > 0?<SladB/>:null}
  </div>
@@ -81,7 +82,7 @@ function Obrot(){
 function Centrum(){
     return(
         <div className="centrum" id="centrum">
-            <Robo className="robo" style={{transform: `rotate(${deg*10}deg`}}/>
+            <Robo className="robo" style={{transform:`"rotate(${i*10}deg)"`}}/>
             {deg > 0?<Slad/>:null}
         </div>
     )

@@ -19,7 +19,7 @@ export default function Robo(){
       shapeRendering="geometricPrecision"
       textRendering="geometricPrecision"
       preserveAspectRatio="xMidYMid meet"
-      viewBox="0 0 1024 1024" 
+      viewBox="0 0 250 250" 
     >
       <path fill="#5e666f" d="M120.5 33.5h-7v-8h7v8z" opacity="0.892"></path>
       <path

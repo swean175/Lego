@@ -1,6 +1,6 @@
 import React,{ useEffect } from "react"
 import Robo from "../components/svgs/icon"
-import oponaszer from "../assets/lekcja6/tyre.jpg"
+import oponaszer from "../assets/lekcja7/tyre.jpg"
 
 
 export default function Lekcja7(){

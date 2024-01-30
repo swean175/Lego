@@ -651,6 +651,10 @@ width: 65%;
   gap:3em;
 }
 
+.skretB{
+  position:relative;
+}
+
  .centrum{
   position: relative;
   margin: auto;

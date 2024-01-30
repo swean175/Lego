@@ -6,7 +6,7 @@ export default function Robo(){
       imageRendering="optimizeQuality"
       shapeRendering="geometricPrecision"
       textRendering="geometricPrecision"
-      viewBox="0 0 512 512" 
+      viewBox="0 0 1024 1024" 
       preserveAspectRatio="xMidYMid meet"
     >
       <path

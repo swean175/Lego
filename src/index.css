@@ -1066,6 +1066,11 @@ width: 95%;
   width: 250px;
   margin: 0.5em;
 }
+
+.layout7{
+  gap:3em;
+  width: 100%;
+}
   
 }
 

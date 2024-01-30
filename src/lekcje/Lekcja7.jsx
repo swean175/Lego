@@ -36,7 +36,7 @@ let codeB = arrB.map((it)=> {
 
     return (
 <>
-{codeB}
+<h2>cos</h2>
 </>
     )
 }
@@ -62,7 +62,7 @@ function Slad(){
 
     return (
 <>
-{code}
+<h2>cos</h2>
 </>
     )
 }

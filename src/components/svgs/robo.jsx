@@ -273,5 +273,4 @@ export default function Robo(){
       <path fill="#5f666f" d="M113.5 213.5h7v8h-7v-8z" opacity="0.934"></path>
     </svg>
 
-        
     )}

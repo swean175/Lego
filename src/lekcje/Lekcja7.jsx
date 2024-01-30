@@ -3,11 +3,6 @@ import Robo from "../components/svgs/robo"
 import oponaszer from "../assets/lekcja6/tyre.jpg"
 
 
-let styl
-let styl2
-let stylB
-let code
-let codeB
 
 export default function Lekcja7(){
 
@@ -20,9 +15,9 @@ export default function Lekcja7(){
 const [deg, setDeg] = useState(0)
 const [degB, setDegB] = useState(0)
 
-code = '<Robo className="robo"/>'
+let code = '<Robo className="robo"/>'
 
-codeB = `<div id="point" className="point"></div>
+let codeB = `<div id="point" className="point"></div>
  <div className="centrumB" id="centrumB;">
  <Robo className="roboB"/> 
  </div> `
@@ -54,7 +49,7 @@ function handleSliderB(event){
 let arrB = []
 
 for (let i =0; i <= degB; i++){
-stylB  = `{transform:"translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px))"}`
+const stylB  = `{transform:"translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px))"}`
     arrB.push(`<div className="sladB" style={${stylB}}></div>`) 
 
     codeB = `<div id="point" className="point"></div>
@@ -72,14 +67,14 @@ stylB  = `{transform:"translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10
 
 function handleSlider(event){
    setDeg(event.target.value)
-   let code = `<Robo className="robo" style={{transform: "rotate(${deg*10}deg)", 
+ code = `<Robo className="robo" style={{transform: "rotate(${deg*10}deg)", 
    transition:" 0.2s"}}/>`
 
 let arr = []
 
 for (let i =0; i <= deg; i++){
-    styl = `{transform:"translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)))"}`
-    styl2 = `{transform:"translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)))"}`
+   const styl = `{transform:"translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)))"}`
+   const styl2 = `{transform:"translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)))"}`
     arr.push(`<div className="slad" style={${styl}}></div><div className="slad2" style={${styl2}}></div>`) 
 }
 

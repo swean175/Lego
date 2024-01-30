@@ -18,10 +18,11 @@ export default function Lekcja7(){
 
 
 
-const [deg, setDeg] = useState(stopnie.defaultValue)
-const [degB, setDegB] = useState(stopnieB.defaultValue)
+const [deg, setDeg] = useState(0)
+const [degB, setDegB] = useState(0)
 
 code = '<Robo className="robo"/>'
+
 codeB = `<div id="point" className="point"></div>
  <div className="centrumB" id="centrumB;">
  <Robo className="roboB"/> 
@@ -31,13 +32,10 @@ codeB = `<div id="point" className="point"></div>
 
 function Obrot(){
     return (
-        <div id="obrot" className="obrotB">
-        <div id="point" className="point"></div>
-          <div className="centrumB" id="centrumB">
+       <>
         <Robo className="roboB"/>
         {codeB}
-    </div> 
-    </div>
+   </>
     )
 }
 
@@ -91,10 +89,8 @@ for (let i =0; i <= deg; i++){
 code = code + [...arr]
 }
 
-
-
     return(
-        <>
+        <React.Fragment>
              <img className="lekcjaszesc-img" src={oponaszer} alt="koło lego"></img>
 
    <h1> Programujemy blok do skręcania robotem </h1>
@@ -117,6 +113,6 @@ code = code + [...arr]
         </div>
 
         
-</>
+</React.Fragment>
     )
 }

@@ -640,7 +640,15 @@ width: 65%;
  }
 
  /* Lekcja 7 -------------------------------------------------------- */
-
+ 
+ 
+ .layout7{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:3em;
+}
 
  .centrum{
   position: relative;

@@ -100,7 +100,7 @@ function handleSlider(event){
 }
 
     return(
-        <React.Fragment>
+        <div className="layout7">
              <img className="lekcjaszesc-img" src={oponaszer} alt="koło lego"></img>
 
    <h1> Programujemy blok do skręcania robotem </h1>
@@ -123,6 +123,6 @@ function handleSlider(event){
         </div>
 
         
-</React.Fragment>
+</div>
     )
 }

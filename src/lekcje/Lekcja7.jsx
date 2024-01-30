@@ -7,6 +7,8 @@ let stopnieB
 let styl
 let styl2
 let stylB
+let code
+let codeB
 
 export default function Lekcja7(){
 
@@ -19,8 +21,8 @@ export default function Lekcja7(){
 const [deg, setDeg] = useState(stopnie.defaultValue)
 const [degB, setDegB] = useState(stopnieB.defaultValue)
 
-let code = '<Robo className="robo"/>'
-let codeB = `<div id="point" className="point"></div>
+code = '<Robo className="robo"/>'
+codeB = `<div id="point" className="point"></div>
  <div className="centrumB" id="centrumB;">
  <Robo className="roboB"/> 
  </div> `

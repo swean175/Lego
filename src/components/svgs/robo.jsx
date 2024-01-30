@@ -11,6 +11,11 @@ export default function Robo(){
       shapeRendering="geometricPrecision"
       textRendering="geometricPrecision"
       viewBox="0 0 250 250" 
+      preserveAspectRatio="xMidYMid meet"
+      style={{
+        width: '250px',
+        height: '250px',
+      }}
     >
       <path
         fill="#59616b"

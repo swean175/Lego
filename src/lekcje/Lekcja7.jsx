@@ -13,12 +13,6 @@ const [deg, setDeg] = React.useState(0)
 const [degB, setDegB] = React.useState(0)
 
 
-// let code = '<Robo className="robo"/>'
-
-// let codeB = `<div id="point" className="point"></div>
-//  <div className="centrumB" id="centrumB">
-//  <Robo className="roboB"/> 
-//  </div> `
 
 function SladB(){
 let arrB = []
@@ -71,7 +65,7 @@ function Obrot(){
     return (
        <>
         <div id="point" className="point"></div>
- <div className="centrumB" id="centrumB" style={{transform:`"rotate(${i*10}deg)"`}}>
+ <div className="centrumB" id="centrumB" style={{transform:`"rotate(${degB}deg)"`}}>
  <Robo className="roboB" /> 
  {degB > 0?<SladB/>:null}
  </div>
@@ -82,7 +76,7 @@ function Obrot(){
 function Centrum(){
     return(
         <div className="centrum" id="centrum">
-            <Robo className="robo" style={{transform:`"rotate(${i*10}deg)"`}}/>
+            <Robo className="robo" style={{transform:`"rotate(${deg}deg)"`}}/>
             {deg > 0?<Slad/>:null}
         </div>
     )

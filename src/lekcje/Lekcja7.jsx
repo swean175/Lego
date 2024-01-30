@@ -4,7 +4,9 @@ import oponaszer from "../assets/lekcja6/tyre.jpg"
 
 let stopnie 
 let stopnieB 
-
+let styl
+let styl2
+let stylB
 
 export default function Lekcja7(){
 
@@ -17,15 +19,12 @@ export default function Lekcja7(){
 const [deg, setDeg] = useState(stopnie.defaultValue)
 const [degB, setDegB] = useState(stopnieB.defaultValue)
 
-const [code, setCode] = useState('<Robo className="robo"/>')
-const [codeB, setCodeB] = useState(`<div id="point" className="point"></div>
-// <div className="centrumB" id="centrumB;">
-// <Robo className="roboB"/> 
-// </div> `)
+let code = '<Robo className="robo"/>'
+let codeB = `<div id="point" className="point"></div>
+ <div className="centrumB" id="centrumB;">
+ <Robo className="roboB"/> 
+ </div> `
 
-const [styl, setStyl] = useState(``)
-const [styl2, setStyl2] = useState(``)
-const [stylB, setStylB] = useState(``)
 
 
 function Obrot(){
@@ -53,26 +52,22 @@ function Centrum(){
 function handleSliderB(event){
     stopnieB = document.getElementById('stopnieB')
     setDegB(event.target.value) 
-// arrB = []
 
 let arrB = []
 
 for (let i =0; i <= degB; i++){
-let b  = `"transform:translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px));"`
+stylB  = `"transform:translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*i)+180}deg)*138px));"`
     arrB.push(`<div className="sladB" style={{${stylB}}}></div>`) 
 
-    setCodeB (`<div id="point" className="point"></div>
+    codeB = `<div id="point" className="point"></div>
     <div className="centrumB" id="centrumB" style={{"transform: rotate(${i*10}deg)}}">
     <Robo className="roboB"/> 
-    </div>`)
+    </div>`
 
-    setCodeB(b + [...arrB])
+ codeB = codeB + [...arrB]
 }
 }
 
-    // arrB.forEach((it)=>{
-    //     setCodeB(prev => prev + it)
-    // })
 
 //--------------------------------------------------------------------------------------------
 
@@ -80,23 +75,18 @@ let b  = `"transform:translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(${(10*
 function handleSlider(event){
     stopnie = document.getElementById('stopnie')
    setDeg(event.target.value)
-   let a = `<Robo className="robo" style={{"transform: rotate(${deg*10}deg); 
+   let code = `<Robo className="robo" style={{"transform: rotate(${deg*10}deg); 
    transition: 0.2s;"}}/>`
 
 let arr = []
 
 for (let i =0; i <= deg; i++){
-    setStyl(`"transform:translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)));"`) 
-    setStyl2( `"transform:translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)));"`) 
+    styl = `"transform:translate(calc(cos(${(10*i)-90}deg)*var(--offset)),calc(sin(${(10*i)-90}deg)*var(--offset)));"`
+    styl2 = `"transform:translate(calc(cos(${(10*i)+90}deg)*var(--offset)),calc(sin(${(10*i)+90}deg)*var(--offset)));"`
     arr.push(`<div className="slad" style={{${styl}}}></div><div className="slad2" style={{${styl2}}}></div>`) 
 }
 
-// arr.forEach((it)=>{
-//     setCode(prev => prev + it)
-// })
-
-setCode(a + [...arr])
-
+code = code + [...arr]
 }
 
 

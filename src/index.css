@@ -706,7 +706,7 @@ aspect-ratio: 1;
 
 .roboB{
   position: absolute;
-  margin: auto;
+  /* margin: auto; */
   width: 250px;
   aspect-ratio: 1;
   transform:rotate(90deg);

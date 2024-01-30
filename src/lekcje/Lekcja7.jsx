@@ -78,6 +78,8 @@ function Obrot(){
 
 function Centrum(){
     return(
+        <>
+         <Robo />
         <div className="centrum" id="centrum">
             <div className="robo" style={{transform:`"rotate(${deg}deg)"`}}>
              
@@ -85,6 +87,8 @@ function Centrum(){
               <Robo /> 
             {deg > 0?<Slad/>:null}
         </div>
+        </>
+       
     )
 }
 

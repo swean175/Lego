@@ -944,9 +944,8 @@ max-height: fit-content;
   }
 
   .math-image{
-    width: 50%;
+    width: 40%;
    height: 35vh;
-    margin: 1em;
    }
 
 }

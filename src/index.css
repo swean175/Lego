@@ -433,7 +433,6 @@ width: 65%;
 
 .math-image{
  width: 25%;
-height: 15vh;
  margin: 1em;
 }
 
@@ -943,6 +942,13 @@ max-height: fit-content;
     font-size: 1rem;
     color:#5BB3E4;
   }
+
+  .math-image{
+    width: 50%;
+   height: 25vh;
+    margin: 1em;
+   }
+
 }
 
 @media (max-width: 787px){

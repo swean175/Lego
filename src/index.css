@@ -433,6 +433,7 @@ width: 65%;
 
 .math-image{
  width: 25%;
+ aspect-ratio: 1;
  margin: 1em;
 }
 

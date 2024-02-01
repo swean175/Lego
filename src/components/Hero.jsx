@@ -29,7 +29,7 @@ export default function Hero(){
 </div>
 <div className="bottom-hero">
 {/* Czy jesteś gotowy, aby przenieść swoje umiejętności Lego Mindstorms na wyższy poziom? Odkryj zaawansowane techniki budowania, wskazówki dotyczące kodowania i zaprezentuj swoje dzieła na naszej stronie internetowej. Tylko niebo ogranicza! */}
-    <div className="white-box"><article><span className="ogloszenia">Ogłoszenia</span><p>Kolejne zajęcia:</p> <p>Środa 31 styczeń godz 16:00</p></article></div>
+    <div className="white-box"><article><span className="ogloszenia">Ogłoszenia</span><p>Kolejne zajęcia:</p> <p>Środa 14 luty godz 16:00</p></article></div>
     <div className="yellow-box">
         <article>Przygotuj się na uwolnienie swojej kreatywności i zanurz się z nami w ekscytujący świat robotyki!</article>
         </div>

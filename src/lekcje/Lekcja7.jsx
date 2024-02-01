@@ -24,7 +24,7 @@ const stylB  = {transform:`translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(
 
 let codeB = arrB.map((it)=> {
     return (
-        <div className="sladB" style={it.stylB}></div>
+        <center className="sladB" style={it.stylB}></center>
     )
 })
 
@@ -48,8 +48,8 @@ function Slad(){
    let code = arr.map((it)=>{
         return (
             <>
-            <div className="slad" style={it.styl}></div>
-            <div className="slad2" style={it.styl2}></div>
+            <center className="slad" style={it.styl}></center>
+            <center className="slad2" style={it.styl2}></center>
             </>
         )
     })
@@ -105,7 +105,7 @@ function handleSlider(event){
 
     return(
       
-            <div className="layout7">
+            <div className="format-lekcje">
            
 
    <h1 style={{fontSize:"1.5em"}}> Programujemy blok do skręcania robotem </h1>

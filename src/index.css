@@ -653,7 +653,7 @@ width: 65%;
 }
 
 .layout7 input{
-  margin-top: 9em;
+  margin-top: 7em;
   }
 
 /* .skretB{
@@ -712,11 +712,12 @@ aspect-ratio: 1;
 
 .centrumB{
   position: absolute;
-  left: 50px;
+  left: 0px;
   top: 132px;
   width: 250px!important;
   aspect-ratio: 1!important;
   transform-origin:195px 45%!important;
+  margin-bottom: 2em;
   /* background-color: red; */
 }
 

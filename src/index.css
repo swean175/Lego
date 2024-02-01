@@ -652,6 +652,10 @@ width: 65%;
   width: 50%;
 }
 
+.layout7 h3{
+margin-top: 3em;
+}
+
 /* .skretB{
   position:relative;
 } */
@@ -667,6 +671,7 @@ width: 65%;
 #centrum{
   width: 250px!important;
   aspect-ratio: 1!important;
+  margin: auto;
 }
 
 .slad,.slad2{
@@ -725,6 +730,7 @@ aspect-ratio: 1;
 }
 
 #obrotB{
+  margin: auto;
   width: 250px!important;
   aspect-ratio: 1!important;
 }

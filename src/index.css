@@ -704,17 +704,17 @@ aspect-ratio: 1;
   position: absolute;
   left: 50px;
   top: 132px;
-  width: 250px;
-  aspect-ratio: 1;
-  transform-origin:195px 45%;
+  width: 250px!important;
+  aspect-ratio: 1!important;
+  transform-origin:195px 45%!important;
   /* background-color: red; */
 }
 
 .roboB{
   position: absolute;
   margin: auto;
-  width: 250px;
-  aspect-ratio: 1;
+  width: 250px!important;
+  aspect-ratio: 1!important;
   transform:rotate(90deg);
 }
 
@@ -722,8 +722,8 @@ aspect-ratio: 1;
   position: absolute;
 left: 245px;
 top: 245px;
-  width: 10px;
-  aspect-ratio: 1;
+  width: 10px!important;
+  aspect-ratio: 1!important;
   /* background-color: black; */
   z-index: 2;
 }

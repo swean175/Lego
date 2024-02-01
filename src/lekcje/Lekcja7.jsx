@@ -24,7 +24,7 @@ const stylB  = {transform:`translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(
 
 let codeB = arrB.map((it)=> {
     return (
-        <center className="sladB" style={it.stylB}></center>
+        <span className="sladB" style={it.stylB}></span>
     )
 })
 
@@ -48,8 +48,8 @@ function Slad(){
    let code = arr.map((it)=>{
         return (
             <>
-            <center className="slad" style={it.styl}></center>
-            <center className="slad2" style={it.styl2}></center>
+            <span className="slad" style={it.styl}></span>
+            <span className="slad2" style={it.styl2}></span>
             </>
         )
     })
@@ -115,7 +115,7 @@ function handleSlider(event){
          
          <Obrot />
 
-             <input id="sliderB" className="slider" value="0" type="range" name="pointsB" min="0" max="36" onChange={handleSliderB}></input>
+             <input id="sliderB" className="slider" value={degB} type="range" name="pointsB" min="0" max="36" onChange={handleSliderB}></input>
             <p id="stopnieB">{degB * 10} stopni</p>
 
         </div>
@@ -124,7 +124,7 @@ function handleSlider(event){
 
       <Centrum />
 
-            <input id="slider" className="slider" value="0" type="range" name="points" min="0" max="36" onChange={handleSlider}></input>
+            <input id="slider" className="slider" value={deg} type="range" name="points" min="0" max="36" onChange={handleSlider}></input>
             <p id="stopnie">{deg * 10} stopni</p>
         </div>
 

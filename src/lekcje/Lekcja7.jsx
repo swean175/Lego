@@ -24,7 +24,7 @@ const stylB  = {transform:`translate(calc(cos(${(10*i)+180}deg)*138px),calc(sin(
 
 let codeB = arrB.map((it)=> {
     return (
-        <span className="sladB" style={it.stylB}></span>
+        <div className="sladB" style={it.stylB}></div>
     )
 })
 
@@ -48,8 +48,8 @@ function Slad(){
    let code = arr.map((it)=>{
         return (
             <>
-            <span className="slad" style={it.styl}></span>
-            <span className="slad2" style={it.styl2}></span>
+            <div className="slad" style={it.styl}></div>
+            <div className="slad2" style={it.styl2}></div>
             </>
         )
     })

@@ -683,6 +683,7 @@ background-color: red;
 .slider{
   margin-top:5em;
   direction: ltr;
+  width: 250px;
 }
 
 .robo{
@@ -730,8 +731,8 @@ top: 245px;
 .sladB{
   position: absolute;
 margin: 240px 240px;
-  width: 10px;
-  aspect-ratio: 1;
+  width: 10px!important;
+  aspect-ratio: 1!important;
   border-radius: 50%;
   background-color: black;
 }

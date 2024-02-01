@@ -63,7 +63,7 @@ function Slad(){
 
 function Obrot(){
     return (
-       <div className="obrotB">
+       <div className="obrotB" id="obrotB">
         <div id="point" className="point"></div>
  <div className="centrumB" id="centrumB" style={{transform:`rotate(${degB*10}deg)`}}>
          <Robo 

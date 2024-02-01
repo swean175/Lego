@@ -659,9 +659,14 @@ width: 65%;
  .centrum{
   position: relative;
   margin: auto;
-  width: 250px;
-  aspect-ratio: 1;
+  width: 250px!important;
+  aspect-ratio: 1!important;
   transform: rotate(90deg);
+}
+
+#centrum{
+  width: 250px!important;
+  aspect-ratio: 1!important;
 }
 
 .slad,.slad2{
@@ -710,12 +715,18 @@ aspect-ratio: 1;
   /* background-color: red; */
 }
 
+
 .roboB{
   position: absolute;
   margin: auto;
   width: 250px!important;
   aspect-ratio: 1!important;
   transform:rotate(90deg);
+}
+
+#obrotB{
+  width: 250px!important;
+  aspect-ratio: 1!important;
 }
 
 .point{

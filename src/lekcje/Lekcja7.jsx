@@ -115,10 +115,12 @@ function handleSlider(event){
          
          <Obrot />
 
-             <input id="sliderB" className="slider" value={degB} type="range" name="pointsB" min="0" max="36" onChange={handleSliderB}></input>
-            <p id="stopnieB">{degB * 10} stopni</p>
+         
 
         </div>
+
+        <input id="sliderB" className="slider" value={degB} type="range" name="pointsB" min="0" max="36" onChange={handleSliderB}></input>
+            <p id="stopnieB">{degB * 10} stopni</p>
         <h3>Napędzając koła w przeciwnych kierunkach zmniejsza się okrąg i przyspiesza obrót, oś obrotu jest w połowie szerokości</h3>
         <div className="skret">
 

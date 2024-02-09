@@ -979,7 +979,11 @@ max-height: fit-content;
    height: 35vh;
    }
 
-   .obrotB{
+.layout7{
+  padding: 0;
+}
+
+   #obrotB{
   margin-left: -240px;
   }
 

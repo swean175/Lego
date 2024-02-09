@@ -423,16 +423,19 @@ width: 65%;
 
 .options-image{
   width: 50%;
+  aspect-ratio: 1;
   margin: 1em;
 }
 
 .bloki-image{
   width: 90%;
+  aspect-ratio: 0.2;
   margin: 1em;
 }
 
 .math-image{
  width: 25%;
+ aspect-ratio: 0.5;
  margin: 1em;
 }
 
@@ -650,7 +653,8 @@ width: 65%;
   align-items: center;
   margin-left: 0;
   gap:3em;
-  width: 100%;
+  width: 90%;
+  padding: 0em 1em;
 }
 
 .layout7 input{
@@ -706,9 +710,15 @@ background-color: red;
 
 .obrotB{
   position: relative;
-width: 500px;
-aspect-ratio: 1;
+width: 250px;
+margin-left: 0;
 /* background: blue; */
+}
+
+#obrotB{
+  margin: auto;
+  width: 300px!important;
+  aspect-ratio: 1!important;
 }
 
 .centrumB{
@@ -731,11 +741,6 @@ aspect-ratio: 1;
   transform:rotate(90deg);
 }
 
-#obrotB{
-  margin: auto;
-  width: 250px!important;
-  aspect-ratio: 1!important;
-}
 
 .point{
   position: absolute;

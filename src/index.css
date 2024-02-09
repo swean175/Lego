@@ -429,7 +429,7 @@ width: 65%;
 
 .bloki-image{
   width: 90%;
-  aspect-ratio: 0.2;
+  aspect-ratio: 4;
   margin: 1em;
 }
 
@@ -709,9 +709,9 @@ background-color: red;
 }
 
 .obrotB{
-  position: relative;
+  position: absolute;
 width: 250px;
-margin-left: 0;
+margin-left: -50px;
 /* background: blue; */
 }
 

@@ -1,5 +1,5 @@
 import React,{ useEffect } from "react"
-import ready from "../assets/lekcja8/ready.jpg"
+import ready from "../assets/lekcja8/ready.png"
 
 
 export default function Lekcja8(){

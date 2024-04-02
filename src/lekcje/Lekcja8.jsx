@@ -13,8 +13,8 @@ export default function Lekcja8(){
       
             <div className="format-lekcje">
 
-   <h1 style={{fontSize:"1.5em"}}> Zadania przeniesienia puszek do celu </h1>
-   <img className="lekcjaszesc-img" src={ready} alt="plan zadania"></img>
+   <h1 style={{fontSize:"1.5em"}}> Zadanie: zbuduj i zaprogramuj robota który przemieści puszki do celu </h1>
+   <img className="generic-img" src={ready} alt="plan zadania"></img>
 
      
         </div>

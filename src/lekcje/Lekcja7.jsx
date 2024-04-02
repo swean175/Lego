@@ -142,7 +142,7 @@ function handleSlider(event){
         <div>
             <h3>Do obliczenia ilości obrotów silnika która jest potrzebna do pokonania odcinka o danej długości posłuży nam blok obliczania drogi z poprzedniej lekcji</h3>
             <h4>Poniżej wnętrze bloku do skręcania</h4>
-            <img className="lekcjaszesc-img" src={blokskretu} alt="blok skręcania wnętrze"></img>
+            <img className="blokskret" src={blokskretu} alt="blok skręcania wnętrze"></img>
         </div>
         </div>
         </div>

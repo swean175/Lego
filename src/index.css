@@ -448,6 +448,16 @@ width: 65%;
   margin: 1em;
 }
 
+.generic-img{
+  width: 70%;
+  aspect-ratio: 1;
+}
+
+.blokskret{
+  width: 70%;
+  aspect-ratio: 0.2;
+}
+
     /* Przydatne linki--------- */
 
     .przydatne-linki{

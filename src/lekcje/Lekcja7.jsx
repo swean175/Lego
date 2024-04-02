@@ -136,13 +136,16 @@ function handleSlider(event){
             <h3>
                 Dzięki temu mozemy stworzyć nowy blok i używac go wielokrotnie
             </h3>
-            <h4>Poniżej znajduję się nasz blok skręcania z wprowadzonymi informacjami</h4>
         </div>
+        <h4>Poniżej znajduję się nasz blok skręcania z wprowadzonymi informacjami</h4>
         <div><img className="generic-img" src={blokmain} alt="blok skręcania na zewnątrz"></img></div>
         <div>
             <h3>Do obliczenia ilości obrotów silnika która jest potrzebna do pokonania odcinka o danej długości posłuży nam blok obliczania drogi z poprzedniej lekcji</h3>
-            <h4>Poniżej wnętrze bloku do skręcania</h4>
-            <img className="blokskret" src={blokskretu} alt="blok skręcania wnętrze"></img>
+           
+        </div>
+        <h4>Poniżej wnętrze bloku do skręcania</h4>
+        <div>
+        <img className="blokskret" src={blokskretu} alt="blok skręcania wnętrze"></img>
         </div>
         </div>
         </div>

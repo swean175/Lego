@@ -20,6 +20,9 @@ import Lekcja5 from './lekcje/Lekcja5'
 import Lekcja6 from './lekcje/Lekcja6'
 import Lekcja7 from './lekcje/Lekcja7'
 import Lekcja8 from './lekcje/Lekcja8'
+import Lekcja9 from './lekcje/Lekcja9'
+import Lekcja10 from './lekcje/Lekcja10'
+import Lekcja11 from './lekcje/Lekcja11'
 import LekcjeLayout from './components/LekcjeLayout'
 
 
@@ -47,6 +50,9 @@ export default function App() {
     <Route path="lekcja6" element={<Lekcja6 />}/>
     <Route path="lekcja7" element={<Lekcja7 />}/>
     <Route path="lekcja8" element={<Lekcja8 />}/>
+    <Route path="lekcja9" element={<Lekcja9 />}/>
+    <Route path="lekcja10" element={<Lekcja10 />}/>
+    <Route path="lekcja11" element={<Lekcja11 />}/>
 </Route>
 </Route>
 </Route>

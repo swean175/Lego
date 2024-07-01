@@ -25,7 +25,7 @@ export default function Linki(){
        <hr></hr>
        <h3><a href="https://www.youtube.com/watch?v=3tguWcKTXQI" target="blank">Walki Sumo </a></h3>
        <hr></hr>
-       <h3>  <DownloadLink fileName={file.name} fileUrl={file.url} /> - Program do skanowania otoczenia i znajdywania największej odległości </h3>
+       <h3>  <DownloadLink fileName={file.name} fileUrl={file.url} /> - Program do skanowania otoczenia i znajdywania największej odległości (projekt z ostatnich kilku lekcji)</h3>
     
  
             </div>

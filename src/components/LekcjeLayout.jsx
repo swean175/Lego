@@ -15,7 +15,7 @@ export default function LekcjeLayout(){
                             {location.pathname === "/lekcje" ? null : <BiSolidChevronLeft className="arrows" size={64}/>}
                     </NavLink>
                     <NavLink to={location.pathname==="/lekcje" ? "lekcja1" : `lekcja${lesseonIndex +1}`}>
-                    {location.pathname === "/lekcje/lekcja8" ? null :<BiSolidChevronRight className="arrows" size={64}/>}
+                    {location.pathname === "/lekcje/lekcja11" ? null :<BiSolidChevronRight className="arrows" size={64}/>}
         </NavLink>
         </div>
       </div>

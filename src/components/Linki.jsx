@@ -5,7 +5,7 @@ import DownloadLink from "./DownloadLink"
 
 export default function Linki(){
 
-    const file = {name: 'skan.ev3', url:'../../public/downloads/skan.ev3'}
+    const file = {name: 'skan.ev3', url:'./downloads/skan.ev3'}
     return(
         <React.Fragment>
             <div className="przydatne-linki">

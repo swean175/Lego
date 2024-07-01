@@ -1,8 +1,11 @@
 import React from "react"
 import classroom from "../assets/Ev-class.png"
 import ev from "../assets/EV3_Icon.ico"
+import DownloadLink from "./DownloadLink"
 
 export default function Linki(){
+
+    const file = {name: 'skan.ev3', url:'../../public/downloads/skan.ev3'}
     return(
         <React.Fragment>
             <div className="przydatne-linki">
@@ -21,6 +24,9 @@ export default function Linki(){
        <h3><a href="https://www.youtube.com/watch?v=7-4yOx1CnXE" target="blank">Fabryka Tesla</a></h3>
        <hr></hr>
        <h3><a href="https://www.youtube.com/watch?v=3tguWcKTXQI" target="blank">Walki Sumo </a></h3>
+       <hr></hr>
+       <h3>  <DownloadLink fileName={file.name} fileUrl={file.url} /> - Program do skanowania otoczenia i znajdywania największej odległości </h3>
+    
  
             </div>
         </React.Fragment>

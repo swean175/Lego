@@ -19,6 +19,5 @@ export default function LekcjeLayout(){
         </NavLink>
         </div>
       </div>
-           
     )
 }

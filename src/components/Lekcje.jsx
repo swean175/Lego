@@ -16,33 +16,30 @@ const [disp, setDisp] = React.useState("Wprowadzenie")
         color: "#5BB3E4"
     }
 
-    
- 
+
     function dane(){
-       let lista = tematyArr.map((temat) => {
+        let lista = tematyArr.map((temat) => {
         return (
             <>
-             <li onClick = {()=>chosen(temat)}>  
-              <NavLink
+                <li onClick = {()=>chosen(temat)}>  
+                    <NavLink
                             to={temat==="Wprowadzenie"?".":temat.toLowerCase()}
                             style={({ isActive }) => isActive & temat!=="Wprowadzenie" ? activeStyles : null}
                         >
                             {temat}
                     </NavLink>
-                    </li>
-             </>
+                </li>
+            </>
         )
-       
     }) 
     return (
         <>
-        {lista}
+            {lista}
         </>
     )
     }
    
     function chosen(topic){
-       
         setDisp(() =>  tematyArr.indexOf(topic))
     }
 
@@ -50,15 +47,12 @@ const [disp, setDisp] = React.useState("Wprowadzenie")
         
         <section>
             <div className='menu-lekcji'>
-                 <h1>Lekcje:</h1>
-      <div><ul>{dane()}</ul></div>
-      </div>
-      <content>
-      
-      <Outlet/>
-        
-      </content>
+                <h1>Lekcje:</h1>
+                <div><ul>{dane()}</ul></div>
+            </div>
+            <content>
+                <Outlet/>
+            </content>
         </section>
-       
     )
 }

@@ -26,20 +26,19 @@ React.useEffect(() => {
         <>
         <footer> 
             <h2>{user}</h2>
-        <LuUserCircle2 className="user-icon" color="#d1cccc" size={48}/><button className="wyloguj" onClick={logOff}>{wyloguj}</button>
+            <LuUserCircle2 className="user-icon" color="#d1cccc" size={48}/><button className="wyloguj" onClick={logOff}>{wyloguj}</button>
         </footer>
-       
         </>
     )
   }
   return (
     <Navigate 
-    to="/" 
-    state={{
-        message: "Wylogowano",
-        from: location.pathname
-    }} 
-    replace
-/>
+      to="/" 
+      state={{
+          message: "Wylogowano",
+          from: location.pathname
+      }} 
+      replace
+    />
   )
 }

@@ -2,30 +2,28 @@ import React from "react"
 import { Navigate } from "react-router-dom"
 
 export default function Loguj(){
- 
     const [loginFormData, setLoginFormData] = React.useState({ email: "", password: "" })
-   const [aproved, setAproved] = React.useState(false)
+    const [aproved, setAproved] = React.useState(false)
     const [komunikat, setKomunikat] = React.useState("")
-  
 
     async function Log(message){
         const serUrl = 'https://slawa-lego-team.netlify.app/.netlify/functions/Log'
         const response = await fetch(serUrl, {
-     method: 'POST',
-     headers: {
-         'Content-Type': 'application/json'
-     },
-     body:JSON.stringify(message)
-       })
-       const data = await response.json()
-         return data
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify(message)
+        })
+        const data = await response.json()
+        return data
     }
 
 
 
     async function handleSubmit(e) {
         e.preventDefault()
-           try{
+        try{
             const token = await Log(loginFormData)
             
             if (token.aprove){
@@ -35,11 +33,10 @@ export default function Loguj(){
             } else {
                 setKomunikat("Adres email lub hasło jest nieprawidłowe")
             }
-          
-           }catch(error){
+        }catch(error){
             setKomunikat("Błąd logowania")
             console.error(error)
-           }
+        }
     
     }
 
@@ -56,39 +53,38 @@ export default function Loguj(){
     if (aproved) {
         return (
         
- <Navigate 
-                to="/lekcje" 
-                state={{
-                    message: "Zalogowano",
-                    from: location.pathname
-                }} 
-                replace
-            />
-            )}
-           
-                return (
-                <>
- <div className="login-container">
-            <h1>Zaloguj się</h1>
-            <h2><span className="red-font">{komunikat}</span></h2>
-            <form onSubmit={handleSubmit} className="login-form">
-                <input
-                    name="email"
-                    onChange={handleChange}
-                    type="email"
-                    placeholder="Email address"
-                    value={loginFormData.email}
-                />
-                <input
-                    name="password"
-                    onChange={handleChange}
-                    type="password"
-                    placeholder="Hasło"
-                    value={loginFormData.password}
-                />
-                <button>Zaloguj</button>
-            </form>
+        <Navigate 
+            to="/lekcje" 
+            state={{
+                message: "Zalogowano",
+                from: location.pathname
+            }} 
+            replace
+        />
+        )}
+    return (
+        <>
+            <div className="login-container">
+                <h1>Zaloguj się</h1>
+                <h2><span className="red-font">{komunikat}</span></h2>
+                <form onSubmit={handleSubmit} className="login-form">
+                    <input
+                        name="email"
+                        onChange={handleChange}
+                        type="email"
+                        placeholder="Email address"
+                        value={loginFormData.email}
+                    />
+                    <input
+                        name="password"
+                        onChange={handleChange}
+                        type="password"
+                        placeholder="Hasło"
+                        value={loginFormData.password}
+                    />
+                    <button>Zaloguj</button>
+                </form>
         </div>
-     </>)
+    </>)
 
 }

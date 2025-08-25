@@ -34,33 +34,32 @@ export default function App() {
   return (
 <BrowserRouter>
     <Routes>
-    <Route path="/" element={<Layout/>}>
-    <Route index element={<Hero />} />
-    <Route path="linki" element={<Linki />} />
-    <Route path="login" element={<Loguj />}/>
-    <Route element={<Auth/>}>
-    <Route path="lekcje" element={<Lekcje />}>
-    <Route element={<LekcjeLayout />}>
-    <Route index element={<Wprowadzenie />}/>
-    <Route path="lekcja1" element={<Lekcja1 />}/>
-    <Route path="lekcja2" element={<Lekcja2 />}/>
-    <Route path="lekcja3" element={<Lekcja3 />}/>
-    <Route path="lekcja4" element={<Lekcja4 />}/>
-    <Route path="lekcja5" element={<Lekcja5 />}/>
-    <Route path="lekcja6" element={<Lekcja6 />}/>
-    <Route path="lekcja7" element={<Lekcja7 />}/>
-    <Route path="lekcja8" element={<Lekcja8 />}/>
-    <Route path="lekcja9" element={<Lekcja9 />}/>
-    <Route path="lekcja10" element={<Lekcja10 />}/>
-    <Route path="lekcja11" element={<Lekcja11 />}/>
-</Route>
-</Route>
-</Route>
-</Route>
+      <Route path="/" element={<Layout/>}>
+        <Route index element={<Hero />} />
+        <Route path="linki" element={<Linki />} />
+        <Route path="login" element={<Loguj />}/>
+        <Route element={<Auth/>}>
+          <Route path="lekcje" element={<Lekcje />}>
+            <Route element={<LekcjeLayout />}>
+            <Route index element={<Wprowadzenie />}/>
+              <Route path="lekcja1" element={<Lekcja1 />}/>
+              <Route path="lekcja2" element={<Lekcja2 />}/>
+              <Route path="lekcja3" element={<Lekcja3 />}/>
+              <Route path="lekcja4" element={<Lekcja4 />}/>
+              <Route path="lekcja5" element={<Lekcja5 />}/>
+              <Route path="lekcja6" element={<Lekcja6 />}/>
+              <Route path="lekcja7" element={<Lekcja7 />}/>
+              <Route path="lekcja8" element={<Lekcja8 />}/>
+              <Route path="lekcja9" element={<Lekcja9 />}/>
+              <Route path="lekcja10" element={<Lekcja10 />}/>
+              <Route path="lekcja11" element={<Lekcja11 />}/>
+            </Route>
+          </Route>
+        </Route>
+      </Route>
 
-   
     </Routes>
-    </BrowserRouter>
+</BrowserRouter>
   )
 }
 

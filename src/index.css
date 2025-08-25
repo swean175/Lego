@@ -61,8 +61,8 @@ main{
   margin: 0;
   padding: 0;
   width: 100%;
- min-height: 100vh;
-background-color: #d1cccc;
+  min-height: 100vh;
+  background-color: #d1cccc;
 }
 
 .hero{
@@ -72,7 +72,7 @@ background-color: #d1cccc;
   /* background-color: #967AC1; */
   display: flex;
   flex-direction: column;
-align-content: space-between;
+  align-content: space-between;
 }
 
 
@@ -87,7 +87,7 @@ align-content: space-between;
 .top-hero>article{
   margin-top: 3em;
   align-self: stretch;
- font-size: 1.6em;
+  font-size: 1.6em;
   max-height: 150px;
   min-width: 200px;
   max-width: 300px;
@@ -119,13 +119,12 @@ align-content: space-between;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: bottom;
- 
 }
 
 .bottom-hero article{
   padding-top: 2em;
   font-size: medium;
-text-align: center;
+  text-align: center;
 }
 
 
@@ -133,7 +132,7 @@ text-align: center;
   padding: 2em;
   min-width: 200px;
   max-width: 400px;
- height: 250px;
+  height: 250px;
   margin-top: 15em;
 }
 
@@ -167,10 +166,7 @@ nav{
 
   display: flex;
   align-items: center;
- /* justify-content: center; */
-/* align-content: space-around; */
-background-color: #1a1a1a;
-/* Alternative color #1C5860*/
+  background-color: #1a1a1a;
 }
 
 nav a{
@@ -193,7 +189,7 @@ nav a{
 }
 
 .ev3logo:hover{
-filter:hue-rotate(200deg);
+  filter:hue-rotate(200deg);
 }
 
 .home-menu{
@@ -206,10 +202,9 @@ filter:hue-rotate(200deg);
 }
 
 .links-menu{
-display: flex;
-padding-right: 2em;
-gap: 2em;
-
+  display: flex;
+  padding-right: 2em;
+  gap: 2em;
 }
 
 section{
@@ -219,9 +214,9 @@ section{
 }
 
 content{
-display: flex;
-justify-content: center;
-max-width: auto;
+  display: flex;
+  justify-content: center;
+  max-width: auto;
 }
 
 .not-found-container {
@@ -287,7 +282,7 @@ max-width: auto;
   width: 15%;
   min-width: 200px;
   max-width: 30%;
-min-height: 100%;
+  min-height: 100%;
   background-color: #1C5860;
 }
 
@@ -313,9 +308,9 @@ footer{
   margin-top:auto;
   display: flex;
   align-items: center;
- justify-content: space-between;
-background-color: #1a1a1a;
-z-index: 2;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  z-index: 2;
 }
 
 footer>h2{
@@ -367,8 +362,8 @@ button:focus-visible {
 
 .wprowadzenie{
   max-width: 85%;
-padding: 0 5em;
-padding-bottom: 2em;
+  padding: 0 5em;
+  padding-bottom: 2em;
 }
 
 .lekcje-layout{
@@ -381,8 +376,6 @@ padding-bottom: 2em;
 .wpro-image{
   margin: auto;
   width: 35vw;
-  /* max-width: 720px;
-  min-width: 400px; */
 }
 
 .onstart{
@@ -394,21 +387,21 @@ padding-bottom: 2em;
 
 .loops{
   margin: 2em;
-width: 35%;
+  width: 35%;
 }
 
 .katblocks{
   display: block;
   margin: 2em auto;
-width: 50%;
+  width: 50%;
 }
 
 .if{
-width: 25%;
+  width: 25%;
 }
 
 .ifand,.shiba{
-width: 65%;
+  width: 65%;
 }
 
 
@@ -434,9 +427,9 @@ width: 65%;
 }
 
 .math-image{
- width: 25%;
- aspect-ratio: 0.5;
- margin: 1em;
+  width: 25%;
+  aspect-ratio: 0.5;
+  margin: 1em;
 }
 
 .program-image{
@@ -483,16 +476,16 @@ width: 65%;
 
     .format-lekcje>div{
       flex-direction: column;
-     }
+    }
 
-     .format-lekcje article{
+    .format-lekcje article{
       margin: 2em 0em;
-     }
+    }
 
-     .shiba-opis{
+    .shiba-opis{
       width: 30%;
       padding: 0 1em;
-     }
+    }
 
 /* Lekcja 6 ---------------------------*/
 
@@ -508,13 +501,13 @@ width: 65%;
   /* flex-direction: column;
   justify-content: center;
   align-items:center; */
- }
+}
 
- .lek6-title{
+.lek6-title{
   display: block;
   width: 300px;
   justify-self: left;
- }
+}
 
 .wzor{
   display: flex;
@@ -575,15 +568,15 @@ width: 65%;
   padding: 0;
 }
 
- .odcdrogi{
+.odcdrogi{
   position: absolute;
   display: inline;
   margin: 0;
   padding: 0;
- }
+}
 
 .obwod{
- display:block;
+  display:block;
   padding:0em 1em;
   width: 320px;
 }
@@ -592,70 +585,68 @@ width: 65%;
   max-width: 320px;
 }
 
- .numery-odc{
+  .numery-odc{
   display: flex;
   max-width: 274px;
   color: blue;
   justify-content:space-between;
- }
+  }
 
- .numery-odc h2:nth-child(2){
+  .numery-odc h2:nth-child(2){
   animation: odc1 3s linear infinite both;
- }
+  }
 
- .numery-odc h2:nth-child(3){
+  .numery-odc h2:nth-child(3){
   animation: odc2 3s linear infinite both;
- }
+  }
 
- .numery-odc h2:nth-child(4){
+  .numery-odc h2:nth-child(4){
   animation: odc3 3s linear infinite both;
- }
+  }
 
- #odc1{
+  #odc1{
   margin-left: 0px;
- }
+  }
 
- #odc2{
+  #odc2{
   margin-left: 75px;
   animation: odc1 3s linear infinite both;
- }
+  }
 
- #odc3{
+  #odc3{
   margin-left: 150px;
   animation: odc2 3s linear infinite both;
- }
+  }
 
- #odc4{
+  #odc4{
   margin-left: 225px;
   animation: odc3 3s linear infinite both;
- }
+  }
 
- #droga{
+  #droga{
   display: block;
   margin-top: 0;
   stroke-width: 10px;
   margin: 0;
- }
+  }
 
- .droga-wzory{
+  .droga-wzory{
   margin: 2em;
- }
+  }
 
- .kolo{
+  .kolo{
   max-width: 100px;
   overflow: hidden;
   animation: kolo 3s linear infinite both;
- }
+  }
   
- #wheel{
+  #wheel{
   margin: 0;
   animation: wheel 3s linear infinite both;
- }
+  }
 
  /* Lekcja 7 -------------------------------------------------------- */
- 
- 
- .layout7{
+  .layout7{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -675,7 +666,7 @@ width: 65%;
   position:relative;
 } */
 
- .centrum{
+  .centrum{
   position: relative;
   margin: auto;
   width: 250px!important;
@@ -693,7 +684,7 @@ width: 65%;
   --size: 10px;
   --offset: 75px;
   position: absolute;
-margin: 120px 120px;
+  margin: 120px 120px;
   width: var(--size)!important;
   aspect-ratio: 1!important;
   border-radius: 50%;
@@ -701,7 +692,7 @@ margin: 120px 120px;
 }
 
 .slad2{
-background-color: red;
+  background-color: red;
 }
 
 
@@ -725,10 +716,9 @@ background-color: red;
 
 .obrotB{
   position: absolute;
-width: 250px;
-margin-left: 0px;
-margin-top: -100px;
-/* background: blue; */
+  width: 250px;
+  margin-left: 0px;
+  margin-top: -100px;
 }
 
 #obrotB{
@@ -745,7 +735,6 @@ margin-top: -100px;
   aspect-ratio: 1!important;
   transform-origin:195px 45%!important;
   margin-bottom: 2em;
-  /* background-color: red; */
 }
 
 
@@ -760,17 +749,16 @@ margin-top: -100px;
 
 .point{
   position: absolute;
-left: 245px;
-top: 245px;
+  left: 245px;
+  top: 245px;
   width: 10px!important;
   aspect-ratio: 1!important;
-  /* background-color: black; */
   z-index: 2;
 }
 
 .sladB{
   position: absolute;
-margin: 240px 240px;
+  margin: 240px 240px;
   width: 10px!important;
   aspect-ratio: 1!important;
   border-radius: 50%;
@@ -801,7 +789,7 @@ margin: 240px 240px;
     }
     /* At 100%, the circle has a full stroke */
     100% {
-     transform: translateY(58px);
+      transform: translateY(58px);
       stroke-dasharray: 200 0;
     
        /* 314 is half of the circumference */
@@ -867,7 +855,6 @@ margin: 240px 240px;
 
 @keyframes kolo {
   0% {
- 
   }
   100%{
     transform: translateX(220px);
@@ -885,7 +872,6 @@ margin: 240px 240px;
 
 @keyframes wheel {
   0% {
- 
   }
   100%{
     transform: rotate(1170deg);
@@ -910,12 +896,12 @@ margin: 240px 240px;
 
   .bottom-hero{
     margin-top: 30%;
-  padding: 0 0 25em 0;
+    padding: 0 0 25em 0;
 }
 
 .white-box{
-border-bottom: 7px solid #5BB3E4;
-border-left: 7px solid #967AC1;
+  border-bottom: 7px solid #5BB3E4;
+  border-left: 7px solid #967AC1;
 }
 
 .yellow-box{
@@ -940,12 +926,11 @@ section{
 }
 
 .menu-lekcji{
- 
   text-align: center;
   position: relative;
   padding-bottom: 1em;
   min-width: 100%;
-max-height: fit-content;
+  max-height: fit-content;
   background-color: #1C5860;
 }
 
@@ -957,7 +942,6 @@ max-height: fit-content;
   margin-top: 0;
   text-align: left;
 }
-
 
 }
 
@@ -986,15 +970,15 @@ max-height: fit-content;
 
   .math-image{
     width: 40%;
-   height: 35vh;
-   }
+    height: 35vh;
+  }
 
 .layout7{
   padding: 0;
 }
 
-   #obrotB{
-  margin-left: -80px;
+  #obrotB{
+    margin-left: -80px;
   }
 
 }
@@ -1023,9 +1007,9 @@ max-height: fit-content;
 .top-hero>article{
   margin: 3em auto;
   width: 80%;
- min-width: 150px;
- max-width: 400px;
- line-height: 1.7em;
+  min-width: 150px;
+  max-width: 400px;
+  line-height: 1.7em;
 }
 
 .zaloguj{
@@ -1039,13 +1023,12 @@ max-height: fit-content;
   margin-top: 21%;
   padding: 0 0 12em 0;
   background-image: none;
-background-color: #5BB3E4;
+  background-color: #5BB3E4;
 }
 
 .bottom-hero article{
-font-size: medium;
-padding: 1em;
-
+  font-size: medium;
+  padding: 1em;
 }
 
 
@@ -1055,7 +1038,7 @@ padding: 1em;
   width: 100%;
   height: 70vh;
 }
- 
+
 
 .white-box, .yellow-box{
   width: 80%;
@@ -1104,20 +1087,20 @@ padding: 1em;
 .shiba-opis{
   width: 95%;
   padding: 0 0.5em;
- }
+}
 
- .shiba{
+.shiba{
   width: 95%;
   padding: 1em 0;
   margin: 0;
- }
-
- .loops,.if,.onstart,.ifand,.variables-image,.math-image,.options-image,.bloki-image{
-  margin: 0;
-width: 95%;
 }
 
-  .lekcjaszesc-img{
+.loops,.if,.onstart,.ifand,.variables-image,.math-image,.options-image,.bloki-image{
+  margin: 0;
+  width: 95%;
+}
+
+.lekcjaszesc-img{
   width: 250px;
   margin: 0.5em;
 }
@@ -1126,7 +1109,7 @@ width: 95%;
   gap:3em;
   width: 100%;
 }
-  
+
 }
 
 
